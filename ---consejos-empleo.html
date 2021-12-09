@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="../../../../favicon.ico">
+      <title>Portal del Empleo</title>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+      <!-- Place your stylesheet here-->
+      <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+      <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+      <!--- montserrat font-->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+      <!---icons--->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
+   <body class="bg-body">
+      <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">Arriba</button>
+      <header class="back-bt header-interna text-center fixed-top">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                        <a class="text-white" href="#" onclick="goBack()" role="button"><span class="material-icons">keyboard_backspace</span> Regresar al Portal del empleo</a>
+                     </li>
+                  </ul>
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item mr-4">
+                        <a href="acerca-sne.html" class="text-white"> Acerca del SNE</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="servicios-intermediacion-laboral.html" class="text-white"> Programas y servicios</a>
+                     </li>
+                     <li class="nav-item mr-4"><a href="consejos-empleo.html" class="text-white active">Consejos de empleo</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="container">
+            <form>
+               <div class="collapse" id="searchDiv">
+                  <div class="form-row align-items-end justify-content-center py-3">
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="que">¿Qué?</label>
+                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                     </div>
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="donde">¿Dónde?</label>
+                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                     </div>
+                     <div class="col-auto">
+                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                     </div>
+                     <div class="col-auto">
+                        <div class="form-check mb-2">
+                           <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                           Cerrar
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </header>
+      <main class="container" id="text">
+
+         <div class="col-12 mt-5">
+            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+               <li class="nav-item m-0">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="home" aria-selected="true">Para candidato</a>
+               </li>
+               <li class="nav-item m-0">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Para empleador</a>
+               </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+               <div class="tab-pane fade show active" id="profile1" role="tabpanel" aria-labelledby="profile1-tab">
+                  <div class="bg-white p-3 mb-3 border-LBR">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div id="main-menu" class="list-group">
+                              <a href="#" class="list-group-item active">Videocurriculum</a>
+                              <a href="#" class="list-group-item">Proceso de Búsqueda de Empleo</a>
+                              <a href="#" class="list-group-item">Título y semblanza en CV</a>
+                              <a href="#" class="list-group-item">Cómo grabar video de presentación</a>
+                           </div>
+                        </div>
+                        <div class="col-md-8 list">
+                           <h1 class="mb-5">Videocurriculum</h1>
+                           <div class="row mb-2">
+                              <div class="col-md-6">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repudiandae soluta dignissimos eaque quia voluptas tempora! Vitae, eum, eius. Quasi, voluptas, totam. Nihil nulla mollitia veniam et doloribus. Porro, officia!</p>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile2-tab">
+                  <div class="bg-white p-3 mb-3 border-LBR">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div id="main-menu" class="list-group">
+                              <a href="#" class="list-group-item active">Presentar a mi empresa</a>
+                              <a href="#" class="list-group-item">Proceso de Búsqueda de Candidatos</a>
+                              <a href="#" class="list-group-item">Descripción de tu Oferta de Empleo</a>
+                              <a href="#" class="list-group-item">Cómo grabar video de la Oferta de Empleo</a>
+                           </div>
+                        </div>
+                        <div class="col-md-8 list">
+                           <h1 class="mb-5">Presentar a mi empresa</h1>
+                           <div class="row mb-2">
+                              <div class="col-md-6">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repudiandae soluta dignissimos eaque quia voluptas tempora! Vitae, eum, eius. Quasi, voluptas, totam. Nihil nulla mollitia veniam et doloribus. Porro, officia!</p>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="row mb-2 mb-5">
+                              <div class="col-md-6">
+                                 <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <h2 class="mb-3">Título enganchador del video</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id similique sapiente rerum neque. Natus corrupti debitis quisquam dolores magnam voluptatem odio quo totam amet et, fugiat eveniet perferendis aliquam, quasi?</p>
+                                 <ul class="no-bullets">
+                                    <li class="m-2">
+                                       <a href="">Guión para hacer este video</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculos 2</a>
+                                    </li>
+                                    <li class="m-2">
+                                       <a href="">Ejemplo de vínculo 3</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!-- /.container -->
+      <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- The Modal -->
+      <div class="modal fade" id="Comparativo">
+         <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regrear a resultados</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="comparar.html"></iframe>
+                  </div>
+               </div>
+               <!-- Modal footer -->
+               <!---div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div--->
+            </div>
+         </div>
+      </div>
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="assets/js/jquery-3.5.1.js"></script>
+      <script src="assets/js/bootstrap.bundle.js"></script>
+      <script src="assets/js/rangeslider.js"></script>
+      <script>
+         $(document).ready(function() {
+         
+             $('.shortDesc').each(function(f) {
+         
+                 var newstr = $(this).text().substring(0, 100);
+                 $(this).text(newstr);
+         
+             });
+         })
+      </script>
+      <script>
+         $(document).ready(function() {
+             $('#results a').click(function() {
+                 var href = $(this).attr('href');
+                 var num = href.split("-")[1];
+                 $('.tab-pane').css('display', 'none');
+                 $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                 $(".etab-p" + num).css('display', 'block');
+                 $(".etabi-img" + num).css('display', 'block');
+                 $(".etab-p" + num).addClass('show');
+                 $(".etabi-img" + num).addClass('show');
+             });
+         });
+      </script>
+      <script>
+         //Get the button
+         var mybutton = document.getElementById("myBtn");
+         
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {
+             scrollFunction()
+         };
+         
+         function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+             } else {
+                 mybutton.style.display = "none";
+             }
+         }
+         
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+             document.body.scrollTop = 0;
+             document.documentElement.scrollTop = 0;
+         }
+      </script>
+      <script>
+         $(document).ready(function() {
+             $("#main-menu a").click(function() {
+                 $("#main-menu a").removeClass("active");
+                 $(this).addClass("active");
+             });
+         });
+      </script>
+   </body>
+</html>

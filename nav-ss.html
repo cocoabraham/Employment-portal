@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+    <!---RESPONSIVE MENU--->
+    <!-- The overlay -->
+    <div id="myNav" class="overlay1">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+
+        <div class="overlay-content">
+            <div class="container">
+                <div class="col-12">
+                        
+                    
+                    <hr class="hr-white">
+                    <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                        <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Regístrate</a></li>
+                        <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Iniciar sesión</a></li>
+                    </ul>
+                    <hr class="hr-white">
+                </div>
+
+                <div class="col-12">
+                    <h2>Buscador</h2>
+                    <form>
+                        <div class="form-row justify-content-md-center">
+                            <div class="form-group col-md-6 text-center">
+                                <label class="text-white px19" for="que">¿Qué?</label>
+                                <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                            </div>
+                            <div class="form-group col-md-6 text-center">
+                                <label class="text-white px19" for="donde">¿Dónde?</label>
+                                <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                            </div>
+                            <div class="clearfix">&nbsp;</div>
+                            <div class="form-row col-12">
+                                <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <!---RESPONSIVE MENU--->
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img class="logoPEHeader" src="assets/img/logoBCO.png.png" alt="Logo Portal del empleo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse">
+            <span onclick="openNav()" class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search</i><br>Buscar</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link montserrat montserrat-regular" href="#">Regístrate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link montserrat montserrat-regular gbutton" href="#">Iniciar sesión</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Arriba</button>
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="text-white" href="#" onclick="goBack()" role="button"><span class="material-icons">keyboard_backspace</span> Regresar al Portal del empleo</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                                    Cerrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row justify-content-md-center bg-white p-3" bg-white="">
+            <div class="mt-3 col-3">
+               <div class="pl-4 border-left">
+                   <span class="font-weight-bold">Términos y Condiciones</span>
+               </div>
+                <div class="p-3 pl-4 border-left px-4 border-success">
+                    <span><a href="politicas-ferias.html">Políticas de Privacidad</a>
+                    </span></div>
+            </div>
+            <div class="col-8">
+                <div class="list">
+                    <div class="row">
+                        <div class="bg-white p-3">
+                            <div class="row">
+                                <div class="border-bottom">
+                                    <h2>Términos y Condiciones</h2>
+                                    <!---  Referencia de contenido https://ferias.empleo.gob.mx/content/common/TerminosCondiciones.jsf  ---->
+                                    <div class="p-3 pl-4">
+                                        <span><a href="#eventos">De la sección “Próximos eventos”</a>
+                                        </span><br><a href="#buscadores">De la sección “Iniciar sesión para buscadores de empleo”</a>
+                                        <br><span><a href="#empresas">De la sección “Iniciar sesión para empresas”</a>
+                                        </span><br>
+                                        <span id="video"><a href="#oferta">De vinculación de la oferta</a>
+                                        </span>
+                                    </div>
+                                    <ol>
+                                        <li>Las siguientes especificaciones reglamentan la utilización de los servicios que proporciona el sitio de <strong>Ferias de Empleo de la Secretaría del Trabajo y Previsión Social</strong> (en adelante <strong>STPS</strong>), por medio del <strong>Servicio Nacional del Empleo</strong> (en adelante <strong>SNE</strong>) a los buscadores de empleo o candidatos, empleadores, empresas y toda persona en general (en adelante usuarios); dichos servicios son gratuitos y están sujetos a la aceptación de los términos y las condiciones de uso que aquí se presentan. Todo usuario que hace uso de los servicios del sitio de una forma voluntaria y consciente, deberá sujetarse a las condiciones actuales y a las que pudieran darse más adelante, sin previo aviso. Así, también, el usuario tiene derecho a no aceptar los términos y las condiciones de uso del portal y no acceder a los servicios que este proporciona. y los servicios que el portal proporciona.</li>
+                                        <hr>
+                                        <li>La <strong>STPS</strong> no es responsable de la información que se registre en el portal de Ferias de Empleo por parte de terceros, ni del perjuicio que ello origine; ni de la veracidad de la información publicada de las ofertas de empleo, perfiles laborales de los candidatos, así como de los resultados finales del contacto y los procesos resultantes que se deriven entre empleadores y candidatos. La <strong>STPS</strong> señalará con claridad las fuentes de información y los criterios de confiabilidad que se hubieran tomado en cuenta para la incorporación de las ofertas de empleo.</li>
+                                        <hr>
+                                        <li>La <strong>STPS</strong> no es responsable de la información que se muestra en otros sitios web a los que el usuario tiene acceso desde el portal de Ferias de Empleo. Con el objeto de facilitarle la navegación y ampliar la información ofrecida en el sitio, se establecen enlaces a otras páginas web, por lo que es recomendable examinar las condiciones de uso de éstas para determinar si las acepta o no.</li>
+
+                                        <hr>
+                                        <li>La <strong>STPS</strong> se reserva el derecho de suspender el servicio a todos aquellos usuarios que no cumplan con los presentes Términos y Condiciones de Uso.</li>
+                                        <hr>
+                                        <li>El portal de <strong>Ferias de Empleo</strong> se reserva el derecho de añadir, modificar y actualizar, cualquier contenido de configuración o de diseño, cualquier servicio y los presentes Términos y Condiciones de Uso, en cualquier momento y sin necesidad de previo aviso o notificación a los usuarios, entendiéndose que las mismas son aceptadas si el usuario utiliza los servicios que ofrece el sitio.</li>
+                                        <hr>
+                                        <li>Queda absolutamente prohibida la utilización de las imágenes, gráficos, contenidos, logotipos y formatos de registro que utiliza el portal de <strong>Ferias de Empleo,</strong> salvo que la <strong>STPS</strong> lo autorice en forma explícita y por escrito.</li>
+                                        <hr>
+                                        <li>El portal de <strong>Ferias de Empleo</strong> no se responsabiliza de la inactividad del sitio web, como consecuencia de causas ajenas a él, como cortes de energía eléctrica, avería en el hosting, averías o cortes en las redes de comunicación, y en general, por cualquier avería o fallo en nuestro sistema informático, ajenos a nuestra voluntad, comprometiéndonos a hacer todo lo que sea posible para restablecer el servicio en el mínimo de tiempo.</li>
+                                        <hr>
+                                        <li>El usuario deberá comunicar al portal de <strong>Ferias de Empleo</strong> cualquier ilegalidad o anomalía que observe, tras estudiarla, procederemos a dar atención a la misma.</li>
+                                        <hr id="eventos">
+                                        <h3>De la sección “Próximos eventos”</h3>
+                                        <li>El usuario puede consultar los eventos al ingresar al sitio, sin necesidad de identificarse.</li>
+                                        <hr>
+                                        <li>Es compromiso de todos los usuarios que hagan uso de los servicios que proporciona el portal de Ferias de Empleo, que la información que se obtenga del sitio se utilice únicamente con fines de búsqueda de empleo.</li>
+                                        <hr id="buscadores">
+                                        <h3>De la sección “Iniciar sesión para buscadores de empleo”</h3>
+                                        <li>El ingreso al portal de Ferias de Empleo será a través de un nombre de usuario y contraseña, los cuales quedarán conformados de la siguiente manera:
+                                            <strong>Nombre de Usuario:</strong> El usuario tiene dos alternativas; la primera, es usar su cuenta de correo electrónico, si no se tiene, puede generar una. La segunda opción, es generar un nombre de usuario de entre 8 y 12 caracteres utilizando letras mayúsculas, letras minúsculas y números, se puede hacer una combinación indistinta.
+                                            <strong>Contraseña:</strong> Será asignada por el portal de Ferias de Empleo.</li>
+
+                                        <li>La cuenta de correo electrónico tiene el carácter de nombre de usuario, por lo cual, se verifica su existencia en la base de datos del portal. Si el usuario no tiene una cuenta de correo electrónico propia, se sugiere generar una, ya que es el medio por el cual recibirá toda la información.</li>
+                                        <hr>
+                                        <li>Al registrarse en el sitio, el usuario podrá actualizar sus datos, registrarse a un evento o ubicar las vacantes por perfil.</li>
+                                        <hr>
+                                        <li>A partir de ese momento, el buscador de empleo será el único responsable de sus claves de ingreso al portal de Ferias de Empleo y el uso correcto que se le dé a las mismas para los fines que están especificados. Es importante que el usuario proteja sus claves, ya que si otras personas hacen un mal uso de su información, usando la misma clave, se corre el riesgo de perder acceso al sitio.
+                                        </li>
+                                        <hr>
+                                        <li>Los usuarios tendrán manejo y control de sus datos personales una vez iniciada la sesión en el portal de <strong>Ferias de Empleo.</strong> La actualización y autenticidad de los mismos, es responsabilidad del usuario.</li>
+                                        <hr>
+                                        <li>Si algún usuario del portal de Ferias de Empleo detecta que alguna de las ofertas consultadas no cumple con los presentes Términos y Condiciones de Uso, puede dar aviso a la STPS, proporcionando el nombre de la empresa y las ofertas de empleo que no cumplen con lo estipulado.</li>
+                                        <hr>
+                                        <li>No es responsabilidad de la STPS cualquier conflicto laboral, personal, legal o de cualquier otra índole que pudiera generarse entre el usuario (buscador de empleo o candidato) y las empresas o empleadores que buscan personal a través del portal de Ferias de Empleo y/o de terceros.</li>
+                                        <hr>
+                                        <li>Es compromiso de los buscadores de empleo garantizar, en todo lo posible, la veracidad y autenticidad de sus datos personales y perfil laboral que ingresen al portal de Ferias de Empleo, a través del formato establecido para ello. Con fundamento en los artículos 18 fracciones II y 20 fracciones I y VI de la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental, se garantiza la seguridad de los datos personales y sólo serán difundidos con el consentimiento de los buscadores de empleo.</li>
+                                        <hr>
+                                        <li>En caso de que los buscadores de empleo no cuenten con acceso a internet en forma personal, podrán acudir a las oficinas del <strong>SNE</strong> de su entidad, donde podrán hacer uso de los servicios sin costo alguno.</li>
+                                        <hr id="empresas">
+                                        <h3>De la sección “Iniciar sesión para empresas”</h3>
+                                        <li>Al registrarse en el sitio, el usuario podrá actualizar sus datos, registrarse a un evento o agregar una vacante.</li>
+                                        <hr>
+                                        <li>Los servicios que proporciona el portal de <strong>Ferias de Empleo</strong> a las empresas o empleadores son enteramente gratuitos.</li>
+                                        <hr>
+                                        <li>Serán autorizadas todas aquellas empresas cuya información esté verificada y que publiquen ofertas de trabajo debidamente sustentadas y reales, y que cumplan con lo establecido en este documento.</li>
+                                        <hr>
+                                        <li>Las empresas, bolsas de trabajo, agencias de colocación, outsourcings y otros organismos e instituciones deberán registrarse en el sitio, y proporcionar, al menos, un número de teléfono de contacto fijo, ya que éste será el medio por el cual, se validará el registro de la empresa.</li>
+                                        <hr>
+                                        <li>El portal de <strong>Ferias de Empleo</strong> requiere que, al registrarse la empresa, bolsa de trabajo, agencia de colocación, outsourcing y otros organismos e instituciones se ingrese como dato obligatorio una cuenta de correo electrónico, la cual tiene el carácter de nombre de usuario; por lo cual, se verifica que sea única. Si no cuenta con una cuenta de correo electrónico propia es necesario generar una. La contraseña inicial es generada por el sistema.</li>
+                                        <hr>
+                                        <li>Una vez que concluya su registro y sea aceptada por el SNE para participar en un evento, inmediatamente debe proceder a dar de alta sus ofertas de empleo para que, de ser el caso, sean validadas por el SNE. Mientras se lleva a cabo la validación, podrá seguir dando de alta ofertas de empleo. Validada la información, se le darán todos los permisos de uso en el portal de <strong>Ferias de Empleo</strong>.</li>
+                                        <hr>
+                                        <li>El registro es por única vez y nunca se cancela, por lo que si ya está registrada (o) e intenta realizar otro en el portal de <strong>Ferias de Empleo,</strong> no será permitido por duplicidad en el identificador de éste (a).</li>
+                                        <hr>
+                                        <li>A partir de ese momento, la empresa será la única responsable de su clave y el uso correcto que se le dé a la misma, para los fines que están especificados. Es importante que el empleador proteja su clave, ya que si otras personas hacen mal uso de su información, usando la misma clave, se corre el riesgo de perder acceso al sitio.</li>
+                                        <hr>
+                                        <li>Para un mejor control de referencia y manejo de las ofertas de empleo, el portal Ferias de Empleo asignará un número de folio a todas las ofertas de empleo que las empresas den de alta en el sitio.</li>
+                                        <hr>
+                                        <li>Las ofertas de empleo que se ofrezcan a través del portal Ferias de Empleo deben estar debidamente respaldadas por contratos legalmente válidos y vigentes. Están expresamente prohibidas en el portal, las ofertas de empleo que:</li>
+                                        <ol type="a">
+                                            <li>Exijan invertir dinero a los candidatos.</li>
+                                            <li>Aquellas que correspondan a empresas “pirámide” o negocios tipo multinivel y oportunidades de negocios.</li>
+                                            <li>Que impliquen la contratación de menores sin la autorización legal.</li>
+                                            <li>Estén relacionadas con el entretenimiento de adultos, ocio nocturno o contenidos pornográficos.</li>
+                                            <li>Contraten personal solamente con pago por comisión o cambaceo. </li>
+                                            <li>No paguen por lo menos el salario mínimo diario.</li>
+                                            <li>Requieran que el candidato, o empleado, vaya a un entrenamiento no pagado para ser contratado.</li>
+                                            <li>Contengan referencias obscenas, difamatorias, amenazantes, acosador, abusivas.</li>
+                                            <li>Cualquier cosa que sea embarazosa u ofensiva para otra persona o entidad.</li>
+                                        </ol>
+                                        <hr>
+                                        <li>No se debe publicar simultáneamente la misma oferta. </li>
+
+                                        <li>No están permitidas y no serán autorizadas en el portal Ferias de Empleo, las ofertas que pertenezcan a empresas con nombre irreal o genérico o que demeriten la calidad de la información que ofrece el sitio, ya sea porque están repetidas o porque contienen datos de contacto en los campos de funciones y actividades a realizar, observaciones, y/o conocimientos requeridos. </li>
+                                        <hr>
+                                        <li>No están permitidos y no serán autorizados los requerimientos de personal para servicios en casas-habitación.</li>
+                                        <hr>
+                                        <li>No están permitidos y no serán autorizados los requerimientos de personal para servicios en casas-habitación.</li>
+                                        <hr>
+                                        <li>Cuando la STPS identifique que se ha dado de alta una oferta de empleo no admitida o prohibida en el portal Ferias de Empleo, de acuerdo con los Términos y las Condiciones de Uso del mismo, se procederá a su baja en forma definitiva, reservándose el derecho de no admitir la publicación de más ofertas de empleo por parte de la empresa responsable de la misma. </li>
+                                        <hr>
+                                        <li>No es responsabilidad de la <strong>STPS</strong> cualquier conflicto laboral, personal, legal o de otra índole, que pudiera darse entre el candidato de empleo y las empresas que buscan personal a través del Portal del Empleo y/o terceros. </li>
+                                        <hr>
+                                        <li>La STPS no garantiza ni es responsable de que las empresas, registradas en el portal, encuentren al personal necesario para cubrir sus ofertas.</li>
+                                        <hr>
+                                        <li>Reglas para publicar una oferta en el portal <strong>Ferias de Empleo.</strong></li>
+                                        <ol type="a">
+                                            <li>En los puestos de ayudante general o de obrero general, especificar entre paréntesis el área para la que se requiere, ejemplo: ayudante general (almacén).</li>
+                                            <li>Se debe precisar, con claridad, los requerimientos de conocimientos y habilidades para desempeñar el puesto y las actividades a realizar en el mismo.</li>
+                                            <li>Nombre del puesto: deberá reflejar las actividades a realizar y se debe escribir de la siguiente manera:</li>
+
+                                            <ul type="square">
+                                                <li>Singular y que indique el género, ejemplo: costurera, enfermera, etcétera. </li>
+                                                <li>Sin utilizar abreviaturas.</li>
+                                                <li>Sin puntos al final del nombre.</li>
+                                                <li>Usar diéresis cuando se requiera.</li>
+                                            </ul>
+
+                                            <li>El puesto ofrecido debe ser acorde con la ocupación en la que se está clasificando, además de ser congruente con la escolaridad requerida y las actividades que va a realizar.</li>
+                                            <li>En los puestos de vendedor, especificar el tipo de mercancía a vender.</li>
+                                            <li>En el caso de guardia de seguridad, no utilizar elemento de seguridad.</li>
+                                            <li>No anotar observaciones en este campo, es sólo para el nombre del puesto.</li>
+                                            <li>Los sueldos que se registren deberán ser fijos y proporcionar todas las prestaciones de acuerdo a la Ley Federal de Trabajo.</li>
+                                            <ul type="square">
+                                                <li>Se deberán ofrecer al menos 1 salario mínimo vigentes en la región.</li>
+                                            </ul>
+
+                                            <li>Se deberán ofrecer al menos 1.5 salarios mínimos vigentes en la región para los puestos operativos y de 2 a 2.5 salarios mínimos para los puestos de niveles técnico y profesionistas.</li>
+                                            <li>Las Bolsas de Trabajo y Agencias de Colocación que deseen publicar ofertas deberán contar con “Constancia de Autorización de Funcionamiento y Registro” que emite la <strong>STPS.</strong><br></li>
+                                        </ol>
+                                        <hr id="oferta">
+                                        <h3>De vinculación de la oferta</h3>
+                                        <li>Las empresas, bolsas de trabajo, agencias de colocación, outsourcings y otros organismos e instituciones, deberán registrar sus resultados de colocación en el sistema a más tardar treinta días naturales posteriores a la realización del evento.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><!-- /.container -->
+
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="Comparativo">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regrear a resultados</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="comparar.html"></iframe>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <!---div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div--->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

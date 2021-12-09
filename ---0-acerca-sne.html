@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="../../../../favicon.ico">
+      <title>Portal del Empleo</title>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+      <!-- Place your stylesheet here-->
+      <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+      <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+      <!--- montserrat font-->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+      <!---icons--->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
+   <body class="bg-body">
+      <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Arriba</button>
+      <header class="back-bt header-interna text-center fixed-top">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                        <a class="text-white" href="#" onclick="goBack()" role="button"><span class="material-icons">keyboard_backspace</span> Regresar al Portal del empleo</a>
+                     </li>
+                  </ul>
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item mr-4">
+                        <a href="0-acerca-sne.html" class="text-white active"> Acerca del SNE</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="servicios-intermediacion-laboral.html" class="text-white"> Programas y servicios</a>
+                     </li>
+                     <li class="nav-item mr-4"><a href="consejos-de-empleo.html" class="text-white">Consejos de empleo</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="container">
+            <form>
+               <div class="collapse" id="searchDiv">
+                  <div class="form-row align-items-end justify-content-center py-3">
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="que">¿Qué?</label>
+                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                     </div>
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="donde">¿Dónde?</label>
+                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                     </div>
+                     <div class="col-auto">
+                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                     </div>
+                     <div class="col-auto">
+                        <div class="form-check mb-2">
+                           <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                           Cerrar
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </header>
+      <main>
+         <section id="acercaSNE">
+            <div class="container">
+               <div class="row mt-75px py-4">
+                  <div class="col-md-6 d-flex align-items-center justify-content-center">
+                     <img class="" src="assets/img/sne_logo.png" alt="Logos de gobierno, secretaría y programa">
+                  </div>
+                  <div class="col-md-6 pl-4">
+                     <h1 class="px24 montserrat-bold">Acerca del SNE</h1>
+                     <h2>¡Conócenos!</h2>
+                     <p class="montserrat-regular px19">
+                        El Servicio Nacional de Empleo (SNE) se constituye en México en 1978. Atiende de manera gratuita y personalizada a la población buscadora de empleo y empleadores que necesitan personal calificado para cubrir sus vacantes. ¡Contamos con más de 160 oficinas en todo el país!.
+                     </p>
+                     <ul class="no-bullets list-2-columns ml-3 text-left">
+                        <li>
+                           <h3>#SPE</h3>
+                        </li>
+                        <li>
+                           <h3>#SNE</h3>
+                        </li>
+                        <li>
+                           <h3>#WAPES</h3>
+                        </li>
+                        <li>
+                           <h3>#AMSPE</h3>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="my-5 form-group text-center">
+                  <a href="#" class="btn btn-lg btnPrimary" data-toggle="modal" data-target="#SNE">Conoce más sobre el SNE</a>
+               </div>
+            </div>
+            <div class="bg-white pt-4 py-4">
+               <div class="container py-4">
+                  <div class="row py-4">
+                     <div class="col-md-6">
+                        <h2 class="montserrat-bold px32">Promovemos la generación de empleos</h2>
+                        <p class="montserrat-regular px24">Trabajamos por ti, Trabajamos por México (#SNE)</p>
+                        <ul class="montserrat-regular px19">
+                           <li>Atendemos a miles de buscadores de empleo </li>
+                           <li>Brindamos asesoría a empleadores en la búsqueda de talento</li>
+                           <li>Logramos colocaciones en un empleo cubriendo vacantes</li>
+                        </ul>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="border-gold text-center">
+                           <h2 class="montserrat-regular px40">Hemos logrado</h2>
+                           <p class="montserrat-bold px90">369,142</p>
+                           <p class="montserrat-regular px32">talentos contratados</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="my-3 form-group text-center">
+                     <a href="https://www.gob.mx/stps/documentos/cifras-historicas-del-servicio-nacional-de-empleo?state=published" class="btn btn-lg btnPrimary" target="_blank">Estadísticas</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="bg-sne-discapacidad bg-white p-5">
+            <div class="container mb-5">
+               <div class="row mt-75px pb-5">
+                  <div class="col-md-8">
+                     <p class="mb-3 mt-4 montserrat-bold px40 text-white">¡Prepárate!
+                     </p>
+                     <p class="mb-1 mt-1 montserrat px24 text-white">El vínculo laboral es un proceso, nosotros te ayudamos.</p>
+                     <p class="text-white">Información, orientación, capacitación y asesoría relacionadas con el mercado laboral.</p>
+                     <a href="#" class="btn-lg btnPrimary mb-3">Ver guías, tutoriales</a>
+                     <h1 class="pt-5 montserrat-bold text-white"></h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bg-sne-primer-empleo bg-white p-5">
+               <div class="container mb-5">
+                  <div class="row mt-75px pb-5">
+                     <div class="col-md-7">
+                        <p class="mb-3 mt-4 montserrat-bold px40 text-white">Servicios de intermediación laboral</p>
+                        <p class="mb-5 mt-1 montserrat px24 text-white">Vinculación entre candidatos y empresas; Información, orientación, capacitación y asesoría relacionadas con el mercado laboral.</p>
+                        <a href="0-sne-sil.html" class="btn-lg btnPrimary">Conoce otros servicios</a>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bg-sne-ferias bg-white p-5">
+               <div class="container mb-5">
+                  <div class="row mt-75px pb-5">
+                     <div class="col-md-7">
+                        <p class="mb-3 mt-4 montserrat-bold px40 text-white">Movilidad laboral</p>
+                        <p class="mb-5 mt-1 montserrat px24 text-white">Te apoyamos para encontrar ofertas de empleo fuera de tu lugar de residencia ¡No te limites!</p>
+                        <a href="0-sne-ml.html" class="btn-lg btnPrimary">Conoce más de movilidad laboral</a>
+                        <h1 class="pt-5 montserrat-bold text-white"></h1>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bg-sne-extranjero bg-white p-5">
+               <div class="container">
+                  <div class="row mt-75px pb-5">
+                     <div class="col-md-8">
+                        <p class="mb-3 mt-4 montserrat-bold px40 text-white">¡Anímate y trabaja en otro país! </p>
+                        <p class="mb-5 mt-1 montserrat px24 text-white">Si eres profesionista, tienes experiencia, dominas el inglés u otro idioma y te gustaría laborar en otro país, esta oportunidad es para tí.</p>
+                        <h2 class="my-5 text-white">#ViveViajaTrabaja</h2>
+                        <a href="https://www.empleo.gob.mx/trabaja-en-el-extranjero" target="_blank" class="btn-lg btnPrimary">Empleos en el extranjero</a>
+                        <h1 class="pt-5 montserrat-bold text-white"></h1>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="p-5">
+               <div class="container">
+                  <div class="row mt-75px pb-5">
+                     <div class="col-md-6 pr-3">
+                        <img class="" src="assets/img/echa-un-vistazo.png" style="width:450px" alt="Imagen del Gobierno de México">
+                     </div>
+                     <div class="col-md-6">
+                        <p class="mb-3 mt-4 montserrat-bold px40">¡Echa un vistazo!
+                        </p>
+                        <p class="mb-5 mt-1 montserrat px24"> Tenemos un periódico digital, encuentra más empleos. Recopilación quincenal de empleos de todas los estados del país</p>
+                        <a href="0-sne-pd.html" class="btn-lg btnPrimary">Periódico Digital</a>
+                        <h1 class="pt-5 montserrat-bold text-white"></h1>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="p-5" style="background:#E1E8E0">
+               <div class="container">
+                  <div class="row pb-5">
+                     <div class="col-md-8">
+                        <p class="mb-3 mt-4 montserrat-bold px40">Solicita una cita para ayudarte personalmente</p>
+                        <p class="mb-4 mt-1 montserrat px24"> Te ayudaremos a buscar en nuestra bolsa de trabajo, obtener apoyos económicos para el autoempleo y capacitarte</p>
+                        <a href="#" class="btn-lg btnPrimary">Enviar mensaje</a>
+                     </div>
+                     <div class="col-md-4">
+                        <img class="img-fluid" src="assets/img/solicita-una-cita_2.png" alt="mano sonteniendo un celular">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container mt-75px pb-5">
+               <div class="row mt-110px">
+                  <div class="col-md-6">
+                     <h1 class="montserrat-bold px24 pb-2">Agenda una cita en nuestros Centros de atención</h1>
+                     <h2 class="montserrat px16 pb-3"> El Servicio Nacional de Empleo (SNE) es la institución pública a nivel nacional que se ocupa de atender de manera gratuita y personalizada los problemas de desempleo y subempleo en el país en beneficio de sus habitantes.</h2>
+                     <h2 class="montserrat-semiBold px16">Oficina administrativa en Ciudad de México Direcció:</h2>
+                     <h2 class="montserrat px16 pb-4">Félix Cuevas No.301, Del Valle, Benito Juárez, 03100 Benito Juárez, CDMX Horario: 9:00 a 19:00 Teléfono: 55 5002 3300</h2>
+                     <a href="0-sne-dir.html" class="btn-lg btnPrimary">Encuentra la oficina más cercana</a>
+                  </div>
+                  <div class="col-md-6 pr-3">
+                     <img class="" src="assets/img/mapa.jpg" style="width:450px" alt="Mapa de la Republica Méxica">
+                  </div>
+               </div>
+            </div>
+         
+            
+            
+            
+            <div class="container mt-75px pb-5">
+               <div class="bg-white text-center">
+                  <p class="mb-5 mt-4 montserrat-bold px40">Otros Programas
+                  </p>
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <img class="img-fluid" src="assets/img/trabaja-gobierno-federal.png" alt="Imagen del Gobierno de México">
+                     <h2 class="montserrat-bold px19 pt-3">Trabaja en el Gobierno Federal</h2>
+                     <h2 class="montserrat px16"> Ofertas de empleo en la Administración Pública Federal</h2>
+                     <ul class="no-bullets">
+                        <li><a href="#" class="montserrat">Empleos en el gobierno</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-6">
+                     <img class="img-fluid" src="assets/img/empleos-otras-plataformas.png" alt="Imagen del Gobierno de México">
+                     <h2 class="montserrat-bold px19 pt-3">Empleos en otras plataformas</h2>
+                     <h2 class="montserrat px16"> Vinculación entre candidatos y empresas; Información, orientación, capacitación y asesoría relacionadas con el mercado laboral</h2>
+                     <ul class="no-bullets">
+                        <li><a href="#" class="montserrat">Otros Empleos</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            
+            
+         
+      </main>
+      <main class="container">
+      </main>
+      <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- The Modal -->
+      <div class="modal fade" id="SNE">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regrear</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <h2>¿Qué es el Servicio Nacional de Empleo?</h2>
+                  <p class="montserrat-regular">
+                     Es una instancia, creada en el artículo 537 de la Ley Federal del Trabajo, que está a cargo de la Secretaría del Trabajo y Previsión Social (STPS). Para el empleo en México, la STPS opera como Servicio Público de Empleo (#WAPES #AMSPE) el SNE (#SNE) a través de la Unidad del Servicio Nacional de Empleo (USNE) de manera coordinada con los gobiernos de los 32 estados, con más de 160 oficinas del SNE (OSNE), lo cual permite brindar a los ciudadanos buscadores de empleo y empleadores del país:
+                  </p>
+                  <ul class="no-bullets">
+                     <li>
+                        <span class="material-icons">check</span> Atención de manera gratuita y personalizada a buscadores de empleo y empresas para facilitar la vinculación laboral.
+                     </li>
+                     <li>
+                        <span class="material-icons">check</span> Promover la inclusión laboral de la población vulnerable en todos sus servicios.
+                     </li>
+                     <li>
+                        <span class="material-icons">check</span> Otorgar apoyos a través del Programa de Apoyo al Empleo (#PAESNE)
+                     </li>
+                     <li>
+                        <span class="material-icons">check</span> Orienta a los jóvenes, ofreciéndoles opciones para facilitar su inserción laboral.
+                     </li>
+                     <li>
+                        <span class="material-icons">check</span> Facilita la Movilidad Laboral interna y al extranjero.
+                     </li>
+                  </ul>
+                  <hr>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <h2>Misión</h2>
+                        <p class="montserrat-regular">Lograr vínculos laborales de calidad, en especial de las personas que enfrentan barreras de acceso al empleo.</p>
+                     </div>
+                     <div class="col-lg-6">
+                        <h2>Visión</h2>
+                        <p class="montserrat-regular">El Servicio Nacional de Empleo se ha constituido como una política pública fundamental y exitosa en el desarrollo de los mercados laborales eficientes e incluyentes.</p>
+                     </div>
+                  </div>
+                  <hr>
+                  <p>
+                     Consulta las reglas de operación del Programa de Apoyo al Empleo del Servicio Nacional de Empleo (#PAESNE):
+                     <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5582854&fecha=26/12/2019" target="_blank">http://www.dof.gob.mx/nota_detalle.php?codigo=5582854&fecha=26/12/2019</a>
+                  </p>
+                  <div class="mt-5 form-group text-center">
+                     <button type="button" class="btn btn-lg btnPrimary" data-dismiss="modal">Cerrar</button>
+                  </div>
+               </div>
+               <!-- Modal footer -->
+               <!---div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div--->
+            </div>
+         </div>
+      </div>
+
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="assets/js/jquery-3.5.1.js"></script>
+      <script src="assets/js/bootstrap.bundle.js"></script>
+      <script src="assets/js/rangeslider.js"></script>
+      <script>
+         $(document).ready(function() {
+         
+             $('.shortDesc').each(function(f) {
+         
+                 var newstr = $(this).text().substring(0, 100);
+                 $(this).text(newstr);
+         
+             });
+         })
+      </script>
+      <script>
+         $(document).ready(function() {
+             $('#results a').click(function() {
+                 var href = $(this).attr('href');
+                 var num = href.split("-")[1];
+                 $('.tab-pane').css('display', 'none');
+                 $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                 $(".etab-p" + num).css('display', 'block');
+                 $(".etabi-img" + num).css('display', 'block');
+                 $(".etab-p" + num).addClass('show');
+                 $(".etabi-img" + num).addClass('show');
+             });
+         });
+      </script>
+      <script>
+         //Get the button
+         var mybutton = document.getElementById("myBtn");
+         
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {
+             scrollFunction()
+         };
+         
+         function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+             } else {
+                 mybutton.style.display = "none";
+             }
+         }
+         
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+             document.body.scrollTop = 0;
+             document.documentElement.scrollTop = 0;
+         }
+      </script>
+      
+   </body>
+</html>
+

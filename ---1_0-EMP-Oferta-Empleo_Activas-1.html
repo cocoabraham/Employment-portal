@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Arriba</button>
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4 border-right">
+                            <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search &nbsp;</i><br>
+                                Buscar</a><span>&nbsp; &nbsp; &nbsp;</span>
+                        </li>
+
+
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"><i class="material-icons">business_center</i><br>
+                                Ofertas de empleo</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"><i class="material-icons">people</i><br>
+                                Candidatos</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white">
+                                <i class="material-icons">notifications</i>
+                                <span class="badge badge-important">12</span>
+                                <br>
+                                Notificaciones</a>
+
+                        </li>
+                        <li class="mr-4"><button type="submit" class="btn btn-gold px16 align-center">Crear oferta</button></li>
+                        <li class="nav-item">
+                            <div class="row">
+                                <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"></div>
+                                <div class="col-8 text-left">
+                                    <h4 class="montserrat-light text-white">Hola Alejandra</h4><a href="#" class="text-white">Cerrar sesión</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                                    Cerrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div id="filters" class="bg-white p-3">
+                    <ul class="no-bullets">
+                        <li class="py-3 border-bottom"><a href="#" class="selected">Ofertas activas (5)</a></li>
+                        <li class="py-3 border-bottom"><a href="#">Ofertas inactivas (4)</a></li>
+                        <li class="py-3 border-bottom"><a href="#">Ofertas pendientes (3)</a></li>
+                        <li class="py-3 border-bottom"><a href="#">Ofertas expiradas (3)</a></li>
+                        <li class="py-3"><a href="#">Papelera (34)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+
+
+
+
+                <div class="list">
+
+
+
+
+                    <div class="row">
+                        <h2 class="montserrat-regular px24">Mostrando 10 de 30 Ofertas Activas</h2>
+                        <div class="col-8">
+
+                        </div>
+                        <div id="options" class="col-4 text-right">
+                            <ul class="nav">
+                                <li class="nav-link px-1">
+                                    <div>
+                                        <select class="montserrat px16">
+                                            <option>Ordenar por:</option>
+                                            <option>Fecha</option>
+                                            <option>Carrera</option>
+                                            <option>Número de postulaciones</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row">
+                        <div id="options" class="col-12 text-right align-items-right">
+
+                        </div>
+
+
+
+                        <div class="backItemList">
+                            <div class="row">
+
+                                <div class="col-md-8">
+
+                                    <h3 class="text-danger">Caduca en 57 días<p></p>
+                                    </h3>
+                                    <a href="#" class="text-dark">
+                                        <h2>Arquitecto Supervisor de Obra</h2>
+                                        <h2 class="mb-4">$30,000.00</h2>
+                                    </a>
+                                    <h3>Coyoacán, Ciudad de México - Empresa: Arkiplus<p></p>
+                                    </h3>
+
+
+
+                                    <p class="shortDesc">Inició: 23/04/2020 - Finaliza 29/05/2020</p>
+
+
+                                </div>
+                                <div class="col-md-4 text-md-right">
+                                    <h2 class="mb-4">26 candidatos a tu medida</h2>
+                                    <p>200 candidatos postulados</p>
+                                    <p>1 Plaza disponible - 100 postulaciones máximo</p>
+
+
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h4 class="mt-3">Folio: 20384</h4>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <ul class="nav">
+                                        <li class="nav-link px-1"><a href="#" class="active" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para poder desactivar la oferta de empleo." data-original-title="" title=""><i class="material-icons">pause</i> Desactivar</a></li>
+
+
+
+                                        <li class="nav-link px-1"><a href="#" data-content="Para editar la oferta de empleo" data-placement="bottom" data-container="body" class="active"><i class="material-icons">edit</i> Editar</a></li>
+
+
+
+                                        <li class="nav-link px-1"><a href="#" class="active" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para reutilizar la oferta de empleo." data-original-title="" title=""><i class="material-icons">loop</i> Reutilizar</a></li>
+                                        <li class="nav-link px-1"><a href="#" class="active" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para borrar la oferta de empleo." data-original-title="" title=""><i class="material-icons">delete</i> Borrar</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+                        <div class="backItemList">
+                            <div class="row">
+
+                                <div class="col-md-8">
+
+                                    <h3 class="text-danger">Caduca en 25 días<p></p>
+                                    </h3>
+                                    <a href="#" class="text-dark">
+                                        <h2>Arquitecto Supervisor de Obra</h2>
+                                        <h2 class="mb-4">$15,500.00</h2>
+                                    </a>
+                                    <h3>Coyoacán, Ciudad de México - Empresa: Arkiplus<p></p>
+                                    </h3>
+
+
+
+                                    <p class="shortDesc">Inició: 29/04/2020 - Finaliza 29/05/2020</p>
+
+
+                                </div>
+                                <div class="col-md-4 text-md-right">
+                                    <h2 class="mb-4">26 candidatos a tu medida</h2>
+                                    <p>98 candidatos postulados</p>
+                                    <p>1 Plaza disponible - 100 postulaciones máximo</p>
+
+
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h4 class="mt-3">Folio: 20384</h4>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <ul class="nav">
+                                        <li class="nav-link px-1"><a href="#" class="active" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para poder desactivar la oferta de empleo." data-original-title="" title=""><i class="material-icons">pause</i> Desactivar</a></li>
+
+
+
+                                        <li class="nav-link px-1"><a href="#" data-content="Para editar la oferta de empleo" data-placement="bottom" data-container="body" class="active"><i class="material-icons">edit</i> Editar</a></li>
+
+
+
+                                        <li class="nav-link px-1"><a href="#" class="active" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para reutilizar la oferta de empleo." data-original-title="" title=""><i class="material-icons">loop</i> Reutilizar</a></li>
+                                        <li class="nav-link px-1"><a href="#" class="active" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para borrar la oferta de empleo." data-original-title="" title=""><i class="material-icons">delete</i> Borrar</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                        <div class="backItemList">
+                            <div class="row">
+
+                                <div class="col-md-8">
+
+                                    <h3 class="text-danger">Caduca en 20 días<p></p>
+                                    </h3>
+                                    <a href="#" class="text-dark">
+                                        <h2>Contador Público</h2>
+                                        <h2 class="mb-4">$11,500.00</h2>
+                                    </a>
+                                    <h3> Miguel Hidalgo, Ciudad de México - Empresa: Arkiplus<p></p>
+                                    </h3>
+
+
+
+                                    <p class="shortDesc">1 Plaza disponible - 100 postulaciones máximo</p>
+                                </div>
+                                <div class="col-md-4 text-md-right">
+                                    <h2 class="mb-4">19 candidatos a tu medida</h2>
+                                    <p>15 candidatos postulados</p>
+                                    <p>1 Plaza disponible - 100 postulaciones máximo</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h4 class="mt-3">Folio: 20384</h4>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <ul class="nav">
+                                        <li class="nav-link px-1"><a href="#" class="active" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para poder desactivar la oferta de empleo." data-original-title="" title=""><i class="material-icons">pause</i> Desactivar</a></li>
+
+
+
+                                        <li class="nav-link px-1"><a href="#" data-content="Para editar la oferta de empleo" data-placement="bottom" data-container="body" class="active"><i class="material-icons">edit</i> Editar</a></li>
+
+
+
+                                        <li class="nav-link px-1"><a href="#" class="active" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para reutilizar la oferta de empleo." data-original-title="" title=""><i class="material-icons">loop</i> Reutilizar</a></li>
+                                        <li class="nav-link px-1"><a href="#" class="active" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para borrar la oferta de empleo." data-original-title="" title=""><i class="material-icons">delete</i> Borrar</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row justify-content-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Siguiente</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Termina tarjeta 1 -->
+            <div class="col-lg-9">
+
+                <div class="row">
+                    <div class="col-12">
+                        <hr class="d-lg-none">
+                        <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                            <li class="p-1"><a href="#" class="selected"><i class="material-icons">person_search</i><br>Te buscan (4)</a></li>
+                            <li class="p-1"><a href="#"><i class="material-icons">star</i><br>Guardados (4)</a></li>
+                            <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Postulaciones (4)</a></li>
+                            <li class="p-1"><a href="#"><i class="material-icons">list_alt</i><br>Otras oportunidades (4)</a></li>
+                            <li class="p-1"><a href="#"><i class="material-icons">delete_forever</i><br>Papelera (4)</a></li>
+                        </ul>
+                        <hr class="d-lg-none">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <!-- /.container -->
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <!-- The Modal -->
+    <div class="modal fade" id="Comparativo">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regrear a resultados</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="comparar.html"></iframe>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <!---div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div--->
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+</body>
+
+</html>

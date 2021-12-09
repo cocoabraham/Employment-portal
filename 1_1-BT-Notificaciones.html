@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title><!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all"><!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css">
+    <link href="assets/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!---icons=-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Arriba</button>
+    <header class="back-bt header-interna text-center">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <!---RESPONSIVE MENU--->
+            <!-- The overlay -->
+            <div id="myNav" class="overlay1">
+               <!-- Button to close the overlay navigation -->
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <div class="container">
+                     <div class="col-12">
+                        <div class="text-center"><img class="rounded-circle" src="assets/img/avatar-150.jpg" alt="avatar-150"></div>
+                        <div class="text-center my-3">
+                           <h2 class="m-0">Jorge Rangel Aragón</h2>
+                        </div>
+                        <hr class="hr-white">
+                        <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                           <li class="p-1"><a href="#" class="selected"><i class="material-icons">person_search</i><br>Ofertas de empleo</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">star</i><br>CV</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Notificaciones</a></li>
+                        </ul>
+                        <hr class="hr-white">
+                     </div>
+                     <div class="col-12">
+                        <h2>Buscador</h2>
+                        <form>
+                           <div class="form-row justify-content-md-center">
+                              <div class="form-group col-md-6 text-center">
+                                 <label class="text-white px19" for="que">¿Qué?</label>
+                                 <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                              </div>
+                              <div class="form-group col-md-6 text-center">
+                                 <label class="text-white px19" for="donde">¿Dónde?</label>
+                                 <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                              </div>
+                              <div class="clearfix">&nbsp;</div>
+                              <div class="form-row col-12">
+                                 <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!---RESPONSIVE MENU--->
+            <div class="container">
+               <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse">
+               <span onclick="openNav()" class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item mr-4 border-right">
+                        <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search &nbsp;</i><br>
+                        Buscar</a><span>&nbsp; &nbsp; &nbsp;</span>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white"><i class="material-icons">business_center</i><br>
+                        Ofertas de empleo</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white"><i class="material-icons">person</i><br>
+                        CV</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white">
+                        <i class="material-icons">notifications</i>
+                        <span class="badge badge-important">12</span>
+                        <br>
+                        Notificaciones</a>
+                     </li>
+                     <li class="nav-item">
+                        <div class="row">
+                           <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"></div>
+                           <div class="col-8 text-left">
+                              <h4 class="montserrat-light text-white">Hola Jorge</h4>
+                              <a href="#" class="text-white">Cerrar sesión</a>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="container">
+            <form>
+               <div class="collapse" id="searchDiv">
+                  <div class="form-row align-items-end justify-content-center py-3">
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="que">¿Qué?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                     </div>
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="donde">¿Dónde?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                     </div>
+                     <div class="col-auto">
+                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                     </div>
+                     <div class="col-auto">
+                        <div class="form-check mb-2">
+                           <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-white"><span class="material-icons">highlight_off</span> Cerrar</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </header>
+    <main class="container">
+        <div class="row mt-3">
+
+            <div class="col-lg-8 order-lg-1">
+                <div class="bg-white p-3 mb-3 border-LBR">
+                    <div class="mb-3">
+                        <h1 class="mr-auto">Notificaciones</h1>
+                        <p>Las notificaciones se eliminarán después de 3 meses</p>
+                    </div>
+
+                    <div class="row" id="options">
+                        <div class="col-7 text-left">
+                            <ul class="nav">
+
+                                <li class="nav-link px-1"><span>&nbsp;</span></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-5 text-right">
+                            <ul class="nav">
+                                <li class="nav-link text-left">
+                                    <div>
+                                        <select class="montserrat px16">
+                                            <option>Ordenar por:</option>
+                                            <option>Todos</option>
+                                            <option>Solo candidatos</option>
+                                            <option>Solo ofertas</option>
+                                            <option>Eventos</option>
+                                        </select>
+
+                                    </div>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="table-responsive-sm">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+                                    <th scope="col" colspan="2" width="15%"> &nbsp;<input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <small><b>Eliminar</b></small></th>
+                                    <th scope="col" width="80%"><small><b>Asunto</b></small></th>
+                                    <th scope="col"><small><b>Fecha</b></small></th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row text-center"></th>
+                                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <span class="material-icons text-light-green">work
+                                        </span></td>
+                                    <td><a href="#">Cruma y Asociados busca un Diseñador web en Coyoacán</a></td>
+                                    <td>Hoy</td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <span class="material-icons text-light-green">assignment_ind
+                                        </span></td>
+
+
+                                    <td><a href="#">Arkiplus te esta buscando, se interesó por tu CV, dale respuesta.
+                                        </a></td>
+                                    <td>8 sep</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td class="text-light-green"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <span class="material-icons">assignment_ind
+                                        </span></td>
+
+
+                                    <td><a href="#">
+                                        </a><a href="#">2 Empleadores vieron tu CV
+                                        </a></td>
+                                    <td>8 sep</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <i class="material-icons text-light-green">work
+                                        </i></td>
+
+
+                                    <td><a href="#">Encontramos 12 ofertas de empleo a tu medida "Corto cabello" </a></td>
+                                    <td>6 sep</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+
+
+                                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <i class="material-icons text-light-green">insert_invitation</i></td>
+                                    <td>
+
+                                        <a href="">No faltes a ExpoEmpleo sep 2020 en 10 dias ¡Inscríbete!</a></td>
+                                    <td>6 sep</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+
+
+                                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <span class="material-icons text-light-green">
+                                            pie_chart
+                                        </span></td>
+                                    <td><a href="">Tu perfil esta a un 80% ¡Completa y aumenta tus oportunidades!</a></td>
+                                    <td>30 ago</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+
+
+                                    <td class="text-light-green"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <span class="material-icons">
+                                            emoji_objects
+                                        </span></td>
+                                    <td><a href="">Tips para hacer tu CV en video, ¡Comparte el enlace! </a></td>
+                                    <td>29 jul</td>
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row"></th>
+
+
+                                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <span class="material-icons text-light-green">work
+                                        </span></td>
+                                    <td><a href="">Expiró la oferta de empleo guardada "Museógrafo".</a></td>
+                                    <td>10 jul</td>
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row"></th>
+
+
+                                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <i class="material-icons text-light-green">insert_invitation</i></td>
+                                    <td>
+
+                                        <a href="">ExpoEmpleo sep 2020 Ciudad de México ¡Inscríbete!</a></td>
+                                    <td>16 jul</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+
+
+                                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <i class="material-icons text-light-green">
+                                            privacy_tip
+                                        </i></td>
+                                    <td><a href="">Los Términos y condiciones del Portal del Empleo han cambiado. ¡Consúltalos!</a></td>
+                                    <td>1 jul</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+
+
+                                    <td class="text-light-green"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <i class="material-icons">
+                                            emoji_objects
+                                        </i></td>
+                                    <td><a href="">Tips para hacer tu CV en video, ¡Comparte el enlace! </a></td>
+                                    <td>1 jul</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+
+
+                                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> <i class="material-icons text-light-green">insert_invitation</i></td>
+                                    <td><a href="">Tu cita esta en la agenda a para el 5 de sep a las 10:00h OSNE "Tlalpan"</a></td>
+                                    <td>1 jul</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Siguiente</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 order-lg-2">
+                <div class="bg-white p-3 mb3 border-LBR">
+                    <div class="panel-group" id="accordion" data-toggle="collapse">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false">
+                                    <h3><span class="material-icons text-light-green">
+                                            settings</span> Configurar</h3>
+                                </a>
+
+                            </div>
+                            <div id="collapseOne" class="panel-collapse mb-5 mt-4 collapse" aria-expanded="false" style="">
+                                <div class="panel-body">
+
+                                    <h3>¿Deseas recibir las siguentes notificaciones?</h3>
+
+
+                                    <div class="form-group form-inline">
+                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                            <div class="toggle btn btn-light off" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;"><input type="checkbox" checked="" data-toggle="toggle" data-width="50" data-on="Si" data-off="No">
+                                                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                        </div>
+                                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                    </div>
+                                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                </div>
+                                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                            </div>
+                                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                        </div>
+                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                    </div>
+                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                </div>
+                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                            </div>
+                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                        </div>
+                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                    </div>
+                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                </div>
+                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                            </div>
+                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                        </div><label for="">&nbsp; Ofertas de empleo</label>
+
+
+
+                                    </div>
+                                    <div class="form-group form-inline">
+                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                            <div class="toggle btn btn-light off" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;"><input type="checkbox" checked="" data-toggle="toggle" data-width="50" data-on="Si" data-off="No">
+                                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                    </div>
+                                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                </div>
+                                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                            </div>
+                                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                        </div>
+                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                    </div>
+                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                </div>
+                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                            </div>
+                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                        </div>
+                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                    </div>
+                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                </div>
+                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                            </div>
+                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                        </div><label for="">&nbsp; Otras oportunidades</label>
+
+
+
+                                    </div>
+                                    <div class="form-group form-inline">
+                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                            <div class="toggle btn btn-light off" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;"><input type="checkbox" checked="" data-toggle="toggle" data-width="50" data-on="Si" data-off="No">
+                                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                    </div>
+                                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                </div>
+                                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                            </div>
+                                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                        </div>
+                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                    </div>
+                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                </div>
+                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                            </div>
+                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                        </div>
+                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                    </div>
+                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                </div>
+                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                            </div>
+                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                        </div><label for="">&nbsp; Eventos</label>
+
+
+
+                                    </div>
+
+                                    <div class="form-group form-inline">
+                                        <div class="toggle btn btn-light off" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;"><input type="checkbox" checked="" data-toggle="toggle" data-width="50" data-on="Si" data-off="No">
+                                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                    </div>
+                                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                </div>
+                                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                            </div>
+                                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                        </div>
+                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                    </div>
+                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                </div>
+                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                            </div>
+                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                        </div>
+                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                    </div>
+                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                </div>
+                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                            </div>
+                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                        </div><label for="">&nbsp; Consejos de empleo</label>
+
+
+
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+                                </div>
+
+
+                                <hr>
+                                <div class="form-group form-inline mt-4">
+                                    <label for="">&nbsp; <h3 class="mr-auto">¿Enviar las notificaciones a tu correo electrónico?</h3></label>
+                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                        <div class="toggle btn btn-light off" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                            <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                                <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;">
+                                                                                    <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 38px;">
+                                                                                        <div class="toggle btn btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 0px;"><input type="checkbox" checked="" data-toggle="toggle" data-width="50" data-on="Si" data-off="No">
+                                                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                        </div>
+                                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                    </div>
+                                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                                </div>
+                                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                            </div>
+                                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                        </div>
+                                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                    </div>
+                                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                                </div>
+                                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                            </div>
+                                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                        </div>
+                                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                    </div>
+                                                    <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                                </div>
+                                                <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                            </div>
+                                            <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                        </div>
+                                        <div class="toggle-group"><label for="" class="btn btnPrimary toggle-on">Si</label><label for="" class="btn btn-light toggle-off">No</label><span class="toggle-handle btn btn-light"></span></div>
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+
+
+                            <div id="collapseTwo" class="panel-collapse mb-5 collapse" aria-expanded="false" style="">
+                                <div class="panel-body">
+                                    <a href="#">
+                                        <h3>Julián Flores Iturriaga <br>Arquitecto paisajista</h3>
+                                    </a>
+
+                                    <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                        <i>92% compatible a tu oferta</i></h4>
+
+
+
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <h3>Manuel Tapia López <br>Arquitecto</h3>
+                                        </a>
+
+                                        <h4><span class="semi-bold">5 años de experiencia</span><br>
+                                            <i>80% compatible a tu oferta</i></h4>
+
+                                    </div>
+                                    <hr>
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <h3>Adriana Guzmán <br>Arquitecto general</h3>
+                                        </a>
+
+                                        <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                            <i>50% compatible a tu oferta</i></h4>
+                                        <div class="progress">
+
+                                            <div class="progress-bar-2" style="width:50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <hr>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </main><!-- /.container -->
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer><!-- The Modal -->
+    <div class="modal fade" id="Modal-xl" tabindex="-1" role="dialog" aria-labelledby="Modal-xl" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3><button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js"></script>
+
+    <script src="assets/js/bootstrap4-toggle.min.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script src="assets/js/assets.js"></script>
+    <script>
+         /* Open when someone clicks on the span element */
+         function openNav() {
+             document.getElementById("myNav").style.width = "100%";
+         }
+         
+         /* Close when someone clicks on the "x" symbol inside the overlay */
+         function closeNav() {
+             document.getElementById("myNav").style.width = "0%";
+         }
+      </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

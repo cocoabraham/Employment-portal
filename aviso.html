@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">Arriba</button>
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="text-white" href="/" onclick="goBack()" role="button"><span class="material-icons">keyboard_backspace</span> Regresar al Portal del empleo</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                                    Cerrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row justify-content-md-center bg-white p-3" bg-white="">
+            <div class="col-12">
+                <div class="alert alert-info" aria-live="polite" style="word-wrap: break-word;">
+					<p style="text-align: center;"><strong>Aviso de privacidad simplificado para solicitar apoyos para encontrar empleo </strong></p>
+ 					<p style="text-align: center;"><strong>(Buscadores de Empleo)</strong></p>
+ 					<p style="text-align: center;">La recolección de datos personales se lleva a cabo a través de la página electrónica <a id="ember308" target="_blank" href="https://vun.empleo.gob.mx/contenido/publico/segob/candidato/identificacionCandidato.jsf" class="ember-view">https://vun.empleo.gob.mx/contenido/publico/segob/candidato/identificacionCandidato.jsf</a> cuyo administrador y responsable del tratamiento es la Coordinación General del Servicio Nacional de Empleo (CGSNE) de la Secretaría del Trabajo y Previsión Social (STPS). Los datos personales que se recaban serán utilizados con la finalidad de acceder a la vinculación laboral, recepción de capacitación y apoyos económicos o en especie, hasta la posible colocación en una actividad productiva.
+						Si deseas conocer nuestro aviso de privacidad integral, lo podrás consultar en el portal: <a id="ember308" target="_blank" href="https://vun.empleo.gob.mx/contenido/publico/segob/avisoPrivacidadIntegralCandidato.jsf" class="ember-view">https://vun.empleo.gob.mx/contenido/publico/segob/avisoPrivacidadIntegralCandidato.jsf</a></p>
+				</div>
+            </div>
+            <div class="col-12">
+                <div class="alert alert-info" aria-live="polite" style="word-wrap: break-word;">
+					<p style="text-align: center;"><strong>Aviso de privacidad simplificado para el registro como empleador en el SNE </strong></p>
+					<p style="text-align: center;"><strong>(Empleador persona física)</strong></p>
+					<p style="text-align: center;">La recolección de datos personales se lleva a cabo a través de la página electrónica <a id="ember308" target="_blank" href="https://vun.empleo.gob.mx/contenido/publico/segob/empresa/identificacionEmpresa.jsf" class="ember-view">https://vun.empleo.gob.mx/contenido/publico/segob/empresa/identificacionEmpresa.jsf</a> cuyo administrador y responsable del tratamiento es la Coordinación General del Servicio Nacional de Empleo (CGSNE) de la Secretaría del Trabajo y Previsión Social (STPS). Los datos personales que se recaban serán utilizados con la finalidad de promover puestos vacantes para recibir candidatos interesados en ocuparlas.
+Si deseas conocer nuestro aviso de privacidad integral, lo podrás consultar en el portal: <a id="ember308" target="_blank" href="https://vun.empleo.gob.mx/contenido/publico/segob/avisoPrivacidadIntegralEmpresa.jsf" class="ember-view">https://vun.empleo.gob.mx/contenido/publico/segob/avisoPrivacidadIntegralEmpresa.jsf</a> </p>
+				</div>
+            </div>
+        </div>
+    </main><!-- /.container -->
+
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="Comparativo">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regrear a resultados</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="comparar.html"></iframe>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <!---div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div--->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+
+</body></html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search</i><br>Buscar</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"><i class="material-icons">business_center</i><br>Ofertas de empleo</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"> <i class="material-icons">person</i><br>Perfil</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"> <i class="material-icons">notifications</i><br>Notificaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="row">
+                                <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"> </div>
+                                <div class="col-8 text-left">
+                                    <h4 class="montserrat-light text-white">Hola Jorge</h4>
+                                    <a href="#" class="text-white">Cerrar sesión</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                                    Cerrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-lg-4">
+                <div id="filters" class="bg-white p-3">
+                    <div class="d-flex mb-3">
+                        <h3 class="mr-auto">Filtros</h3><a href="" class="px14 ml-auto"><span class="material-icons px14">edit</span> Limpiar filtros</a>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="tag_list_wrapper col-12">
+                            <div class="tag_list" id="job_details_more_1" data-id='1'>
+                                palabra<span>X</span>
+                            </div>
+                            <div class="tag_list" id="job_details_more_2" data-id='2'>
+                                palabra<span>X</span>
+                            </div>
+                            <div class="tag_list" id="job_details_more_3" data-id='3'>
+                                palabra<span>X</span>
+                            </div>
+                            <div class="tag_list" id="job_details_more_4" data-id='4'>
+                                palabra<span>X</span>
+                            </div>
+                            <div class="tag_list" id="job_details_more_5" data-id='5'>
+                                palabra<span>X</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3">
+                        <h3 class="mr-auto">Oficios y profesiones</h3>
+                    </div>
+                    <ul class="no-bullets pl-2">
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                        <li><a href="#" class="px16">Repostero (32)</a></li>
+                    </ul>
+                    <hr>
+                    <div class="d-flex mb-3">
+                        <h3 class="mr-auto">Distancia</h3>
+                    </div>
+                    <div class="form-group">
+                        <label for="#">Ubicación</label>
+                        <div class="select">
+                            <select>
+                                <option>Selecciona un estado</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                            </select>
+                            <div class="select__arrow"></div>
+                        </div>
+                        <p class="text-center line-height-normal"><i><small class="form-text montserrat-light">Selecciona un rango de Kms de tu casa a la oficina</small></i></p>
+
+                        <input type="range" value="0" step="1" min="0" max="50">
+
+                        <div class="range">
+                            <small class="min float-left">0 Km</small>
+                            <small class="max float-right">50 Km</small>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-3">
+                        <h3 class="mr-auto">Habilidades o competencias</h3>
+
+                    </div>
+                    <div class="form-group">
+
+                        <div class="select">
+                            <select>
+                                <option>Selecciona</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                            </select>
+                            <div class="select__arrow"></div>
+                        </div>
+                        
+
+
+                    </div>
+                    <div class="form-group">
+                            <label for="#">Escolaridad</label>
+                            <div class="select">
+                                <select>
+                                    <option>Selecciona</option>
+                                    <option>Option</option>
+                                    <option>Option</option>
+                                </select>
+                                <div class="select__arrow"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="#">Años de experiencia</label>
+                            <div class="select">
+                                <select>
+                                    <option>Selecciona</option>
+                                    <option>Option</option>
+                                    <option>Option</option>
+                                </select>
+                                <div class="select__arrow"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="#">Edad</label>
+                            <div class="select">
+                                <select>
+                                    <option>Selecciona</option>
+                                    <option>Option</option>
+                                    <option>Option</option>
+                                </select>
+                                <div class="select__arrow"></div>
+                            </div>
+                        </div>
+                    
+
+
+                </div>
+            </div>
+            <div class="col-lg-8">
+
+
+                <p>Buscaste: Arquitecto en coyoacán</p>
+                <hr>
+                <p>Resultados: 345 candidatos</p>
+
+                <div id="options" class="row">
+                    <div class="col-7 text-left">
+                        <ul class="nav">
+                            <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#meInteresa"><i class="material-icons">star</i> Guardar</a></li>
+                            <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#Comparativo"><i class="material-icons">people</i> Comparar</a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="col-5 text-right">
+                        <ul class="nav">
+                            <li class="nav-link">
+                                <div>
+                                    <select class="montserrat px16">
+                                        <option>Ordenar por:</option>
+                                        <option>Compatibilidad</option>
+                                        <option>Ubicación</option>
+                                        <option>Carrera</option>
+                                        <option>Experiencia</option>
+                                        <option>Expectativa salarial</option>
+                                    </select>
+
+                                </div>
+                            </li>
+                            <li class="nav-link  px-1"><a href="#"><i class="material-icons">sort_by_alpha</i></a></li>
+                            <li class="nav-link  px-1"><a href="#"><i class="material-icons">pin_drop</i></a></li>
+                            <li class="nav-link  px-1"><a href="1_1-EMP-Lista-Candidatos-mosaico.html"><i class="material-icons">apps</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <div class="list">
+                    <div class="row">
+
+
+                        <div class="col-12 p-3">
+                            <iframe class="w100" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d120440.03331454599!2d-99.21776692867216!3d19.379929649121863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d19.283967999999998!2d-99.1166464!4m5!1s0x85d1f8866458ed7d%3A0xeb63a225faf03f07!2sEje%203%20Nte.%20Camarones%20494%2C%20Col%20del%20Recreo%2C%20Azcapotzalco%2C%2002070%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!3m2!1d19.473174099999998!2d-99.1811367!5e0!3m2!1ses-419!2smx!4v1598487313480!5m2!1ses-419!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main><!-- /.container -->
+
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <!-- The Modal -->
+    <div class="modal fade" id="Comparativo" tabindex="-1" role="dialog" aria-labelledby="Comparativo" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="compare" class="row">
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-end">
+                                        <a href=""><i class="material-icons">star</i></a>
+
+                                    </div>
+                                    <div class="col">
+                                        <h1> <i><span class="montserrat-medium px16">100% compatible con</span></i></h1>
+                                        <h3 class="px12">"Contador/Ejecutivo contable"</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar-2" style="width:70%"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h2>Jorge García Muñoz</h2>
+                                    <h2 class="montserrat-regular px16 height-50">Diseñador gráfico con conocimientos en web</h2>
+                                    <h3>5 años de experiencia</h3>
+                                    <small>Tlalpan, Ciudad de México</small>
+
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="material-icons px32 text-gold text-center">local_atm</span>
+                                        </div>
+                                        <div class="col-10">
+                                            <h4 class="montserrat-extraLight px12 mb-0">Expectativa salarial</h4>
+                                            <h3>$ 20,000.00</h3>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="">Quitar candidato</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-end">
+                                        <a href=""><i class="material-icons">star</i></a>
+
+                                    </div>
+                                    <div class="col">
+                                        <h1> <i><span class="montserrat-medium px16">100% compatible con</span></i></h1>
+                                        <h3 class="px12">"Contador/Ejecutivo contable"</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar-2" style="width:70%"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h2>Gabriela Ortíz Méndez</h2>
+                                    <h2 class="montserrat-regular px16 height-50">Diseñador gráfico con conocimientos en web</h2>
+                                    <h3>5 años de experiencia</h3>
+                                    <small>Tlalpan, Ciudad de México</small>
+                                    <h3 class="text-handicap-blue px12"><span class="material-icons">accessible_forward</span> Persona con discapacidad</h3>
+
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="material-icons px32 text-gold text-center">local_atm</span>
+                                        </div>
+                                        <div class="col-10">
+                                            <h4 class="montserrat-extraLight px12 mb-0">Expectativa salarial</h4>
+                                            <h3>$ 20,000.00</h3>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="">Quitar candidato</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-end">
+                                        <a href=""><i class="material-icons">star</i></a>
+
+                                    </div>
+                                    <div class="col">
+                                        <h1> <i><span class="montserrat-medium px16">100% compatible con</span></i></h1>
+                                        <h3 class="px12">"Contador/Ejecutivo contable"</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar-2" style="width:70%"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h2>Raúl Arellano Cruz</h2>
+                                    <h2 class="montserrat-regular px16 height-50">Diseñador gráfico con conocimientos en web</h2>
+                                    <h3>5 años de experiencia</h3>
+                                    <small>Tlalpan, Ciudad de México</small>
+
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="material-icons px32 text-gold text-center">local_atm</span>
+                                        </div>
+                                        <div class="col-10">
+                                            <h4 class="montserrat-extraLight px12 mb-0">Expectativa salarial</h4>
+                                            <h3>$ 20,000.00</h3>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="">Quitar candidato</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-end">
+                                        <a href=""><i class="material-icons">star</i></a>
+
+                                    </div>
+                                    <div class="col">
+                                        <h1> <i><span class="montserrat-medium px16">100% compatible con</span></i></h1>
+                                        <h3 class="px12">"Contador/Ejecutivo contable"</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar-2" style="width:70%"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h2>Omar Alejandro Cruz Cruz</h2>
+                                    <h2 class="montserrat-regular px16 height-50">Diseñador gráfico con conocimientos en web</h2>
+                                    <h3>5 años de experiencia</h3>
+                                    <small>Tlalpan, Ciudad de México</small>
+                                    <h3 class="text-handicap-blue px12"><span class="material-icons">accessible_forward</span> Persona con discapacidad</h3>
+
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="material-icons px32 text-gold text-center">local_atm</span>
+                                        </div>
+                                        <div class="col-10">
+                                            <h4 class="montserrat-extraLight px12 mb-0">Expectativa salarial</h4>
+                                            <h3>$ 20,000.00</h3>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="">Quitar candidato</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- Modal me interesa-->
+      <div class="modal fade" id="meInteresa" tabindex="-1" role="dialog" aria-labelledby="Share" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="form-group col-md-12">
+                        <h2>¿Para cual de tus ofertas de empleo te interesa?</h2>
+
+                     </div>
+                  </div>
+                  
+                  <hr>
+                  <p>Selecciona una o más ofertas de empleo</p>
+                  <div class="ScrollStyle">
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                     <label class="form-check-label" for="exampleRadios1">
+                     Título de oferta 1
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                     <label class="form-check-label" for="exampleRadios2">
+                     Título de oferta 2
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                     <label class="form-check-label" for="exampleRadios3">
+                     Título de oferta 3
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                     <label class="form-check-label" for="exampleRadios4">
+                     Título de oferta 4
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                     <label class="form-check-label" for="exampleRadios5">
+                     Título de oferta 5
+                     </label>
+                  </div>
+                  </div>
+                  <hr>
+                  <div class="mt-5 form-group text-center">
+                     <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                     <a href="#" class="montserrat-regular px19 px-4">Regresar</a>
+                     <a href="#" class="btn btn-lg btnPrimary">Aceptar</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>

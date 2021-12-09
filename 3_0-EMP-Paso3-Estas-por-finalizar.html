@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css'>
+    <link href="assets/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+        <header class="back-bt header-registro text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+                <div class="container">
+                    <a class="navbar-brand" href="#."><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </nav>
+
+            <div class="grey-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 text-left mt-2"><a href="#." onclick="goBack()"><span class="material-icons">keyboard_backspace</span> Regresar</a></div>
+                        <div class="col-6 text-right mt-2"><a href="">Cerrar <span class="material-icons">close</span></a></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div id="main" class="container">
+
+            <div class="mt-5">
+                <small class="text-light-grey">Paso 3 de &#40;4&#41;</small>
+                <h1>&#161;Estás por finalizar&#33;</h1>
+                <h2>Datos de reclutamiento</h2>
+                <small>(*) Datos requeridos</small>
+                <hr>
+                <form>
+                    <div id="lang" class="">
+                        <div id="langRow" class="form-row d-flex align-items-end w-100">
+                            <div class="form-group col-md-4">
+                                <label for="Vacantes">Número de vacantes disponibles*</label>
+                                <input type="text" class="form-control" id="Vacantes" placeholder="">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Postulaciones">Límite de postulaciones*</label>
+                                <input type="text" class="form-control" id="Postulaciones" placeholder="">
+                            </div>
+                        </div>
+                        <h3>Elije la fecha de publicación de tu oferta &lpar;Vigencia&rpar;</h3>
+                        <div id="langRow" class="form-row d-flex align-items-end w-100">
+                            <div class="form-group col-md-4">
+                                <label for="">Inicia*</label>
+                                <input id="datepicker2" class="datepicker" />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Finaliza*</label>
+                                <input id="datepicker3" class="datepicker" />
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="recruitment" class="">
+                        <h3>Deseas agregar algún proceso de reclutamiento</h3>
+                        <div id="Knowledge" class="form-row d-flex align-items-end w-100">
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Nombre del paso</label>
+                                <ol>
+                                    <li><input type="text" class="form-control my-2" id="1" placeholder=""></li>
+                                    <li><input type="text" class="form-control my-2" id="2" placeholder=""></li>
+                                    <li><input type="text" class="form-control my-2" id="3" placeholder=""></li>
+                                </ol>
+
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Descripción</label>
+                                <ul>
+                                    <li><input type="text" class="form-control my-2" id="1" placeholder=""></li>
+                                    <li><input type="text" class="form-control my-2" id="2" placeholder=""></li>
+                                    <li><input type="text" class="form-control my-2" id="3" placeholder=""></li>
+                                </ul>
+
+                            </div>
+                            <div class="form-group col-md-12">
+                                <a id="addOtherStudies" href="#."><span class="material-icons">add</span> Agregar otro paso</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 form-group text-center">
+                        <a href="reg-emp-oferta-02.html" onclick="goBack()" class="montserrat-regular px19 px-4"> Regresar</a>
+                        <a href="reg-emp-oferta-04.html" class="btn btn-lg btnPrimary">Guardar y continuar</a>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.container -->
+    </div>
+
+    <footer class="bg-white footerBtm">
+        <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+        </div>
+        <div class="green-bar">
+            <div class="container">
+                    <div class="d-flex flex-row text-center">
+                        <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                        <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                        <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                        <div class="ml-auto p-2"><a href="necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js'></script>
+    <script src="assets/js/bootstrap4-toggle.min.js"></script>
+    <script src="assets/js/assets.js"></script>
+
+</body>
+
+</html>

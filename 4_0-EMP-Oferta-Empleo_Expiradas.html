@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css'>
+    <link href="assets/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!---icons=-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+   <body class="bg-body">
+      <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Arriba</button>
+      <header class="back-bt header-interna text-center">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <!---RESPONSIVE MENU--->
+            <!-- The overlay -->
+            <div id="myNav" class="overlay1">
+               <!-- Button to close the overlay navigation -->
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <div class="container">
+                     <div class="col-12">
+                        <div class="text-center"><img class="rounded-circle" src="assets/img/avatar-150.jpg" alt="avatar-150"></div>
+                        <div class="text-center my-3">
+                           <h2 class="m-0">CRUMA y Asociados</h2>
+                        </div>
+                        <hr class="hr-white">
+                        <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                           <li class="p-1"><a href="#" class="selected"><i class="material-icons">person_search</i><br>Ofertas de empleo</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">star</i><br>Candidatos</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Notificaciones</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Crear oferta</a></li>
+                        </ul>
+                        <hr class="hr-white">
+                     </div>
+                     <div class="col-12">
+                        <h2>Buscador</h2>
+                        <form>
+                           <div class="form-row justify-content-md-center">
+                              <div class="form-group col-md-6 text-center">
+                                 <label class="text-white px19" for="que">¿Qué?</label>
+                                 <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                              </div>
+                              <div class="form-group col-md-6 text-center">
+                                 <label class="text-white px19" for="donde">¿Dónde?</label>
+                                 <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                              </div>
+                              <div class="clearfix">&nbsp;</div>
+                              <div class="form-row col-12">
+                                 <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!---RESPONSIVE MENU--->
+            <div class="container">
+               <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse">
+               <span onclick="openNav()" class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item mr-4 border-right">
+                        <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search &nbsp;</i><br>
+                        Buscar</a><span>&nbsp; &nbsp; &nbsp;</span>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="emp-ofertas-activas.html" class="text-white"><i class="material-icons">business_center</i><br>
+                        Ofertas de empleo</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white"><i class="material-icons">people</i><br>
+                        Candidatos</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white">
+                        <i class="material-icons">notifications</i>
+                        <span class="badge badge-important">12</span>
+                        <br>
+                        Notificaciones</a>
+                     </li>
+                     <li class="mr-4"><button type="submit" class="btn btn-gold px16 align-center">Crear oferta</button></li>
+                     <li class="nav-item">
+                        <div class="row">
+                           <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"></div>
+                           <div class="col-8 text-left">
+                              <h4 class="montserrat-light text-white">Hola Kruma y Aso</h4>
+                              <a href="#" class="text-white">Cerrar sesión</a>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="container">
+            <form>
+               <div class="collapse" id="searchDiv">
+                  <div class="form-row align-items-end justify-content-center py-3">
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="que">¿Qué?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                     </div>
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="donde">¿Dónde?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                     </div>
+                     <div class="col-auto">
+                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                     </div>
+                     <div class="col-auto">
+                        <div class="form-check mb-2">
+                           <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-white"><span class="material-icons">highlight_off</span> Cerrar</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </header>
+      <main class="container">
+         <div class="row justify-content-md-center mt-3">
+            <div class="col-lg-3 d-none d-lg-block">
+               <div id="filters" class="bg-white p-3">
+                  <ul class="no-bullets">
+                     <li class="py-3 border-bottom"><a href="1_0-EMP-Oferta-Empleo_Activas.html">Ofertas activas (5)</a></li>
+                     <li class="py-3 border-bottom"><a href="2_0-EMP-Oferta-Empleo_Inactivas.html">Ofertas inactivas (4)</a></li>
+                     <li class="py-3 border-bottom"><a href="3_0-EMP-Oferta-Empleo_Pendientes.html">Ofertas pendientes (3)</a></li>
+                     <li class="py-3 border-bottom"><a href="4_0-EMP-Oferta-Empleo_Expiradas.html"  class="selected">Ofertas expiradas (3)</a></li>
+                     <li class="py-3"><a href="5_0-EMP-Oferta-Empleo_Papelera.html">Papelera (4)</a></li>
+                  </ul>
+               </div>
+               <div id="filters" class="bg-white p-3 mt-3">
+                  <ul class="no-bullets">
+                     <li class="py-3 text-center"><a href="static/consejos-empleo.html"><span class="material-icons">info</span> Consejos de empleo</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-9">
+               <p>4 ofertas expiradas</p>
+               <hr>
+               <div class="row">
+                  <div class="col-12">
+                     <hr class="d-lg-none">
+                     <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                        <li class="p-1"><a href="1_0-EMP-Oferta-Empleo_Activas.html"><i class="material-icons">person_search</i><br>Ofertas activas (5)</a></li>
+                        <li class="p-1"><a href="2_0-EMP-Oferta-Empleo_Inactivas.html"><i class="material-icons">star</i><br>Ofertas inactivas (4)</a></li>
+                        <li class="p-1"><a href="3_0-EMP-Oferta-Empleo_Pendientes.html"><i class="material-icons">check_circle</i><br>Ofertas pendientes (3)</a></li>
+                        <li class="p-1"><a href="4_0-EMP-Oferta-Empleo_Expiradas.html" class="selected"><i class="material-icons">list_alt</i><br>Oferttas expiradas (3)</a></li>
+                        <li class="p-1"><a href="5_0-EMP-Oferta-Empleo_Papelera.html"><i class="material-icons">delete_forever</i><br>Papelera (4)</a></li>
+                     </ul>
+                     <hr class="d-lg-none">
+                  </div>
+               </div>
+               <div id="options" class="row">
+                  
+                  <div class="col-4 text-right">
+                     <ul class="nav">
+                        <li class="nav-link px-1">
+                           <div>
+                              <select class="montserrat px16">
+                                 <option>Ordenar por:</option>
+                                 <option>Fecha</option>
+                                 <option>Título oferta de empleo</option>
+                                 <option>Número de postulados</option>
+                              </select>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="list">
+                  <div class="row">
+                     <div class="backItemList">
+                        <div class="row">
+                           <div class="col-lg-7 offset-lg-1 border-bottom">
+                              <a href="#" class="text-dark">
+                                 <h3 class="montserrat-extraLight text-danger">Finalizada</h3>
+                              </a>
+                              <a href="#" class="text-dark">
+                                 <h2>Arquitecto Supervisor de Obra</h2>
+                                 <h2 class="mb-4">$12,500.00</h2>
+                              </a>
+                              <h4 class="montserrat-extraLight">Tlalpan, Ciudad de México - Empresa: Arkiplus</h4>
+                              <p class="shortDesc px14">Inició: 23/04/2020 - Finaliza 29/05/2020</p>
+                           </div>
+                           <div class="col-lg-4 text-lg-right">
+                              <h2 class="mb-4">20 candidatos a tu medida</h2>
+                              <p>80 candidatos postulados</p>
+                              <p>1 Plaza disponible - 100 postulaciones máximo</p>
+                           </div>
+                        </div>
+                        <div class="row align-items-center">
+                           <div class="col-lg-2 offset-lg-1 text-left">
+                              <p class="px14 m-0">Folio: 20384</p>
+                           </div>
+                           <div class="col-lg-5 offset-lg-4 text-lg-right mt-2">
+                              <ul class="nav">
+                                 <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#reactivar"><i class="material-icons">fast_forward</i> Reactivar</a></li>
+                                 <li class="nav-link px-1"><a href="1_0-EMP-Paso1-Vamos-a-crear-oportunidades-1.html"><i class="material-icons">loop</i> Reutilizar</a></li>
+                                 <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#borrar"><i class="material-icons">delete</i> Borrar</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="backItemList">
+                        <div class="row">
+                           <div class="col-lg-7 offset-lg-1 border-bottom">
+                              <a href="#" class="text-dark">
+                                 <h3 class="montserrat-extraLight text-danger">Finalizada</h3>
+                              </a>
+                              <a href="#" class="text-dark">
+                                 <h2>Ingeniero civil</h2>
+                                 <h2 class="mb-4">$14,500.00</h2>
+                              </a>
+                              <h4 class="montserrat-extraLight">Tlalpan, Ciudad de México - Empresa: Arkiplus</h4>
+                              <p class="shortDesc px14">Inició: 23/04/2020 - Finaliza 29/05/2020</p>
+                           </div>
+                           <div class="col-lg-4 text-lg-right">
+                              <h2 class="mb-4">10 candidatos a tu medida</h2>
+                              <p>90 candidatos postulados</p>
+                              <p>1 Plaza disponible - 100 postulaciones máximo</p>
+                           </div>
+                        </div>
+                        <div class="row align-items-center">
+                           <div class="col-lg-2 offset-lg-1 text-left">
+                              <p class="px14 m-0">Folio: 20384</p>
+                           </div>
+                           <div class="col-lg-5 offset-lg-4 text-lg-right mt-2">
+                              <ul class="nav">
+                                 <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#reactivar"><i class="material-icons">fast_forward</i> Reactivar</a></li>
+                                 <li class="nav-link px-1"><a href="1_0-EMP-Paso1-Vamos-a-crear-oportunidades-1.html"><i class="material-icons">loop</i> Reutilizar</a></li>
+                                 <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#borrar"><i class="material-icons">delete</i> Borrar</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="backItemList">
+                        <div class="row">
+                           <div class="col-lg-7 offset-lg-1 border-bottom">
+                              <a href="#" class="text-dark">
+                                 <h3 class="montserrat-extraLight text-danger">Finalizada</h3>
+                              </a>
+                              <a href="#" class="text-dark">
+                                 <h2>Analista</h2>
+                                 <h2 class="mb-4">$14,000.00</h2>
+                              </a>
+                              <h4 class="montserrat-extraLight">Tlalpan, Ciudad de México - Empresa: Arkiplus</h4>
+                              <p class="shortDesc px14">Inició: 23/04/2020 - Finaliza 29/05/2020</p>
+                           </div>
+                           <div class="col-lg-4 text-lg-right">
+                              <h2 class="mb-4">30 candidatos a tu medida</h2>
+                              <p>90 candidatos postulados</p>
+                              <p>1 Plaza disponible - 100 postulaciones máximo</p>
+                           </div>
+                        </div>
+                        <div class="row align-items-center">
+                           <div class="col-lg-2 offset-lg-1 text-left">
+                              <p class="px14 m-0">Folio: 20123</p>
+                           </div>
+                           <div class="col-lg-5 offset-lg-4 text-lg-right mt-2">
+                              <ul class="nav">
+                                 <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#reactivar"><i class="material-icons">fast_forward</i> Reactivar</a></li>
+                                 <li class="nav-link px-1"><a href="1_0-EMP-Paso1-Vamos-a-crear-oportunidades-1.html"><i class="material-icons">loop</i> Reutilizar</a></li>
+                                 <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#borrar"><i class="material-icons">delete</i> Borrar</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="backItemList">
+                        <div class="row">
+                           <div class="col-lg-7 offset-lg-1 border-bottom">
+                              <a href="#" class="text-dark">
+                                 <h3 class="montserrat-extraLight text-danger">Finalizada</h3>
+                              </a>
+                              <a href="#" class="text-dark">
+                                 <h2>Supervisor de Obra</h2>
+                                 <h2 class="mb-4">$12,900.00</h2>
+                              </a>
+                              <h4 class="montserrat-extraLight">Tlalpan, Ciudad de México - Empresa: Arkiplus</h4>
+                              <p class="shortDesc px14">Inició: 23/04/2020 - Finaliza 29/05/2020</p>
+                           </div>
+                           <div class="col-lg-4 text-lg-right">
+                              <h2 class="mb-4">50 candidatos a tu medida</h2>
+                              <p>90 candidatos postulados</p>
+                              <p>1 Plaza disponible - 100 postulaciones máximo</p>
+                           </div>
+                        </div>
+                        <div class="row align-items-center">
+                           <div class="col-lg-2 offset-lg-1 text-left">
+                              <p class="px14 m-0">Folio: 20123</p>
+                           </div>
+                           <div class="col-lg-5 offset-lg-4 text-lg-right mt-2">
+                              <ul class="nav">
+                                 <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#reactivar"><i class="material-icons">fast_forward</i> Reactivar</a></li>
+                                 <li class="nav-link px-1"><a href="1_0-EMP-Paso1-Vamos-a-crear-oportunidades-1.html"><i class="material-icons">loop</i> Reutilizar</a></li>
+                                 <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#borrar"><i class="material-icons">delete</i> Borrar</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row justify-content-center">
+                     <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                           <li class="page-item disabled">
+                              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                           </li>
+                           <li class="page-item"><a class="page-link" href="#">1</a></li>
+                           <li class="page-item"><a class="page-link" href="#">2</a></li>
+                           <li class="page-item"><a class="page-link" href="#">3</a></li>
+                           <li class="page-item">
+                              <a class="page-link" href="#">Siguiente</a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+            <!-- Termina tarjeta 1 -->
+            
+         </div>
+      </main>
+      <!-- /.container -->
+      <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+            <!-- Modal borrar-->
+      <div class="modal fade" id="reactivar" tabindex="-1" role="dialog" aria-labelledby="Share" aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="form-group col-md-12">
+                        <h2>Reactivar oferta de empleo</h2>
+                         <p><small>(*) Datos requeridos</small></p>
+                        
+                     </div>
+                  </div>
+                  <h3>Actualiza los siguientes datos para reactivar la oferta de empleo</h3>
+                  <hr>
+                  <div id="lang" class="">
+                        <div id="langRow" class="form-row d-flex align-items-end w-100">
+                            <div class="form-group col-md-6">
+                                <label for="Vacantes">Número de vacantes disponibles*</label>
+                                <input type="text" class="form-control" id="Vacantes" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Postulaciones">Límite de postulaciones*</label>
+                                <input type="text" class="form-control" id="Postulaciones" placeholder="">
+                            </div>
+                        </div>
+                        <h3>Elije la fecha de publicación de tu oferta &lpar;Vigencia&rpar;</h3>
+                        <div id="langRow" class="form-row d-flex align-items-end w-100">
+                            <div class="form-group col-md-6">
+                                <label for="">Inicia*</label>
+                                <input id="datepicker2" class="datepicker" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Finaliza*</label>
+                                <input id="datepicker3" class="datepicker" />
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                  <div class="mt-5 form-group text-center">
+                     <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                     <a href="#" class="montserrat-regular px19 px-4">Cancelar</a>
+                     <a href="#" class="btn btn-lg btnPrimary">Desactivar la oferta</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal borrar-->
+      <div class="modal fade" id="borrar" tabindex="-1" role="dialog" aria-labelledby="Share" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="form-group col-md-12">
+                        <h2>Desactivar</h2>
+                         <h3>¿Por que razón quieres borrar esta oferta de empleo??</h3>
+                        
+                     </div>
+                  </div>
+                  <p>Tu respuesta ayudará a ofrecerte un mejor servicio</p>
+                  <hr>
+                  <p>Selecciona un motivo</p>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                     <label class="form-check-label" for="exampleRadios1">
+                     El puesto ya se ocupó
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                     <label class="form-check-label" for="exampleRadios2">
+                     No encuentro al candidato correcto
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                     <label class="form-check-label" for="exampleRadios3">
+                     Los candidatoss no cumplen el perfil requerido
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                     <label class="form-check-label" for="exampleRadios4">
+                     Recibo muchas postulaciones
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                     <label class="form-check-label" for="exampleRadios5">
+                     Otro
+                     </label>
+                  </div>
+                  <hr>
+                  <div class="form-group">
+                     <label for="exampleFormControlTextarea1">Cuéntanos un poco más</label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <hr>
+                  <div class="mt-5 form-group text-center">
+                     <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                     <a href="#" class="montserrat-regular px19 px-4">Cancelar</a>
+                     <a href="#" class="btn btn-lg btnPrimary">Desactivar la oferta</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js'></script>
+    <script src="assets/js/bootstrap4-toggle.min.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script src="assets/js/assets.js"></script>
+    <script>
+        $('#btnShowAlert').on('click', function() {
+            $('#myAlert').style('display', 'block');
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+

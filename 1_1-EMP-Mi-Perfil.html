@@ -1,0 +1,959 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="../../../../favicon.ico">
+      <title>Portal del Empleo</title>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+      <!-- Place your stylesheet here-->
+      <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+      <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css">
+      <link href="assets/css/bootstrap4-toggle.min.css" rel="stylesheet">
+      <!--- montserrat font-->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+      <!---icons=-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
+   <body class="bg-body">
+      <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Arriba</button>
+      <header class="back-bt header-interna text-center">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <!---RESPONSIVE MENU--->
+            <!-- The overlay -->
+            <div id="myNav" class="overlay1">
+               <!-- Button to close the overlay navigation -->
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <div class="container">
+                     <div class="col-12">
+                        <div class="text-center"><img class="rounded-circle" src="assets/img/avatar-150.jpg" alt="avatar-150"></div>
+                        <div class="text-center my-3">
+                           <h2 class="m-0">CRUMA y Asociados</h2>
+                        </div>
+                        <hr class="hr-white">
+                        <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                           <li class="p-1"><a href="#" class="selected"><i class="material-icons">person_search</i><br>Ofertas de empleo</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">star</i><br>Candidatos</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Notificaciones</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Crear oferta</a></li>
+                        </ul>
+                        <hr class="hr-white">
+                     </div>
+                     <div class="col-12">
+                        <h2>Buscador</h2>
+                        <form>
+                           <div class="form-row justify-content-md-center">
+                              <div class="form-group col-md-6 text-center">
+                                 <label class="text-white px19" for="que">¿Qué?</label>
+                                 <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                              </div>
+                              <div class="form-group col-md-6 text-center">
+                                 <label class="text-white px19" for="donde">¿Dónde?</label>
+                                 <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                              </div>
+                              <div class="clearfix">&nbsp;</div>
+                              <div class="form-row col-12">
+                                 <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!---RESPONSIVE MENU--->
+            <div class="container">
+               <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse">
+               <span onclick="openNav()" class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item mr-4 border-right">
+                        <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search &nbsp;</i><br>
+                        Buscar</a><span>&nbsp; &nbsp; &nbsp;</span>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="emp-ofertas-activas.html" class="text-white"><i class="material-icons">business_center</i><br>
+                        Ofertas de empleo</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white"><i class="material-icons">people</i><br>
+                        Candidatos</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white">
+                        <i class="material-icons">notifications</i>
+                        <span class="badge badge-important">12</span>
+                        <br>
+                        Notificaciones</a>
+                     </li>
+                     <li class="mr-4"><button type="submit" class="btn btn-gold px16 align-center">Crear oferta</button></li>
+                     <li class="nav-item">
+                        <div class="row">
+                           <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"></div>
+                           <div class="col-8 text-left">
+                              <h4 class="montserrat-light text-white">Hola Kruma y Aso</h4>
+                              <a href="#" class="text-white">Cerrar sesión</a>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="container">
+            <form>
+               <div class="collapse" id="searchDiv">
+                  <div class="form-row align-items-end justify-content-center py-3">
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="que">¿Qué?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                     </div>
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="donde">¿Dónde?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                     </div>
+                     <div class="col-auto">
+                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                     </div>
+                     <div class="col-auto">
+                        <div class="form-check mb-2">
+                           <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-white"><span class="material-icons">highlight_off</span> Cerrar</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </header>
+      <main class="container">
+         <div class="row mt-3">
+            <div class="col-lg-3 order-lg-12">
+               <div class="bg-white mb-3 p-3">
+                  <div class="d-flex mb-3">
+                     <h2 class="mr-auto">Datos generales</h2>
+                     <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#editarDatosGenerales"><span class="material-icons px14">edit</span> Modificar</a>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Tipo de persona</h3>
+                     <small>Moral</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">RFC</h3>
+                     <small>CAD741230A22</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Razón Social</h3>
+                     <small>Carolina Innovación de productos y servicios, S.A. de C.V.</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <hr>
+                     <h3 class="m-0">Sector de actividad</h3>
+                     <small>Servicios</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Subsector</h3>
+                     <small>Turismo</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">
+                        Actividad económica principal
+                     </h3>
+                     <small>Turismo</small>
+                  </div>
+                  <hr>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Domicilio Fiscal</h3>
+                     <small>
+                     Periferico Sur 4124, Jardines del Pedregal, Álvaro Obregón, 01900 Ciudad de México, CDMX</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Teléfono</h3>
+                     <small>
+                     55 0000 0000</small>
+                  </div>
+               </div>
+               <div class="bg-white mb-3 p-3">
+                  <div class="d-flex mb-3">
+                     <h2 class="mr-auto">Permisos y notificaciones</h2>
+                     <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#editarPermisosNotificaciones"><span class="material-icons px14">edit</span> Modificar</a>
+                  </div>
+                  <div class="text-left mb-3">
+                     <p>Me gustaría recibir CV´s de candidastos acordes a mis Ofertas de Empleo, por mi número telefónico y mi correo electrónico</p>
+                  </div>
+                  <div class="text-light-green">
+                     <p class="m-0"><span class="material-icons">check</span> Sí, me gustaría</p>
+                  </div>
+               </div>
+               <div class="bg-white mb-3 p-3">
+                  <div class="d-flex mb-3">
+                     <h2 class="mr-auto">Cuenta</h2>
+                     <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#editarCuenta"><span class="material-icons px14">edit</span> Modificar</a>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h2 class="m-0">Usuario</h2>
+                     <small>Ejemplo01</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h2 class="m-0">Correo</h2>
+                     <small>Ejemplo01@hotmail.com</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h2 class="m-0">Contraseña</h2>
+                     <input type="password" readonly="" class="form-control" id="inputPassword" value="Password">
+                  </div>
+               </div>
+               <div class="bg-white mb-3 p-3">
+                  <div class="d-flex mb-3">
+                     <h2 class="mr-auto">Mi perfil</h2>
+                     
+                  </div>
+                  <p>Si desactivas tu Perfil, los candidatos no podrán encontrarte y no recibiras postulaciones</p>
+                  <div class="form-group form-inline">
+                                <label for="">Activar perfil</label>&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" checked data-toggle="toggle" data-width="50" data-on="Si" data-off="No">
+
+                            </div>
+                  
+               </div>
+            </div>
+            <div class="col-lg-9 order-lg-1">
+               <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="profile1" role="tabpanel" aria-labelledby="profile1-tab">
+                     <div class="bg-white p-3 mb-3 border-LBR">
+                        <div class="d-flex mb-3">
+                           <h1 class="mr-auto">Acerca de la empresa</h1>
+                           <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#editarAcercaDeLaEmpresa"><span class="material-icons px14">edit</span> Modificar</a>
+                        </div>
+                        <hr>
+                        <div class="row mb-2">
+                           <div class="col-12">
+                              <h2 class="m-0">Carolina Innovación de productos y servicios, S.A. de C.V.</h2>
+                           </div>
+                        </div>
+                        <div class="row mb-2">
+                           <div class="col-2 text-center pt-2"><img src="assets/img/mi-perfil-em.png" alt="avatar-150"></div>
+                           <div class="col-10">
+                              <h3 class="m-0 pt-2">Semblanza</h3>
+                              <p class="m-0">La empresa es líder global en el sector turístico, La empresa es líder global en el sector turístico La empresa es líder global en el sector turístico, La empresa es líder global en el sector turístico…</p>
+                              <h3 class="m-0 pt-2">Número de empleados</h3>
+                              <p class="m-0">2</p>
+                           </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-2">
+                           <div class="col-md-6">
+                              <h3 class="m-0 pb-2">Tus redes sociales</h3>
+                              <ul class="no-bullets">
+                                 <li class="m-2">
+                                    <img src="assets/img/facebook.png" class="img24" alt="facebook"> <a href="">www.facebook.com/asociados</a>
+                                 </li>
+                                 <li class="m-2">
+                                    <img src="assets/img/linkedin.png" class="img24" alt="linkedin"> <a href="">www.linkedin.com/in/asociados</a>
+                                 </li>
+                                 <li class="m-2">
+                                    <img src="assets/img/web.png" class="img24" alt="web"> <a href="">www.asociados.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="col-md-6">
+                              <h3 class="m-0">Video de empresa</h3>
+                              <div class="embed-responsive embed-responsive-16by9">
+                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_fP43gcBywU" allowfullscreen=""></iframe>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bg-white p-3 mb-3 border">
+                        <div class="d-flex mb-3">
+                           <h2 class="mr-auto">Datos de contacto con el SNE </h2>
+                           <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#editarDatosContacto"><span class="material-icons px14">edit</span> Modificar</a>
+                        </div>
+                        <hr>
+                        <div class="row mb-2 py-2">
+                           <div class="col-md-1 text-light-green">
+                              <span class="material-icons">person</span>
+                           </div>
+                           <div class="col-md-4">
+                              <h3 class="m-0">Carolina Urtado Mendóza</h3>
+                              <p class="m-0">Gerente de Recursos Humanos</p>
+                           </div>
+                           <div class="col-md-1 text-light-green">
+                              <span class="material-icons">check</span>
+                           </div>
+                           <div class="col-md-4 text-light-green">
+                              <p class="m-0">Predeterminado</p>
+                           </div>
+                        </div>
+                        <div class="row mb-2 py-2">
+                           <div class="col-md-1 text-light-green">
+                              <span class="material-icons">mail</span>
+                           </div>
+                           <div class="col-md-4">
+                              <h3 class="m-0">Correo electrónico</h3>
+                              <p class="m-0">carolina@miempresa.mx</p>
+                           </div>
+                           <div class="col-md-1 text-light-green border-left">
+                              <span class="material-icons">phone</span>
+                           </div>
+                           <div class="col-md-4">
+                              <h3 class="m-0">Teléfono</h3>
+                              <p class="m-0">54 6894 0320 Ext. 4635 </p>
+                           </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-2 py-2">
+                           <div class="col-md-1 text-light-green">
+                              <span class="material-icons">person</span>
+                           </div>
+                           <div class="col-md-11">
+                              <h3 class="m-0">Lorena Méndoza Hijar</h3>
+                              <p class="m-0">Gerente de Recursos Humanos</p>
+                           </div>
+                        </div>
+                        <div class="row mb-2 py-2">
+                           <div class="col-md-1 text-light-green">
+                              <span class="material-icons">mail</span>
+                           </div>
+                           <div class="col-md-4">
+                              <h3 class="m-0">Correo electrónico</h3>
+                              <p class="m-0">lore@miempresa.mx</p>
+                           </div>
+                           <div class="col-md-1 text-light-green border-left">
+                              <span class="material-icons">phone</span>
+                           </div>
+                           <div class="col-md-4">
+                              <h3 class="m-0">Teléfono</h3>
+                              <p class="m-0">54 6894 0320 Ext. 4635 </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile2-tab">
+                     <div class="bg-white p-3 mb-3 border-LBR">
+                        <div class="mb-3">
+                           <h1 class="mr-auto">Seguramente tienes gustos, aficiones y habilidades</h1>
+                           <h3>Actividades que pueden generar ingresos</h3>
+                        </div>
+                     </div>
+                     <div class="bg-white p-3 mb-3 border">
+                        <div class="d-flex mb-3">
+                           <h2 class="mr-auto">Cortar cabello</h2>
+                           <a href="" class="px14 ml-auto"><span class="material-icons px14">edit</span> Modificar</a>
+                        </div>
+                        <hr>
+                        <div class="row mb-2">
+                           <div class="col-md-6">
+                              <h3 class="m-0">¿Cuanto tiempo le dedicas?</h3>
+                              <p class="m-0">1 a 2 horas a la semana</p>
+                           </div>
+                           <div class="col-md-6">
+                              <h3 class="m-0">¿Desde cuando realizas esta actividad?</h3>
+                              <p class="m-0">Más de 3 años</p>
+                           </div>
+                        </div>
+                        <h3 class="mt-4">Herramientas para esta actividad</h3>
+                        <div class="row mb-2">
+                           <div class="col-md-6">
+                              <h3 class="m-0">Herramienta</h3>
+                              <ul class="no-bullets">
+                                 <li class="m-0">Uso de máquina para cortar</li>
+                                 <li class="m-0">Uso de máquina para cortar</li>
+                                 <li class="m-0">Uso de máquina para cortar</li>
+                                 <li class="m-0">Uso de máquina para cortar</li>
+                                 <li class="m-0">Uso de máquina para cortar</li>
+                                 <li class="m-0">Uso de máquina para cortar</li>
+                                 <li class="m-0">Uso de máquina para cortar</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-6">
+                              <h3 class="m-0">Experiencia</h3>
+                              <ul class="no-bullets">
+                                 <li class="m-0">5años</li>
+                                 <li class="m-0">5años</li>
+                                 <li class="m-0">5años</li>
+                                 <li class="m-0">5años</li>
+                                 <li class="m-0">5años</li>
+                                 <li class="m-0">5años</li>
+                                 <li class="m-0">5años</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <h3 class="mt-4">Destrezas o conocimientos adquiridos</h3>
+                        <div class="row mb-2">
+                           <div class="col-12">
+                              <h3 class="m-0">Herramienta</h3>
+                              <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et justo laoreet tellus laoreet vestibulum. Pellentesque non neque lorem.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bg-white p-3 mb-3 border">
+                        <div class="d-flex mb-3">
+                           <h2 class="mr-auto">Árbitro de futból</h2>
+                           <a href="" class="px14 ml-auto"><span class="material-icons px14">edit</span> Modificar</a>
+                        </div>
+                     </div>
+                     <div class="bg-white p-3 mb-3 border">
+                        <div class="d-flex mb-3">
+                           <a href="" class="px16"><span class="material-icons px14">add</span> Agregar otro gusto, afición o habilidad</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!-- /.container -->
+      <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- The Modal -->
+      <div class="modal fade" id="Modal-xl" tabindex="-1" role="dialog" aria-labelledby="Modal-xl" aria-hidden="true">
+         <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <div class="modal-body"></div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal acerca de la empresa-->
+      <div class="modal fade" id="editarAcercaDeLaEmpresa" tabindex="-1" role="dialog" aria-labelledby="editarDatosPersonales" aria-hidden="true">
+         <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <div id="ad" class="form-row d-flex align-items-start w-100">
+                     <div class="form-group col-md-12">
+                        <h2>Acerca de la empresa</h2>
+                        <small>(*) Datos requeridos</small>
+                        <hr>
+                     </div>
+                     <form class="width-100">
+                        <div id="experience" class="">
+                           <div id="experienceRow" class="form-row d-flex align-items-end w-100">
+                              <div class="form-group col-md-9">
+                                 <label for="">Nombre de la empresa o negocio</label>
+                                 <input type="text" class="form-control" id="" placeholder="">
+                              </div>
+                              <div class="form-group col-md-3">
+                                 <label for="">Número de empleados*</label>
+                                 <div role="wrapper" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group"><input type="text" class="form-control" id="" placeholder=""></div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                 <label for="">Descripción</label>
+                                 <textarea class="form-control" id="" rows="3"></textarea>
+                              </div>
+                              <div class="col-12">&nbsp;</div>
+                           </div>
+                        </div>
+                        <hr>
+                        <h3>Imagen de tu empresa</h3>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p class="text-center"></p>
+                              <img src="assets/img/icon-100-100.png" class="rounded-circle mx-auto d-block">
+                              <p class="text-light-grey mt-3 text-center"><small>Formatos permitidos *jpg, *png, *bmp
+                                 <br>Tamaño máximo 30Kb y la altura no exceda los 100 pixles</small>
+                              </p>
+                           </div>
+                           <div class="col-md-6">
+                              <p class="">¡Hey! Aquí puedes agregar el logotipo de tu negocio</p>
+                              <div class="p-3">
+
+
+                                        <div class="text-center">
+                                <input class="foto" type="file" id="foto" name="foto" (change)="elegirFoto($event)" accept="image/*">
+                                <label for="foto"><span class="btn btnLight">Subir un archivo</span></label>
+                                <div class="mt-3 text-center">
+                                    <button type="submit" (click)="validarFoto(content)" class="btn btnPrimary">Subir imagen</button>
+                                </div>
+                            </div>
+                                    </div>
+                           </div>
+                        </div>
+                        <hr>
+                        <div class="row mt-5">
+                           <div class="col-md-6">
+                              <h3>Video de la empresa</h3>
+                              <a href="#" data-toggle="modal" data-target="#ModalVideoEMP" class="mb-3">¿Cómo hacer un video de tu empresa?</a>
+                              <p> </p>
+                              <h3>Comparte el enlace del video de tu empresa</h3>
+                              <div class="form-group">
+                                 <label for="">Dirección electrónica en YouTube</label>
+                                 <input type="text" class="form-control" id="">
+                              </div>
+                           </div>
+                           <div class="col-md-6 border-left">
+                              <h3>Tus redes sociales</h3>
+                              <div class="form-row align-items-center">
+                                 <div class="col-12">
+                                    <label class="sr-only" for="">Facebook</label>
+                                    <div class="input-group mb-2">
+                                       <div class="input-group-prepend">
+                                          <div class="input-group-text"><img src="assets/img/facebook.png" class="img24"></div>
+                                       </div>
+                                       <input type="text" class="form-control" id="" placeholder="Facebook">
+                                    </div>
+                                 </div>
+                                 <div class="col-12">
+                                    <label class="sr-only" for="">Linked In</label>
+                                    <div class="input-group mb-2">
+                                       <div class="input-group-prepend">
+                                          <div class="input-group-text"><img src="assets/img/linkedin.png" class="img24"></div>
+                                       </div>
+                                       <input type="text" class="form-control" id="" placeholder="LinkedIn">
+                                    </div>
+                                 </div>
+                                 <div class="col-12">
+                                    <label class="sr-only" for="">Página web</label>
+                                    <div class="input-group mb-2">
+                                       <div class="input-group-prepend">
+                                          <div class="input-group-text"><img src="assets/img/web.png" class="img24"></div>
+                                       </div>
+                                       <input type="text" class="form-control" id="" placeholder="URL">
+                                    </div>
+                                 </div>
+                                 <div class="col-12">
+                                    <label class="sr-only" for="">Otra</label>
+                                    <input type="text" class="form-control mb-2" id="" placeholder="Otra red social">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="mt-5 form-group text-center">
+                           <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                           <a href="#" onclick="goBack()" class="montserrat-regular px19 px-4"> Cancelar</a>
+                           <a href="reg-emp-04.html" class="btn btn-lg btnPrimary">Guardar y continuar</a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+       <!-- Modal Datos de contacto-->
+      <div class="modal fade" id="editarDatosContacto" tabindex="-1" role="dialog" aria-labelledby="editarDatosPersonales" aria-hidden="true">
+         <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <div id="ad" class="form-row d-flex align-items-start w-100">
+                     <div class="form-group col-md-12">
+                        <h2>Datos de contacto</h2>
+                        <small>(*) Datos requeridos</small>
+                        <hr>
+                     </div>
+                     <form class="width-100">
+                        <div class="panel-body">
+                            <div id="panel panel-default experienceRow" class="form-row d-flex align-items-end w-100">
+                                
+                                <div class="form-group col-md-4">
+                                    <h3 mt-5="">Datos personales</h3>
+                                    <label for="">Nombre (s)</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Apellido (s)</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Cargo del contacto</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Correo electrónico</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Repetir correo electrónico</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="">Teléfono fijo</label>
+                                    <input type="tel" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="">Extensión</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 form-group text-center">
+                           <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                           <a href="#" onclick="goBack()" class="montserrat-regular px19 px-4"> Cancelar</a>
+                           <a href="reg-emp-04.html" class="btn btn-lg btnPrimary">Guardar</a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+        <!-- Modal Datos generales-->
+      <div class="modal fade" id="editarDatosGenerales" tabindex="-1" role="dialog" aria-labelledby="editarDatosPersonales" aria-hidden="true">
+         <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <div id="ad" class="form-row d-flex align-items-start w-100">
+                     <div class="form-group col-md-12">
+                        <h2>Datos generales</h2>
+                        <small>(*) Datos requeridos</small>
+                        <hr>
+                     </div>
+                     <form class="width-100">
+                        <div id="" class="mt-5 form-row d-flex align-items-end w-100">
+                            <div class="form-group col-md-4">
+                                <h3>Datos de la Persona moral</h3>
+                                <label for="inputRFC">RFC*</label>
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputRazon">Nombre, denominación o razón social*</label>
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputSociedad">Tipo de sociedad*</label>
+                                <select id="" class="form-control">
+                                    <option selected="">Seleccionar</option>
+                                    <option>op1</option>
+                                    <option>op2</option>
+                                    <option>op3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Sector de actividad*</label>
+                                <select id="" class="form-control">
+                                    <option selected="">Seleccionar</option>
+                                    <option>op1</option>
+                                    <option>op2</option>
+                                    <option>op3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Subsector*</label>
+                                <select id="" class="form-control">
+                                    <option selected="">Seleccionar</option>
+                                    <option>op1</option>
+                                    <option>op2</option>
+                                    <option>op3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Actividad económica principal*</label>
+                                <select id="" class="form-control">
+                                    <option selected="">Seleccionar</option>
+                                    <option>op1</option>
+                                    <option>op2</option>
+                                    <option>op3</option>
+                                </select>
+                            </div>
+                            
+                            <hr>
+                   
+
+
+                        <div class="form-group col-md-12">
+
+                            <h2>Tu empresa se encuentra</h2>
+                        </div>
+
+                        <div class="form-group col-12">
+                            <div id="InitialAddress" class="form-check form-check-inline">
+                                <input value="option1" data-target="#collapseOne" name="collapseGroup" type="radio" class="form-check-input" checked="true" data-toggle="collapse" aria-expanded="false">
+                                <h3 class="form-check-label" for="inlineRadio1">Domicilio registrado</h3>
+                            </div>
+                            <div id="showaddress" class="">
+                                <p class="m-0">Periferico Sur 4124, Jardines del Pedregal, Álvaro Obregón, C.P. 01900, Ciudad de México, CDMX</p>
+                            </div>
+                        </div>
+                        <div class="form-group col-12">
+                            <div id="OtherAddress" class="form-check form-check-inline">
+                                <input value="option2" data-target="#collapseOne" name="collapseGroup" type="radio" class="form-check-input collapsed" data-toggle="collapse" aria-expanded="false">
+                                <h3 class="form-check-label" for="collapseGroup">Otro domicilio</h3>
+                            </div>
+                        </div>
+                        <div id="Other-address" class="panel-group">
+                            <div class="panel panel-default">
+                                <div id="collapseOne" class="panel-collapse collapse" style="">
+                                    <div class="panel-body">
+                                        <div id="panel panel-default experienceRow" class="form-row d-flex align-items-end w-100">
+                                            <div class="form-group col-md-4 mt-3">
+                                                <label for="">Código Postal*</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btnPrimary" type="button"> Validar</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-8 border-left">
+                                                <a href="#" class=""><span class="material-icons">location_on</span> Usar mi ubicación</a>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="">Entidad Federativa</label>
+                                                <select id="" class="form-control">
+                                                    <option selected="">Selecciona...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="">Municipio o alcaldía</label>
+                                                <select id="" class="form-control">
+                                                    <option selected="">Selecciona...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="">Colonia*</label>
+                                                <select id="" class="form-control">
+                                                    <option selected="">Selecciona...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="">Localidad*</label>
+                                                <select id="" class="form-control">
+                                                    <option selected="">Selecciona...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="">Calle*</label>
+                                                <input type="text" class="form-control" id="" placeholder="">
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label for="">Número exterior*</label>
+                                                <input type="text" class="form-control" id="" placeholder="">
+
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label for="">Número interior</label>
+                                                <input type="text" class="form-control" id="" placeholder="">
+
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label for="">Entre qué calles se encuentra o alguna referencia*</label>
+                                                <input type="text" class="form-control" id="" placeholder="">
+                                            </div>
+                                            <div id="panel panel-default experienceRow" class="form-row d-flex align-items-end w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+   
+                            
+                        </div>
+                        <div class="mt-5 form-group text-center">
+                           <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                           <a href="#" onclick="goBack()" class="montserrat-regular px19 px-4"> Cancelar</a>
+                           <a href="reg-emp-04.html" class="btn btn-lg btnPrimary">Guardar</a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+        <!-- Modal permisos y notofocaciones-->
+      <div class="modal fade" id="editarPermisosNotificaciones" tabindex="-1" role="dialog" aria-labelledby="editarDatosPersonales" aria-hidden="true">
+         <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <div id="ad" class="form-row d-flex align-items-start w-100">
+                     <div class="form-group col-md-12">
+                        <h2>Permisos y notificaciones</h2>
+                        <hr>
+                     </div>
+                     <form class="width-100">
+                       <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="checked" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Me gustaría recibir CV´s de candidastos acordes a mis Ofertas de Empleo, por mi número telefónico y mi correo electrónico
+                    </label>
+                </div>
+
+                        <div class="mt-5 form-group text-center">
+                           <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                           <a href="#" onclick="goBack()" class="montserrat-regular px19 px-4"> Cancelar</a>
+                           <a href="reg-emp-04.html" class="btn btn-lg btnPrimary">Guardar</a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal cuenta -->
+      <div class="modal fade" id="editarCuenta" tabindex="-1" role="dialog" aria-labelledby="editarDatosPersonales" aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <div id="ad" class="form-row d-flex align-items-start w-100">
+                     <div class="form-group col-md-12">
+                        <h2>Cuenta</h2>
+                        <small>(*) Datos requeridos</small>
+                        <hr>
+                     </div>
+                     <form class="width-100">
+                        <div class="row">
+                           <div class="col">
+                              <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                    <h2 class="panel-title text-center">Carolina</h2>
+                                    <h3 class="panel-title text-center">carolina@miempresa.com</h3>
+                                    <h3 class="panel-title text-center">Para modificar tu cuenta debemos verificar que eres tú</h3>
+                                 </div>
+                                 <div class="panel-body">
+                     <form accept-charset="UTF-8" role="form">
+                     <fieldset>
+                     <div class="form-group">
+                     <input class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+                     </div>
+                     <p class="text-center"><a href="05_1_1-BT-Recuperar-contrasena.html">¿Olvidaste tu contraseña?</a></p>
+                     <div class="mt-5 form-group text-center">
+                     <a href="#" class="btn btn-lg btnPrimary" data-toggle="modal" data-target="#editarCuenta2">Continuar</a>
+                     </div>
+                     </fieldset>
+                     </form>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal cuenta2 -->
+      <div class="modal fade" id="editarCuenta2" tabindex="-1" role="dialog" aria-labelledby="editarDatosPersonales" aria-hidden="true">
+         <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <div id="ad" class="form-row d-flex align-items-start w-100">
+                     <div class="form-group col-md-12">
+                        <h2>Cuenta</h2>
+                        <small>(*) Datos requeridos</small>
+                        <hr>
+                     </div>
+                     <form class="width-100">
+                        <div class="row">
+                           <div class="col-12">
+                              <div class="form-row">
+                                 <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Nombre*</label>
+                                    <input type="text" class="form-control" id="">
+                                 </div>
+                                 <div class="form-group col-md-6">
+                                 </div>
+                              </div>
+                              <div class="form-row">
+                                 <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Correo electrónico*</label> <small class="float-right"><a href="">No tengo correo</a></small>
+                                    <input type="email" class="form-control" id="">
+                                 </div>
+                                 <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Confirmar correo electrónico*</label>
+                                    <input type="email" class="form-control" id="">
+                                 </div>
+                              </div>
+                              <div class="form-row">
+                                 <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Contraseña*</label>
+                                    <input type="password" class="form-control" id="">
+                                    <ul class="no-bullets">
+                                       <li><small>Utiliza ocho caracteres</small></li>
+                                       <li><small class="text-danger">Utiliza una letra mayúscula como mínimo</small></li>
+                                       <li><small class="text-success">Utiliza un número como mínimo</small></li>
+                                    </ul>
+                                 </div>
+                                 <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Confirmar contraseña*</label>
+                                    <input type="password" class="form-control" id="">
+                                 </div>
+                              </div>
+                              <button type="submit" class="btn btn-lg btn-secondary">Regresar</button>
+                              <!---button type="submit" class="btn btn-lg btnPrimary">Crear cuenta</button--->
+                              <a href="reg-bt-02.html" class="btn btn-lg btnPrimary">Crear cuenta</a>
+                           </div>
+                           
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="assets/js/jquery-3.5.1.js"></script>
+      <script src="assets/js/bootstrap.bundle.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js"></script>
+      <script src="assets/js/bootstrap4-toggle.min.js"></script>
+      <script src="assets/js/rangeslider.js"></script>
+      <script src="assets/js/assets.js"></script>
+      <script>
+         /* Open when someone clicks on the span element */
+         function openNav() {
+             document.getElementById("myNav").style.width = "100%";
+         }
+         
+         /* Close when someone clicks on the "x" symbol inside the overlay */
+         function closeNav() {
+             document.getElementById("myNav").style.width = "0%";
+         }
+      </script>
+   </body>
+</html>
+

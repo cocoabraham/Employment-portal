@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css'>
+    <link href="assets/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+        <header class="back-bt header-registro text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+                <div class="container">
+                    <a class="navbar-brand" href="#."><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+
+
+                </div>
+            </nav>
+
+            <div class="grey-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 text-left mt-2"><a href="#." onclick="goBack()"><span class="material-icons">keyboard_backspace</span> Regresar</a></div>
+                        <div class="col-6 text-right mt-2"><a href="">Cerrar <span class="material-icons">close</span></a></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div id="main" class="container">
+            <div class="mt-5">
+                <small class="text-light-grey">Paso 6 de &#40;6&#41;</small>
+                <h1>¡Casi terminamos!</h1>
+                <h3>Escribe un nombre para tu CV</h3>
+                <small>(*) Datos requeridos</small>
+                <hr>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="">Título para tu CV</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="">Salario mensual deseado</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="">-</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Habilitar un rango de salario</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                       <div class="form-group">
+                        <label for="">Selecciona el horario que más te convenga</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Medio tiempo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                                Tiempo completo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck3">
+                                Fines de semana
+                            </label>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+         
+
+
+
+
+
+
+                <hr>
+                <h3>Puedes compartir información adicional</h3>
+                <div class="form-group">
+                    <label for="">Describe brevemente tu semblanza</label>
+                    <textarea class="form-control" id="" rows="3"></textarea>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#" data-toggle="modal" data-target="#ModalVideoBT" class="mb-3">¿Cómo hacer tu CV en video?</a>
+
+                        <h3>Comparte el enlace de tu CV en video</h3>
+                        <div class="form-group">
+                            <label for="">Dirección electrónica en YouTube</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Tus redes sociales</h3>
+                        <div class="form-row align-items-center">
+                            <div class="col-12">
+                                <label class="sr-only" for="">Facebook</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="assets/img/facebook.png" class="img24"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="Facebook">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="sr-only" for="">Linked In</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="assets/img/linkedin.png" class="img24"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="LinkedIn">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="sr-only" for="">Página web</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="assets/img/web.png" class="img24"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="URL">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="sr-only" for="">Otra</label>
+                                <input type="text" class="form-control mb-2" id="" placeholder="Otra">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+
+                <div class="mt-5 form-group text-center">
+                    <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                    <a href="#" class="montserrat-regular px19 px-4">Regresar</a>
+                    <a href="#" class="btn btn-lg btnPrimary">Guardar y continuar</a>
+                </div>
+            </form>
+        </div><!-- /.container -->
+    </div>
+
+    <footer class="bg-white footerBtm">
+        <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+        </div>
+        <div class="green-bar">
+            <div class="container">
+                <div class="d-flex flex-row text-center">
+                    <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                    <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                    <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                    <div class="ml-auto p-2"><a href="necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="ModalVideoBT" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h2>¿Cómo hacer tu CV en video?</h2>
+                    <ol>
+                        <li class="font-weight-bold">Crea un guión</li>
+                        <p>Piensa y escribe la información más relevante sobre ti</p>
+                        <ul>
+                            <li>Formación académica</li>
+                            <li>Habilidades y competencias</li>
+                            <li>Experiencia laboral</li>
+                            <li>Logros laborales</li>
+                            <li>Menciona por qué deberían contratarte</li>
+                        </ul>
+
+                        <li class="font-weight-bold">Busca un espacio para grabar</li>
+                        <ul>
+                            <li>Elige un espacio iluminado y sin distractores</li>
+                            <li>Aclara tu voz y procura grabar en un espacio sin ruido</li>
+                            <li>Toma tu celularr o enciende tu cámara y encuadra tu imagen</li>
+                        </ul>
+                        <li class="font-weight-bold">Graba tu video</li>
+
+
+
+                        <ul>
+                            <li>Platica sobre ti, en menos de 2 minutos</li>
+                            <li>Menciona tu nombre completo</li>
+                            <li>Menciona tus datos de contacto: correo, teléfono o redes sociales</li>
+                            <li>Sigue el guion que escibiste</li>
+                        </ul>
+                    </ol>
+                    <hr>
+                    <h3>Sube tu video</h3>
+                    <p>Una vez que termines de grrabar solo tienes que subirr tu video a internet</p>
+                    <ol>
+                        <li>Accede a la página de <a href="www.youtube.com" target="_blank">youtube</a></li>
+                        <li>Elije el video de tu empresa y publícalo</li>
+                        <li>Copia el enlace desde you tube y pégalo en tu perfil del Portal del Empleo</li>
+                    </ol>
+                    <hr>
+                    <div class="row justify-content-center"><a href="#" data-dismiss="modal" class="btn btnPrimary">Entendido</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js'></script>
+    <script src="assets/js/bootstrap4-toggle.min.js"></script>
+    <script src="assets/js/assets.js"></script>
+
+</body>
+
+</html>

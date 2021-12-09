@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <!---RESPONSIVE MENU--->
+            <!-- The overlay -->
+            <div id="myNav" class="overlay1">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+
+                <div class="overlay-content">
+                    <div class="container">
+                        <div class="col-12">
+                            <div class="text-center"><img class="rounded-circle" src="assets/img/avatar-150.jpg" alt="avatar-150"></div>
+                            <div class="text-center my-3">
+                                <h2 class="m-0">CRUMA y Asociados</h2>
+                            </div>
+
+                            <hr class="hr-white">
+                            <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                                <li class="p-1"><a href="#" class="selected"><i class="material-icons">person_search</i><br>Ofertas de empleo</a></li>
+                                <li class="p-1"><a href="#"><i class="material-icons">star</i><br>Candidatos</a></li>
+                                <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Notificaciones</a></li>
+                                <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Crear oferta</a></li>
+                            </ul>
+                            <hr class="hr-white">
+                        </div>
+
+                        <div class="col-12">
+                            <h2>Buscador</h2>
+                            <form>
+                                <div class="form-row justify-content-md-center">
+                                    <div class="form-group col-md-6 text-center">
+                                        <label class="text-white px19" for="que">¿Qué?</label>
+                                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                                    </div>
+                                    <div class="form-group col-md-6 text-center">
+                                        <label class="text-white px19" for="donde">¿Dónde?</label>
+                                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                                    </div>
+                                    <div class="clearfix">&nbsp;</div>
+                                    <div class="form-row col-12">
+                                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!---RESPONSIVE MENU--->
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse">
+                    <span onclick="openNav()" class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4 border-right">
+                            <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search &nbsp;</i><br>
+                                Buscar</a><span>&nbsp; &nbsp; &nbsp;</span>
+                        </li>
+
+
+                        <li class="nav-item mr-4">
+                            <a href="emp-ofertas-activas.html" class="text-white"><i class="material-icons">business_center</i><br>
+                                Ofertas de empleo</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"><i class="material-icons">people</i><br>
+                                Candidatos</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white">
+                                <i class="material-icons">notifications</i>
+                                <span class="badge badge-important">12</span>
+                                <br>
+                                Notificaciones</a>
+
+                        </li>
+                        <li class="mr-4"><button type="submit" class="btn btn-gold px16 align-center">Crear oferta</button></li>
+                        <li class="nav-item">
+                            <div class="row">
+                                <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"></div>
+                                <div class="col-8 text-left">
+                                    <h4 class="montserrat-light text-white">Hola Kruma y Aso</h4><a href="#" class="text-white">Cerrar sesión</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-white"><span class="material-icons">highlight_off</span> Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav " role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <img src="assets/img/back_icon.png" alt="back"> Regresar a me interesan
+                        </a>
+                    </li>
+                </ul>
+                <div id="options" class="row">
+                    <div class="col-12 text-left">
+                        <ul class="nav">
+                            <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#Share"><i class="material-icons">share</i> Compartir</a></li>
+                            <li class="nav-link px-1"><a href="#"><i class="material-icons">get_app</i> Descargar CV</a></li>
+                            <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#mensajeBorrar"><i class="material-icons">delete</i> Borrar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-lg-9">
+                <div class="list">
+                    <div class="row">
+                        <div class="backItemDetail">
+                            <div class="row">
+                                <div class="col-1">
+
+                                </div>
+                                <div class="col-md-7">
+
+                                    <h3 class="montserrat-extraLight">Curriculum vitae</h3>
+                                    <h2 class="montserrat-regular px28">Arquitecta</h2>
+                                    <h2 class="montserrat-regular px28">Aurora Morales García</h2>
+                                    <h3 class="">Arquitecto supervisor de obra</h3>
+                                    <h3 class="montserrat-extraLight">Lugar: Coyoacán, Ciudad de México</h3>
+                                    <h3 class="montserrat-extraLight">4 años de experiencia</h3>
+
+
+                                </div>
+                                <div class="col-md-4 text-md-right">
+                                    <h3 class="montserrat-extraLight">Expectativa salarial mensual</h3>
+                                    <h2 class="montserrat-regular mb-4 px28">$30,000.00</h2>
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-11 backMatchDetail">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <h3 class="mb-3">Datos de contacto</h3>
+                                            <p><span class="material-icons">mail_outline</span> <a href="mailto:aurora.morales@gmail.com">aurora.morales@gmail.com</a></p>
+                                            <p><span class="material-icons">phone_iphone</span> Tel: (55) 5555-5555</p>
+                                            <hr>
+                                            <p class="px14 mt-3"><i>Aurora es compatible a tu oferta "Arquitecto supervisor de obra"</i></p>
+                                            <h3>80% compatible</h3>
+                                            <div class="progress">
+                                                <div class="progress-bar-2" style="width:80%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="mb-3">Envía un mensaje a:</h3>
+                                            <p>aurora.morales@gmail.com</p>
+                                            <h3>Mensaje rápido</h3>
+                                            <select id="sendMessage" class="form-control">
+                                                <option>Seleccionar mensaje:</option>
+                                                <option>Me interesa comunicarme contigo</option>
+                                                <option>Pronto me comunicaré contigo</option>
+                                                <option>Tengo una vacante para ti</option>
+                                                <option>Quiero entrevistarte</option>
+                                            </select>
+                                            <h3>Mensaje</h3>
+                                            <textarea id="longMessage" name="" rows="4" cols="" class="form-control"></textarea>
+                                            <button type="submit" class="btn btnPrimary mt-2">Enviar mensaje</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-12 text-center mt-2">
+                                            <div id="interviewQuestion" class="background-light-grey">
+                                                <h3>¿Ya entrevistaste a Aurora?</h3>
+                                                <a href="" class="btn btn-light-green" data-toggle="modal" data-target="#mensajeSi"><span class="material-icons">check_circle_outline</span> si</a>
+                                                &nbsp;
+                                                <a href="" class="btn btn-light-green" data-toggle="modal" data-target="#NoInteresa"><span class="material-icons">thumb_down</span> No me interesa</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12 text-md-right">
+                                    <h5 class="montserrat-thin">Folio: 20384</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1">&nbsp;</div>
+                                <div class="col-lg-7 text-left">
+                                    <h2>Experiencia laboral</h2>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Puesto*</h3>
+                                            <p class="m-0">Diseñador</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Salario neto mensual recibido</h3>
+                                            <p class="m-0">$15,000.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3 class="m-0">Diseño y mantenimiento de páginas web</h3>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui justo, vulputate vel imperdiet ut, aliquam vel ligula. Praesent in augue sit amet sem condimentum sollicitudin in mollis arcu. Curabitur eros metus, sollicitudin vitae dictum non, iaculis vel metus. Suspendisse eget eros quis odio scelerisque sollicitudin vitae in enim.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Fecha de ingreso*</h3>
+                                            <p class="m-0">15/01/2018</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Fecha de salida*</h3>
+                                            <p class="m-0">Aún sigo en este trabajo</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Puesto*</h3>
+                                            <p class="m-0">Diseñador</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Salario neto mensual recibido</h3>
+                                            <p class="m-0">$15,000.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3 class="m-0">Diseño y mantenimiento de páginas web</h3>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui justo, vulputate vel imperdiet ut, aliquam vel ligula. Praesent in augue sit amet sem condimentum sollicitudin in mollis arcu. Curabitur eros metus, sollicitudin vitae dictum non, iaculis vel metus. Suspendisse eget eros quis odio scelerisque sollicitudin vitae in enim.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Fecha de ingreso*</h3>
+                                            <p class="m-0">15/01/2018</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Fecha de salida*</h3>
+                                            <p class="m-0">Aún sigo en este trabajo</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Puesto*</h3>
+                                            <p class="m-0">Diseñador</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Salario neto mensual recibido</h3>
+                                            <p class="m-0">$15,000.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3 class="m-0">Diseño y mantenimiento de páginas web</h3>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dui justo, vulputate vel imperdiet ut, aliquam vel ligula. Praesent in augue sit amet sem condimentum sollicitudin in mollis arcu. Curabitur eros metus, sollicitudin vitae dictum non, iaculis vel metus. Suspendisse eget eros quis odio scelerisque sollicitudin vitae in enim.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Fecha de ingreso*</h3>
+                                            <p class="m-0">15/01/2018</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Fecha de salida*</h3>
+                                            <p class="m-0">Aún sigo en este trabajo</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h2>Formación profesional</h2>
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3 class="m-0">Escolaridad*</h3>
+                                            <p class="m-0">Licenciatura</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Escuela o instituto*</h3>
+                                            <p class="m-0">Universidad Nacional Autónoma de México</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Año de egreso</h3>
+                                            <p class="m-0">2016</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Carrera o especialidad*</h3>
+                                            <p class="m-0">Lic. en Arquitectura</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Situación académica*</h3>
+                                            <p class="m-0">Titulado</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Cédula profesional (opcional)</h3>
+                                            <p class="m-0">2324252627</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h2>Cursos y talleres</h2>
+
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Curso, taller, seminario o diplomado*</h3>
+                                            <p class="m-0">ASPEL SAE</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Escuela o institución</h3>
+                                            <p class="m-0">Facultad de Arquitectura UAEM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">¿Tienes documento probatorio?</h3>
+                                            <p class="m-0">Si</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Tipo de documento</h3>
+                                            <p class="m-0">Certificado</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Curso, taller, seminario o diplomado*</h3>
+                                            <p class="m-0">ASPEL SAE</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Escuela o institución</h3>
+                                            <p class="m-0">Facultad de Arquitectura UAEM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">¿Tienes documento probatorio?</h3>
+                                            <p class="m-0">Si</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Tipo de documento</h3>
+                                            <p class="m-0">Certificado</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h2>Idiomas</h2>
+
+
+                                    <div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Idioma</h3>
+                                            <p class="m-0">Inglés</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Nivel</h3>
+                                            <p class="m-0">Avanzado</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Certificado</h3>
+                                            <p class="m-0">TOEFL</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3 class="m-0">URL de certificado</h3>
+                                            <p class="m-0"><a href="#">www.toefl.com/certificate/12345</a></p>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                </div>
+                                <div class="col-lg-4 mt-2 text-center">
+                                    <img class="logo80" src="assets/img/avatar.jpg" alt="logo de la empresa">
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-12 text-left">
+                                            <h3>Habilidades y competencias</h3>
+                                            <ul>
+                                                <li>Comunicación</li>
+                                                <li>Construir confianza</li>
+                                                <li>Compromiso con el aprendizaje</li>
+                                            </ul>
+                                        </div>
+                                        <hr>
+                                        <div class="col-12 text-left">
+                                            <h3>Conocimiento y herramientas</h3>
+                                            <ul>
+                                                <li>AUTOCAD - 5 años</li>
+                                                <li>Microsoft word - 5 años</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-7 offset-md-1">
+                                    <h3>Datos de contacto</h3>
+                                    <p class="m-0"><a href="mailto:aurora.morales@gmail.com">aurora.morales@gmail.com</a></p>
+                                    <p class="m-0">Tel: (55) 5555-5555</p>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                        <div class="col-12 text-center mt-2">
+                                            <div id="interviewQuestion" class="background-light-grey">
+                                                <h3>¿Ya entrevistaste a Aurora?</h3>
+                                                <a href="" class="btn btn-light-green" data-toggle="modal" data-target="#mensajeSi"><span class="material-icons">check_circle_outline</span> si</a>
+                                                &nbsp;
+                                                <a href="" class="btn btn-light-green" data-toggle="modal" data-target="#NoInteresa"><span class="material-icons">thumb_down</span> No me interesa</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-lg-3">
+                <div class="bg-white p-3 box-shadow">
+                    <div class="panel-group" id="accordion" data-toggle="collapse">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3>Candidatos</h3>
+                                <hr>
+                                <h4 class="border-bottom">
+                                    <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                        <h3>25 Sugeridos</h3>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse mb-5 collapse show" aria-expanded="false" style="">
+                                <div class="panel-body"><a href="#">
+                                        <h3>Fulanito 1 <br>Arquitecto dibujante</h3>
+                                    </a>
+
+                                    <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                        <i>80% compatible a tu oferta</i>
+                                    </h4>
+                                    <div class="progress">
+
+                                        <div class="progress-bar-2" style="width:80%"></div>
+                                    </div>
+
+                                </div>
+                                <hr>
+                                <div class="panel-body">
+                                    <a href="#">
+                                        <h3>Fulanito 2 <br>Dibujante</h3>
+                                    </a>
+
+                                    <h4><span class="semi-bold">5 años de experiencia</span><br>
+                                        <i>85% compatible a tu oferta</i>
+                                    </h4>
+                                    <div class="progress">
+
+                                        <div class="progress-bar-2" style="width:85%"></div>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="border-bottom">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">
+                                        <h3>34 Postulados</h3>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse mb-5 collapse" aria-expanded="false" style="">
+                                <div class="panel-body">
+                                    <a href="#">
+                                        <h3>Julián Flores Iturriaga <br>Arquitecto paisajista</h3>
+                                    </a>
+
+                                    <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                        <i>92% compatible a tu oferta</i>
+                                    </h4>
+                                    <div class="progress">
+
+                                        <div class="progress-bar-2" style="width:92%"></div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <h3>Manuel Tapia López <br>Arquitecto</h3>
+                                        </a>
+
+                                        <h4><span class="semi-bold">5 años de experiencia</span><br>
+                                            <i>80% compatible a tu oferta</i>
+                                        </h4>
+                                        <div class="progress">
+
+                                            <div class="progress-bar-2" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <h3>Adriana Guzmán <br>Arquitecto general</h3>
+                                        </a>
+
+                                        <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                            <i>50% compatible a tu oferta</i>
+                                        </h4>
+                                        <div class="progress">
+
+                                            <div class="progress-bar-2" style="width:50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <hr>
+
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="border-bottom">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false">
+                                        <h3>23 Me interesaron</h3>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse mb-5 collapse" aria-expanded="false" style="">
+                                <div class="panel-body">
+                                    <a href="#">
+                                        <h3>Fulanito 1 <br>Arquitecto paisajista</h3>
+                                    </a>
+
+                                    <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                        <i>92% compatible a tu oferta</i>
+                                    </h4>
+                                    <div class="progress">
+
+                                        <div class="progress-bar-2" style="width:92%"></div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <h3>Fulanito 2 <br>Arquitecto</h3>
+                                        </a>
+
+                                        <h4><span class="semi-bold">5 años de experiencia</span><br>
+                                            <i>80% compatible a tu oferta</i>
+                                        </h4>
+                                        <div class="progress">
+
+                                            <div class="progress-bar-2" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="panel-body">
+                                        <h3>Fulanito 3 <br>Arquitecto general</h3>
+
+                                        <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                            <i>50% compatible a tu oferta</i>
+                                        </h4>
+                                        <div class="progress">
+
+                                            <div class="progress-bar-2" style="width:50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <hr>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="no-bullets mt-3">
+                        <li>
+
+
+                        </li>
+
+
+
+
+                    </ul>
+                    <a href="#" class="">Ver todos los candidatos</a>
+                </div>
+            </div>
+        </div>
+    </main><!-- /.container -->
+
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <div class="modal fade autoclose" id="mensajeBorrar" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <hr>
+                    <h2 class="text-center">La oferta de empleo <span class="font-weight-bold">xxxxxxxxxx</span> se ha movido a la <span class="font-weight-bold">papelera</span></h2>
+                    <hr>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal compartir-->
+    <div class="modal fade" id="Share" tabindex="-1" role="dialog" aria-labelledby="Share" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <h2>Compartir</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="">
+                                <img class="img50" src="assets/img/icon-whatsapp.png">
+                                <p>Whats app</p>
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="">
+                                <img class="img50" src="assets/img/icon-facebook.png">
+                                <p>Facebook</p>
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="">
+                                <img class="img50" src="assets/img/icon-twitter.png">
+                                <p>Twitter</p>
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="">
+                                <img class="img50" src="assets/img/icon-email.png">
+                                <p>Correo</p>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <h3>Dirercción URL</h3>
+                            <input class="col-10 ur" type="url" placeholder="https://www.trabajo.gob.mx" id="">
+                            <a href=""><small>Copiar URL</small></a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- Modal no me Entrevistados-->
+    <div class="modal fade autoclose" id="mensajeSi" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <hr>
+                    <h2 class="text-center">El candidato se ha movido a tu carpeta <span class="font-weight-bold">Entrevistados</span></h2>
+                    <hr>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal no me interesa-->
+    <div class="modal fade" id="NoInteresa" tabindex="-1" role="dialog" aria-labelledby="Share" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <h2>No me interesa</h2>
+                            <p>Si ya no te interesa el candidato, coméntale el motivo.</p>
+                            <p><small>¡Haz que hablen bien de tu empresa!</small></p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p>Selecciona un motivo</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Experiencia insuficiente
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            El puesto ya se ocupó
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Falta de documentación soporte
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                        <label class="form-check-label" for="exampleRadios4">
+                            No aprobó exámenes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                        <label class="form-check-label" for="exampleRadios5">
+                            No se presentó a la entrevista
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                        <label class="form-check-label" for="exampleRadios5">
+                            Se presentó fuera de fecha
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                        <label class="form-check-label" for="exampleRadios5">
+                            No cubre el perfil requerido
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                        <label class="form-check-label" for="exampleRadios5">
+                            Otro
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Cuéntanos un poco más</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <hr>
+                    <div class="mt-5 form-group text-center">
+                        <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                        <a href="#" class="montserrat-regular px19 px-4">Cancelar</a>
+                        <a href="#" class="btn btn-lg btnPrimary">Aceptar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/assets.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <script>
+
+        setTimeout(function() {
+        $('#mensajeSi').modal('hide')
+        }, 4000);
+    </script>
+
+</body>
+
+</html>

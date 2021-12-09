@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="../../../../favicon.ico">
+      <title>Portal del Empleo</title>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+      <!-- Place your stylesheet here-->
+      <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+      <!--- montserrat font-->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+      <!---icons--->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
+   <body>
+      <header class="back-bt header-registro text-center">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+               <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+            </div>
+         </nav>
+      </header>
+      <!---Sin Progress
+         <div class="progress">
+             <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+         </div>
+         Sin Progress--->
+      <div id="main" class="container">
+         <div class="mt-5 col-12">
+            <h1>¡Continuemos!</h1>
+            <h3>Selecciona una de estas dos opciones de registro.</h3>
+         </div>
+         <form>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="form-check py-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label h5 font-weight-bold" for="inlineRadio1"> Registro rápido</label>
+                        <p><small>Cargamos tus datos automáticamente con el RFC. Vinculación con el SAT</small></p>
+                     </div>
+                     <div class="form-group">
+                        <label for="inputPassword4" class="d-block">RFC</label>
+                        <input type="text" class="form-control col-md-6 d-inline" id="" placeholder="">
+                        <a href="reg-emp-0-rapido.html" class="btn btnPrimary d-inline">Validar</a>
+                     </div>
+                  </div>
+                  <div class="col-md-6 border-left">
+                     <div class="form-check py-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label h5 font-weight-bold" for="inlineRadio2"> Registro paso a paso</label>
+                        <p><small>Registro manual de los datos de tu empresa</small></p>
+                     </div>
+                     <div class="form-group col-md-12 pl-4">
+                        <label for="">Tipo de persona</label>
+                        <select id="" class="form-control">
+                           <option selected="">Seleccionar</option>
+                           <option>Empresa privada</option>
+                           <option>Empresa pública</option>
+                           <option>Organismo no gubernamental</option>
+                           <option>Agencia y outsourcing</option>
+                        </select>
+                        <small><a href="reg-emp-fisica-1.html">Ej. Empresa privada</a> | <a href="reg-emp-publica-1.html">Empresa pública</a> | <a href="reg-emp-organismo-1.html">Organismo</a> | <a href="reg-emp-outsourcing-1.html">Outsourcing</a></small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="mt-5 form-group text-center">
+               <a href="reg-emp-fisica-1.html" class="btn btn-lg btnPrimary">Continuar</a>
+            </div>
+         </form>
+      </div>
+      <!-- /.container -->
+      <footer class="bg-white footerBtm">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="modal fade" id="CuentaActiva" tabindex="-1" role="dialog" aria-labelledby="CuentaActiva" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title text-center">Ya existe una cuenta para esta RFC</h3>
+                                    <p class="panel-title text-center">JORA199056TY6</p>
+                                    <h3 class="panel-title text-center">Inicia sesión en el Portal del Empleo</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <form accept-charset="UTF-8" role="form">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="jai**rc@gmail.com" name="email" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input name="remember" type="checkbox" value="Remember Me"> Permanecer conectado
+                                                </label>
+                                            </div>
+                                            <input class="btn btn-lg btnPrimary btn-block" type="submit" value="Iniciar sesión">
+                                        </fieldset>
+                                    </form>
+                                    <hr />
+
+                                    <p class="text-center"><a href="05_1_1-BT-Recuperar-contrasena.html">¿Olvidaste tu contraseña?</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="assets/js/jquery-3.5.1.js"></script>
+      <script src="assets/js/bootstrap.bundle.js"></script>
+      <script src="assets/js/assets.js"></script>
+      <script>
+        $(document).ready(function() {
+            $("#CuentaActiva").modal('show');
+        });
+    </script>
+   </body>
+</html>

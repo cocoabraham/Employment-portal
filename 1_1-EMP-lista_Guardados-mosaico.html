@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Arriba</button>
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <!---RESPONSIVE MENU--->
+            <!-- The overlay -->
+            <div id="myNav" class="overlay1">
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <div class="container">
+                        <div class="col-12">
+                            <div class="text-center"><img class="rounded-circle" src="assets/img/avatar-150.jpg" alt="avatar-150"></div>
+                            <div class="text-center my-3">
+                                <h2 class="m-0">CRUMA y Asociados</h2>
+                            </div>
+                            <hr class="hr-white">
+                            <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                                <li class="p-1"><a href="#" class="selected"><i class="material-icons">person_search</i><br>Ofertas de empleo</a></li>
+                                <li class="p-1"><a href="#"><i class="material-icons">star</i><br>Candidatos</a></li>
+                                <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Notificaciones</a></li>
+                                <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Crear oferta</a></li>
+                            </ul>
+                            <hr class="hr-white">
+                        </div>
+                        <div class="col-12">
+                            <h2>Buscador</h2>
+                            <form>
+                                <div class="form-row justify-content-md-center">
+                                    <div class="form-group col-md-6 text-center">
+                                        <label class="text-white px19" for="que">¿Qué?</label>
+                                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                                    </div>
+                                    <div class="form-group col-md-6 text-center">
+                                        <label class="text-white px19" for="donde">¿Dónde?</label>
+                                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                                    </div>
+                                    <div class="clearfix">&nbsp;</div>
+                                    <div class="form-row col-12">
+                                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---RESPONSIVE MENU--->
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse">
+                    <span onclick="openNav()" class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4 border-right">
+                            <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search &nbsp;</i><br>
+                                Buscar</a><span>&nbsp; &nbsp; &nbsp;</span>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="emp-ofertas-activas.html" class="text-white"><i class="material-icons">business_center</i><br>
+                                Ofertas de empleo</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"><i class="material-icons">people</i><br>
+                                Candidatos</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white">
+                                <i class="material-icons">notifications</i>
+                                <span class="badge badge-important">12</span>
+                                <br>
+                                Notificaciones</a>
+                        </li>
+                        <li class="mr-4"><button type="submit" class="btn btn-gold px16 align-center">Crear oferta</button></li>
+                        <li class="nav-item">
+                            <div class="row">
+                                <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"></div>
+                                <div class="col-8 text-left">
+                                    <h4 class="montserrat-light text-white">Hola Kruma y Aso</h4>
+                                    <a href="#" class="text-white">Cerrar sesión</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-white"><span class="material-icons">highlight_off</span> Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div id="filters" class="bg-white p-3">
+                    <ul class="no-bullets">
+                        <li class="py-3 border-bottom"><a href="1_0-EMP-Me-interesan.html">Me interesan</a></li>
+                        <li class="py-3 border-bottom"><a href="1_0-EMP-CV-Ofertas-Entrevistados.html">Entrevistados</a></li>
+                        <li class="py-3 border-bottom"><a href="1_0-EMP-Guardados.html" class="selected">Guardados (34)</a></li>
+                        <li class="py-3 border-bottom"><a href="1_0-EMP-Postulados.html">Postulados (72)</a></li>
+                        <li class="py-3 border-bottom"><a href="1_0-EMP-Sugeridos.html">Sugeridos (56)</a></li>
+                        <li class="py-3"><a href="1_1-EMP-papelera.html">Papelera (4)</a></li>
+                    </ul>
+                </div>
+                <div id="filters" class="bg-white p-3 mt-3">
+                    <ul class="no-bullets">
+                        <li class="py-3 text-center"><a href="static/consejos-empleo.html"><span class="material-icons">info</span> Consejos de empleo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <p>72 candidatos guardados</p>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <hr class="d-lg-none">
+                        <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                            <li class="p-1"><a href="1_0-EMP-Me-interesan.html" class="selected"><i class="material-icons">person_search</i><br>Me interesan</a></li>
+                            <li class="p-1"><a href="1_0-EMP-Guardados.html"><i class="material-icons">star</i><br>Guardados (4)</a></li>
+                            <li class="p-1"><a href="1_0-EMP-Postulados.html"><i class="material-icons">check_circle</i><br>Postulados (72)</a></li>
+                            <li class="p-1"><a href="1_0-EMP-Sugeridos.html"><i class="material-icons">list_alt</i><br>Sugeridos (56)</a></li>
+                            <li class="p-1"><a href="1_1-EMP-papelera.html"><i class="material-icons">delete_forever</i><br>Papelera (4)</a></li>
+                        </ul>
+                        <hr class="d-lg-none">
+                    </div>
+                </div>
+                <div id="options" class="row">
+                    <div class="col-8 text-left">
+                        <ul class="nav">
+                            <li class="nav-link px-1">
+                                <div>
+                                    <select class="montserrat px16">
+                                        <option>Todas las ofertas</option>
+                                        <option>Administrador contable</option>
+                                        <option>Arquitecto supervisor de obra</option>
+                                        <option>Gerente ejecutivo de empresa farmacéutica</option>
+                                        <option>Enfermera/o</option>
+                                        <option>Vendedores/option</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 text-right">&nbsp;
+                    </div>
+                </div>
+                <div id="options" class="row">
+                    <div class="col-7 text-left">
+                        <ul class="nav">
+                            <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#Comparativo"><i class="material-icons">people</i> Comparar</a></li>
+
+                            <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#mensajeBorrar"><i class="material-icons">delete</i> Borrar</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 text-right">
+                        <ul class="nav">
+                            <li class="nav-link">
+                                <div>
+                                    <select class="montserrat px16">
+                                        <option>Ordenar por:</option>
+                                        <option>Compatibilidad</option>
+                                        <option>Ubicación</option>
+                                        <option>Carrera</option>
+                                        <option>Experiencia</option>
+                                        <option>Expectativa salarial</option>
+                                    </select>
+
+                                </div>
+                            </li>
+                            <li class="nav-link  px-1"><a href="#"><i class="material-icons">sort_by_alpha</i></a></li>
+                            <li class="nav-link  px-1"><a href="02-BT-SS-Resultados-mapa.HTML"><i class="material-icons">pin_drop</i></a></li>
+                            <li class="nav-link  px-1"><a href="2_0-BT-Te-buscan-vista-mosaico.html"><i class="material-icons">apps</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="backItemListGrid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="nav">
+                                            <li><input type="checkbox"> </li>
+                                            <li class="ml-1"><i class="material-icons unactive">star</i></li>
+                                            <li class="text-handicap-blue"><span class="material-icons">accessible_forward</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="" class="text-dark">
+                                            <h3 class="montserrat-extraLight">Arquitecta</h3>
+                                            <h3> Aurora Morales Castañeda</h3>
+                                            <h2 class="montserrat-regular px16 height-50">Diseñador web pro experto en CSS y HTML 5</h2>
+                                            <p>5 años de experiencia</p>
+
+                                            <h4 class="montserrat-extraLight px12">Expectativa salarial</h4>
+                                            <h3 class="montserrat-regular">$30,000.00</h3>
+                                            <h4 class="montserrat-extraLight px12">Coyoacán, Ciudad de México</h4>
+                                        </a>
+                                        <hr>
+
+                                        <div class="">
+                                            <p class="px14 m-0"><i>95% compatible con "Arquitecto"</i></p>
+                                            <div class="progress">
+                                                <div class="progress-bar-2" style="width:70%"></div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="col text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="backItemListGrid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="nav">
+                                            <li><input type="checkbox"> </li>
+                                            <li class="ml-1"><i class="material-icons unactive">star</i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="" class="text-dark">
+                                            <h3 class="montserrat-extraLight">Arquitecta</h3>
+                                            <h3> Aurora Morales Castañeda</h3>
+                                            <h2 class="montserrat-regular px16 height-50">Diseñador gráfico con conocimientos en web</h2>
+                                            <p>5 años de experiencia</p>
+
+                                            <h4 class="montserrat-extraLight px12">Expectativa salarial</h4>
+                                            <h3 class="montserrat-regular">$30,000.00</h3>
+                                            <h4 class="montserrat-extraLight px12">Coyoacán, Ciudad de México</h4>
+                                        </a>
+                                        <hr>
+
+                                        <div class="">
+                                            <p class="px14 m-0"><i>95% compatible con "Arquitecto"</i></p>
+                                            <div class="progress">
+                                                <div class="progress-bar-2" style="width:70%"></div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="col text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="backItemListGrid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="nav">
+                                            <li><input type="checkbox"> </li>
+                                            <li class="ml-1"><i class="material-icons unactive">star</i></li>
+                                            <li class="text-handicap-blue"><span class="material-icons">accessible_forward</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="" class="text-dark">
+                                            <h3 class="montserrat-extraLight">Arquitecta</h3>
+                                            <h3> Aurora Morales Castañeda</h3>
+                                            <h2 class="montserrat-regular px16 height-50">Diseñador web</h2>
+                                            <p>5 años de experiencia</p>
+
+                                            <h4 class="montserrat-extraLight px12">Expectativa salarial</h4>
+                                            <h3 class="montserrat-regular">$30,000.00</h3>
+                                            <h4 class="montserrat-extraLight px12">Coyoacán, Ciudad de México</h4>
+                                        </a>
+                                        <hr>
+
+                                        <div class="">
+                                            <p class="px14 m-0"><i>95% compatible con "Arquitecto"</i></p>
+                                            <div class="progress">
+                                                <div class="progress-bar-2" style="width:70%"></div>
+                                            </div>
+                                        </div>
+
+                                        <hr>
+                                        <div class="col text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="backItemListGrid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="nav">
+                                            <li><input type="checkbox"> </li>
+                                            <li class="ml-1"><i class="material-icons unactive">star</i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="" class="text-dark">
+                                            <h3 class="montserrat-extraLight">Arquitecta</h3>
+                                            <h3> Aurora Morales Castañeda</h3>
+                                            <h2 class="montserrat-regular px16 height-50">Diseñador web pro experto en CSS y HTML 5</h2>
+                                            <p>5 años de experiencia</p>
+
+                                            <h4 class="montserrat-extraLight px12">Expectativa salarial</h4>
+                                            <h3 class="montserrat-regular">$30,000.00</h3>
+                                            <h4 class="montserrat-extraLight px12">Coyoacán, Ciudad de México</h4>
+                                        </a>
+                                        <hr>
+
+                                        <div class="">
+                                            <p class="px14 m-0"><i>95% compatible con "Arquitecto"</i></p>
+                                            <div class="progress">
+                                                <div class="progress-bar-2" style="width:70%"></div>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <div class="col text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="backItemListGrid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="nav">
+                                            <li><input type="checkbox"> </li>
+                                            <li class="ml-1"><i class="material-icons unactive">star</i></li>
+                                            <li class="text-handicap-blue"><span class="material-icons">accessible_forward</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="" class="text-dark">
+                                            <h3 class="montserrat-extraLight">Arquitecta</h3>
+                                            <h3> Aurora Morales Castañeda</h3>
+                                            <h2 class="montserrat-regular px16 height-50">Diseñador web pro experto en CSS y HTML 5</h2>
+                                            <p>5 años de experiencia</p>
+
+                                            <h4 class="montserrat-extraLight px12">Expectativa salarial</h4>
+                                            <h3 class="montserrat-regular">$30,000.00</h3>
+                                            <h4 class="montserrat-extraLight px12">Coyoacán, Ciudad de México</h4>
+                                        </a>
+                                        <hr>
+
+                                        <div class="">
+                                            <p class="px14 m-0"><i>95% compatible con "Arquitecto"</i></p>
+                                            <div class="progress">
+                                                <div class="progress-bar-2" style="width:70%"></div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="col text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="row justify-content-center">
+
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Siguiente</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Termina tarjeta 1 -->
+        </div>
+    </main>
+    <!-- /.container -->
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <!-- The Modal -->
+    <div class="modal fade" id="Comparativo" tabindex="-1" role="dialog" aria-labelledby="Comparativo" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="compare" class="row">
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-end">
+                                        <a href=""><i class="material-icons">star</i></a>
+
+                                    </div>
+                                    <div class="col">
+                                        <h1> <i><span class="montserrat-medium px16">100% compatible con</span></i></h1>
+                                        <h3 class="px12">"Contador/Ejecutivo contable"</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar-2" style="width:70%"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h2>Jorge García Muñoz</h2>
+                                    <h2 class="montserrat-regular px16 height-50">Diseñador gráfico con conocimientos en web</h2>
+                                    <h3>5 años de experiencia</h3>
+                                    <small>Tlalpan, Ciudad de México</small>
+
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="material-icons px32 text-gold text-center">local_atm</span>
+                                        </div>
+                                        <div class="col-10">
+                                            <h4 class="montserrat-extraLight px12 mb-0">Expectativa salarial</h4>
+                                            <h3>$ 20,000.00</h3>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="">Quitar candidato</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-end">
+                                        <a href=""><i class="material-icons">star</i></a>
+
+                                    </div>
+                                    <div class="col">
+                                        <h1> <i><span class="montserrat-medium px16">100% compatible con</span></i></h1>
+                                        <h3 class="px12">"Contador/Ejecutivo contable"</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar-2" style="width:70%"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h2>Gabriela Ortíz Méndez</h2>
+                                    <h2 class="montserrat-regular px16 height-50">Diseñador gráfico con conocimientos en web</h2>
+                                    <h3>5 años de experiencia</h3>
+                                    <small>Tlalpan, Ciudad de México</small>
+                                    <h3 class="text-handicap-blue px12"><span class="material-icons">accessible_forward</span> Persona con discapacidad</h3>
+
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="material-icons px32 text-gold text-center">local_atm</span>
+                                        </div>
+                                        <div class="col-10">
+                                            <h4 class="montserrat-extraLight px12 mb-0">Expectativa salarial</h4>
+                                            <h3>$ 20,000.00</h3>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="">Quitar candidato</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-end">
+                                        <a href=""><i class="material-icons">star</i></a>
+
+                                    </div>
+                                    <div class="col">
+                                        <h1> <i><span class="montserrat-medium px16">100% compatible con</span></i></h1>
+                                        <h3 class="px12">"Contador/Ejecutivo contable"</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar-2" style="width:70%"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h2>Raúl Arellano Cruz</h2>
+                                    <h2 class="montserrat-regular px16 height-50">Diseñador gráfico con conocimientos en web</h2>
+                                    <h3>5 años de experiencia</h3>
+                                    <small>Tlalpan, Ciudad de México</small>
+
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="material-icons px32 text-gold text-center">local_atm</span>
+                                        </div>
+                                        <div class="col-10">
+                                            <h4 class="montserrat-extraLight px12 mb-0">Expectativa salarial</h4>
+                                            <h3>$ 20,000.00</h3>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="">Quitar candidato</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-end">
+                                        <a href=""><i class="material-icons">star</i></a>
+
+                                    </div>
+                                    <div class="col">
+                                        <h1> <i><span class="montserrat-medium px16">100% compatible con</span></i></h1>
+                                        <h3 class="px12">"Contador/Ejecutivo contable"</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar-2" style="width:70%"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h2>Omar Alejandro Cruz Cruz</h2>
+                                    <h2 class="montserrat-regular px16 height-50">Diseñador gráfico con conocimientos en web</h2>
+                                    <h3>5 años de experiencia</h3>
+                                    <small>Tlalpan, Ciudad de México</small>
+                                    <h3 class="text-handicap-blue px12"><span class="material-icons">accessible_forward</span> Persona con discapacidad</h3>
+
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="material-icons px32 text-gold text-center">local_atm</span>
+                                        </div>
+                                        <div class="col-10">
+                                            <h4 class="montserrat-extraLight px12 mb-0">Expectativa salarial</h4>
+                                            <h3>$ 20,000.00</h3>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="btnPrimary btn-lg">Ver CV</a>
+                                        </div>
+                                        <div class="col-12 my-1 text-center">
+                                            <a href="#" class="">Quitar candidato</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade autoclose" id="mensajeBorrar" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <hr>
+                    <h2 class="text-center">La oferta de empleo <span class="font-weight-bold">xxxxxxxxxx</span> se ha movido a la <span class="font-weight-bold">papelera</span></h2>
+                    <hr>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>

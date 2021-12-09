@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4 border-right">
+                            <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search &nbsp;</i><br>
+                                Buscar</a><span>&nbsp; &nbsp; &nbsp;</span>
+                        </li>
+
+
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"><i class="material-icons">business_center</i><br>
+                                Ofertas de empleo</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"><i class="material-icons">people</i><br>
+                                Candidatos</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white">
+                                <i class="material-icons">notifications</i>
+                                <span class="badge badge-important">12</span>
+                                <br>
+                                Notificaciones</a>
+
+                        </li>
+                        <li class="mr-4"><button type="submit" class="btn btn-gold px16 align-center">Crear oferta</button></li>
+                        <li class="nav-item">
+                            <div class="row">
+                                <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"></div>
+                                <div class="col-8 text-left">
+                                    <h4 class="montserrat-light text-white">Hola Alejandra</h4><a href="#" class="text-white">Cerrar sesión</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                                    Cerrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav " role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <img src="assets/img/back_icon.png" alt="star"> Regresar a resultados
+                        </a>
+                    </li>
+                </ul>
+                <div id="options" class="row">
+                    <div class="col-12 text-left">
+                        <ul class="nav">
+                            <li class="nav-link px-1"><a href="#"><span class="material-icons">input</span> Reutilizar</a></li>
+
+                            <li class="nav-link px-1"><a href="#"><i class="material-icons">edit</i> Editar</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-3">
+
+            <div class="col-md-9">
+
+
+
+
+
+                <div class="list">
+                    <div class="row">
+                        <div class="backItemDetail">
+                            <div class="row">
+                                <div class="col-1">
+                                    <ul class="nav">
+
+                                        <li class="ml-1"><i class="material-icons">star</i></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-7">
+
+                                    <h3 class="montserrat-extraLight">Oferta de empleo</h3>
+                                    <h2 class="montserrat-regular px28">Diseñador</h2>
+                                    <h3 class="montserrat-extraLight">Lugar: Coyoacán, Ciudad de México <a href="#">¿Cómo llegar?</a></h3>
+                                    <h3 class="montserrat-extraLight">Empresa: <a href="#">Arkiplus</a></h3>
+                                    <h3 class="montserrat-regular">Vigente hasta el 20 de mayo del 2020 </h3>
+                                    <h3 class="text-handicap-blue"><span class="material-icons">accessible_forward</span> Aceptamos personas con discapacidad</h3>
+
+
+                                </div>
+                                <div class="col-md-4 text-md-right">
+                                    <h3 class="montserrat-extraLight">Salario mensual neto</h3>
+                                    <h2 class="montserrat-regular mb-4 px28">$30,000.00</h2>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="row">
+                                <div class="col-12 text-md-right">
+                                    <h5 class="montserrat-thin">Folio: 20384</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">&nbsp;</div>
+                                <div class="col-7 text-left">
+                                    <h3>Decripción</h3>
+                                    <p class="montserrat-light px16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam tellus et placerat vulputate. Praesent mi ex, sollicitudin eget dolor eu, rhoncus molestie nulla. Ut at eros ante. Etiam in erat tempor, elementum est eu, porttitor leo. Duis nec erat urna. Cras sollicitudin, quam sed viverra ultricies, ipsum elit posuere sem, vitae laoreet purus ipsum eget sapien. Integer dignissim ornare turpis, eget posuere urna viverra at. Donec justo mi, elementum ut gravida id, vulputate sit amet tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean lobortis ullamcorper porttitor</p>
+                                    <h3 class="mt-5">Requisitos</h3>
+                                    <ul>
+                                        <li class="montserrat-light px16">Edad 25 a 35 años</li>
+                                        <li class="montserrat-light px16">Genero: Femenino</li>
+                                        <li class="montserrat-light px16">Estado civil: Indistinto</li>
+                                        <li class="montserrat-light px16">Escolaridad: Licenciatura en diseño gráfico</li>
+                                        <li class="montserrat-light px16">Experiencia mínima de 1 año en diseño web</li>
+                                    </ul>
+                                    <h3 class="mt-5">Horario</h3>
+                                    <ul class="no-bullets">
+                                        <li class="montserrat-light px16">Lunes a jueves: 8:30 am - 6:30 pm</li>
+                                        <li class="montserrat-light px16">Viernes: 8:30 am - 3:00 pm</li>
+                                    </ul>
+                                    <h3 class="mt-5">Funciones y actividades</h3>
+                                    <ul>
+                                        <li class="montserrat-light px16">Diseñar, maquetar, generar propuestas, programar, implementar y optimizar páginas web empresariales.</li>
+                                        <li class="montserrat-light px16">Diseñar los diferentes materiales gráficos de comunicación.</li>
+                                        <li class="montserrat-light px16">Aplicar la lñínea gráfica y generar cntenidos en los materiales de comunicación y medios digitales..</li>
+                                    </ul>
+
+                                </div>
+                                <div class="col-4 mt-2 text-center">
+                                    <img class="logo80" src="assets/img/logo-empresa.jpg" alt="logo de la empresa">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="col-md-8 embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iG-CSw4evGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-3">
+
+                <div class="row">
+
+
+                </div>
+
+                <div class="bg-white p-3 box-shadow">
+                    <div class="panel-group" id="accordion" data-toggle="collapse">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3><b>Candidatos relacionados</b></h3>
+                                <hr>
+                                <h4 class="border-bottom">
+                                    <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                        <h3>25 Sugeridos</h3>
+                                    </a></h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse mb-5 collapse show" aria-expanded="false" style="">
+                                <div class="panel-body"><a href="#">
+                                        <h3>Fulanito 1 <br>Arquitecto dibujante</h3>
+                                    </a>
+
+                                    <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                        <i>80% compatible a tu oferta</i></h4>
+                                    <div class="progress">
+
+                                        <div class="progress-bar-2" style="width:80%"></div>
+                                    </div>
+
+                                </div>
+                                <hr>
+                                <div class="panel-body">
+                                    <a href="#">
+                                        <h3>Fulanito 2 <br>Dibujante</h3>
+                                    </a>
+
+                                    <h4><span class="semi-bold">5 años de experiencia</span><br>
+                                        <i>85% compatible a tu oferta</i></h4>
+                                    <div class="progress">
+
+                                        <div class="progress-bar-2" style="width:85%"></div>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="border-bottom">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">
+                                        <h3>34 Postulados</h3>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse mb-5 collapse" aria-expanded="false" style="">
+                                <div class="panel-body">
+                                    <a href="#">
+                                        <h3>Julián Flores Iturriaga <br>Arquitecto paisajista</h3>
+                                    </a>
+
+                                    <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                        <i>92% compatible a tu oferta</i></h4>
+                                    <div class="progress">
+
+                                        <div class="progress-bar-2" style="width:92%"></div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <h3>Manuel Tapia López <br>Arquitecto</h3>
+                                        </a>
+
+                                        <h4><span class="semi-bold">5 años de experiencia</span><br>
+                                            <i>80% compatible a tu oferta</i></h4>
+                                        <div class="progress">
+
+                                            <div class="progress-bar-2" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <h3>Adriana Guzmán <br>Arquitecto general</h3>
+                                        </a>
+
+                                        <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                            <i>50% compatible a tu oferta</i></h4>
+                                        <div class="progress">
+
+                                            <div class="progress-bar-2" style="width:50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <hr>
+
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="border-bottom">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false">
+                                        <h3>23 Me interesaron</h3>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse mb-5 collapse" aria-expanded="false" style="">
+                                <div class="panel-body">
+                                    <a href="#">
+                                        <h3>Fulanito 1 <br>Arquitecto paisajista</h3>
+                                    </a>
+
+                                    <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                        <i>92% compatible a tu oferta</i></h4>
+                                    <div class="progress">
+
+                                        <div class="progress-bar-2" style="width:92%"></div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <h3>Fulanito 2 <br>Arquitecto</h3>
+                                        </a>
+
+                                        <h4><span class="semi-bold">5 años de experiencia</span><br>
+                                            <i>80% compatible a tu oferta</i></h4>
+                                        <div class="progress">
+
+                                            <div class="progress-bar-2" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="panel-body">
+                                        <h3>Fulanito 3 <br>Arquitecto general</h3>
+
+                                        <h4><span class="semi-bold">7 años de experiencia</span><br>
+                                            <i>50% compatible a tu oferta</i></h4>
+                                        <div class="progress">
+
+                                            <div class="progress-bar-2" style="width:50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <hr>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="no-bullets mt-3">
+                        <li>
+
+
+                        </li>
+
+
+
+
+                    </ul>
+                    <a href="#" class="">Ver todos los candidatos</a>
+                </div>
+
+            </div>
+        </div>
+    </main><!-- /.container -->
+
+    <footer class="mt-110px bg-white">
+        <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+        </div>
+        <div class="green-bar">
+            <div class="container">
+                <div class="col-6">
+                    <ul class="list-unstyled list-inline text-center">
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-fb mx-1">
+                                hola
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-tw mx-1">
+                                hola
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-gplus mx-1">
+                                hola
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-li mx-1">
+                                hola
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-dribbble mx-1">
+                                hola
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">right</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

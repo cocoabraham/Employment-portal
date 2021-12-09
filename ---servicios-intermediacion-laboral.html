@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">Arriba</button>
+    <header class="back-bt header-interna text-center fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="text-white" href="#" onclick="goBack()" role="button"><span class="material-icons">keyboard_backspace</span> Regresar al Portal del empleo</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4">
+                            <a href="acerca-sne.html" class="text-white"> Acerca del SNE</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="servicios-intermediacion-laboral.html" class="text-white active"> Programas y servicios</a>
+                        </li>
+                        <li class="nav-item mr-4"><a href="consejos-empleo.html" class="text-white">Consejos de empleo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                                    Cerrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="container" id="text">
+        <div class="row bg-white p-3 mt-5">
+            <div class="col-md-4">
+                <div id="main-menu" class="list-group">
+                    <a href="servicios-intermediacion-laboral.html" class="list-group-item active">Servicios de Intermediación Laboral</a>
+                    <a href="movilidad-laboral.html" class="list-group-item">Movilidad Laboral</a>
+                    <a href="empleos-en-el-extranjero.html" class="list-group-item">Empleos en el Extranjero</a>
+                    <a href="periodico-digital.html" class="list-group-item">Periódico Digital de Empleo</a>
+                    <a href="necesitas-ayuda.html" class="list-group-item">Solicita una Cita</a>
+                    <!---a href="directorio.html" class="list-group-item">Directorio</a--->
+                    <a href="#sub-menu" class="list-group-item" data-toggle="collapse" data-parent="#main-menu">Otros programas <span class="material-icons">expand_more</span></a>
+                    <div class="collapse list-group-level1" id="sub-menu">
+                        <a href="otras-plataformas.html" class="list-group-item" data-parent="#sub-menu">Empleos en otras plataformas</a>
+                        <a href="bolsa-trabajo-tren-maya.html" class="list-group-item" data-parent="#sub-menu">Bolsa de trabajo Tren Maya</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-8 list">
+                <h1 class="mb-5">Servicios de intermediación laboral</h1>
+                <h3 class="lh-25">El SNE (#SNE) te brinda atención enfocada a tus necesidades particulares, proporcionándote información, asesoría y opciones, a través de sus servicios de intermediación laboral:</h3>
+                <ul>
+                    <li><a href="0_1-SS-home.html">El portal del empleo, ¡Encuentra un empleo!</a></li>
+                    <li><a href="movilidad-laboral.html">Movilidad laboral</a></li>
+                    <li><a href="#Bolsa-trabajo">Bolsa de trabajo</a></li>
+                </ul>
+                <p>Y ha creado para ti otros <a href="#Servicios-complementarios">servicios complementarios, ¡conócelos!</a></p>
+                <p>Todos los servicios del SNE (#SNE), se brindan de manera presencial, en las oficinas del SNE (#OSNE) o a distancia a través de internet, redes sociales y el teléfono.</p>
+                <ul class="no-bullets mb-3">
+                    <li class="mb-2"><span class="font-weight-bold">¡Buscador de empleo</span>, serás atendido por un Consejero Laboral, quien te orientará a partir de una entrevista!</li>
+                    <li><span class="font-weight-bold">¡Empleador</span>, serás atendido por un Concertador Empresarial, quien te brindará apoyo en el perfilamiento y cobertura de tus vacantes!</li>
+                </ul>
+                <h2 id="Bolsa-trabajo">¿Qué es la bolsa de trabajo del SNE?</h2>
+                <p>Es el servicio del SNE <span class="font-weight-bold">(#AMSPE)</span>, que te atiende de forma presencial y personalizada cuando acudas a las OSNE (#OSNE), es el <span class="font-weight-bold">servicio de empleo más confiable</span> en donde un consejero laboral te proporcionará información y orientación sobre las ofertas de trabajo disponibles, acordes a tus sus conocimientos, experiencia laboral y preferencias. </p>
+
+                <p>Sí eres empleador y requieres de asesoría para el perfilamiento, reclutamiento, selección o registro y promoción de vacantes entre los buscadores de trabajo, información de candidatos disponibles para cubrir tus ofertas de empleo, un concertador empresarial, te acompañará en dicho proceso.
+                </p>
+                <a href="directorio.html">Directorio de Oficinas del Servicio Nacional de Empleo </a>
+                <ul class="my-3">
+                    <li>
+                        <h3>Como parte de la Bolsa de Trabajo, tenemos las Ferias de Empleo </h3>
+                        <p>Sé parte de nuestros eventos de empleo, presenciales o virtuales, ferias de empleo, día del empleo, reclutamiento masivo y selección de personal, en donde se efectúa una vinculación laboral directa, entre empleadores en búsqueda de talento y candidatos.
+                            Revisa nuestro calendario de las ferias de empleo, consúltalo en el siguiente enlace:
+                        </p><a href="http://ferias.empleo.gob.mx/content/evento/CalendarioEventos.jsf" target="_blank">http://ferias.empleo.gob.mx/content/evento/CalendarioEventos.jsf</a>
+                    </li>
+                </ul>
+                <h2 class="text-center mt-5 mb-3" id="Servicios-complementarios">¡Conoce nuestros servicios de atención complementaria!</h2>
+                <ul>
+                    <li>
+                        <h3>Servicio Nacional de Empleo por Teléfono “SNETEL”</h3>
+                        <p>A través de nuestra línea gratuita, un ejecutivo telefónico te proporcionará información, atención y asesoría sobre las alternativas de empleo, servicios y apoyos que ofrece el Programa de Apoyo al Empleo (#PAE) para facilitar tu inserción. A ti empleador te atenderá y asesorará para cubrir tus puestos de trabajo vacantes.</p>
+                        <h2 class="text-center my-3">¡ llama al 800 841 2020 !</h2>
+                    </li>
+                    <li>
+                        <h3>Talleres para Buscadores de Empleo ( #SNEenTodoMéxico )</h3>
+                        <p>¿Te encuentras en una situación difícil para conseguir empleo o tienes escasa experiencia laboral?, o simplemente ¿Quieres mejorar tus conocimientos sobre cómo realizar la búsqueda de empleo? </p>
+                        <p>Los Talleres para Buscadores de Empleo son la opción gratuita que te asesora para adquirir o fortalecer conocimientos en el proceso de búsqueda de empleo. Te proporcionan consejos útiles para la integración de la documentación necesaria, la identificación de habilidades personales, la elaboración de un curriculum vitae y cómo prepararse para una entrevista laboral, entre otros.</p>
+                        <p>Estas sesiones que <span class="font-weight-bold">mejoran tu empleabilidad</span>, están disponibles <span class="font-weight-bold">para ti de manera presencial o virtual</span>, Consulta nuestro <span class="font-weight-bold">calendario</span> de Talleres, regístrate y participa: </p>
+                        <a href="http://bit.ly/TVBE15-30oct2020" target="_blank">http://bit.ly/TVBE15-30oct2020</a>
+                    </li>
+                    <li>
+                        <h3>Centros de Intermediación Laboral (CIL)</h3>
+                        <p>¿No cuentas con un equipo informático y acceso a internet?, ¡Visítanos, es gratuito!, dentro de nuestras oficinas (#DIRECTORIOSNE) tenemos un CIL, es decir un lugar específico, con equipo, herramientas necesarias y la asistencia personalizada para tu registro en nuestros sistemas, portales y otros sitios de empleo.</p>
+                        <a href="directorio.html">Busca un CIL cerca de ti</a>
+                    </li>
+                    <li>
+                        <h3>Periódico digital de Empleo</h3>
+                        <a href="periodico-digital.html">¡Echa un vistazo al periódico digital!</a>
+                    </li>
+                    <li>
+                        <h3>Observatorio Laboral</h3>
+                        <p>¡Conoce <span class="font-weight-bold">información del Mercado Laboral!</span>, da clic en ésta dirección <a href="https://www.observatoriolaboral.gob.mx">https://www.observatoriolaboral.gob.mx</a> y obtendrás información confiable sobre las principales ocupaciones y profesiones en el país.</p>
+                    </li>
+                    <h2 class="text-center lh-25">¡Trabajamos por ti, Trabajos por México!<br>#SNE<br>#AMSPE<br>#WAPES</h2>
+                </ul>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+    <!-- /.container -->
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <!-- The Modal -->
+    <div class="modal fade" id="Comparativo">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar a resultados</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="comparar.html"></iframe>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <!---div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div--->
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#main-menu a").click(function() {
+                $("#main-menu a").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

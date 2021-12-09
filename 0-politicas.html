@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">Arriba</button>
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="text-white" href="#" onclick="goBack()" role="button"><span class="material-icons">keyboard_backspace</span> Regresar al Portal del empleo</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                                    Cerrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row justify-content-md-center bg-white p-3">
+            <aside class="mt-3 col-3">
+            </aside>
+
+            <div class="col-8 list">
+                <h2>Políticas y Condiciones de Uso</h2>
+                <h3>Consideraciones generales</h3>
+                <div class="p-3 pl-4">
+
+                    <span><a href="#candidatos">De la sección <q>Candidatos</q></a>
+                    </span><br><a href="#empresas">De la sección <q>Empresas</q></a>
+                    <br><span><a href="#sne">De la sección <q>Servicio Nacional de Empleo</q></a>
+                    </span><br>
+                    <span id="video"><a href="#video">Video currículum</a>
+                    </span>
+
+
+                </div>
+                <ol>
+                    <li>Las presentes Políticas y Condiciones de Uso reglamentan el uso de los servicios que proporciona el sitio Web <strong>www.empleo.gob.mx</strong> (en adelante <strong>Portal del Empleo</strong>) de la Secretaría del Trabajo y Previsión Social (en adelante <strong>STPS</strong>). Los servicios que proporciona el <strong>Portal del Empleo</strong> están sujetos al cumplimiento de las presentes Políticas y Condiciones de Uso por parte de los usuarios.</li>
+                    <hr>
+                    <li>Las empresas, candidatos de empleo y en general toda persona que ingrese al <strong>Portal del Empleo</strong> por cualquier razón, acepta en forma voluntaria y sin ninguna reserva estar de acuerdo con Políticas y Condiciones de uso del <strong>Portal del Empleo</strong>, y en caso contrario, tienen derecho a no aceptar su uso y los servicios que el Portal proporciona.</li>
+                    <hr>
+                    <li>La <strong>STPS</strong> no es responsable por el uso de la información que se registre en el <strong>Portal del Empleo</strong>, así como de cualquier perjuicio originado al usuario por el uso de la misma. La <strong>STPS</strong> señalará con claridad las fuentes de información y los criterios de confiabilidad que se hubieran tomado en cuenta para la incorporación de la información sobre las ofertas de empleo, por lo que en ningún caso será responsable por los juicios de valor o las interpretaciones que los usuarios realicen sobre la exactitud o validez de la información publicada, así como por cualquier perjuicio o reclamo de cualquier otra índole que pudiera ser imputable al uso de la información.</li>
+
+                    <hr>
+                    <li>La <strong>STPS</strong> no es responsable de la información que se muestra en otros sitios web a los que el usuario tiene acceso desde el <strong>Portal del Empleo</strong>. Con el objeto de facilitarle la navegación y ampliar la información ofrecida en el <strong>Portal del Empleo</strong> se establecen enlaces a otras páginas Web. Dado que el <strong>Portal del Empleo</strong>, no es titular, ni responsable de las páginas Web enlazadas, le recomendamos examine la Política de uso de éstas cuando acceda a las mismas. El <strong>Portal del Empleo</strong>, en ningún caso será responsable de los contenidos ni de cualquier otro aspecto derivado de las Webs de terceros.</li>
+                    <hr>
+                    <li>La <strong>STPS</strong> se reserva el derecho de suspender el servicio a todos aquellos usuarios que no cumplan con estas Políticas y Condiciones de Uso.</li>
+                    <hr>
+                    <li>El <strong>Portal del Empleo</strong> se reserva el derecho de modificar y actualizar, cualquier contenido de configuración o de diseño, cualquier servicio y las presentes Políticas y Condiciones de Uso en cualquier momento y sin necesidad de previo aviso o notificación a los usuarios, así como añadir servicios nuevos, entendiéndose que las mismas son aceptadas si se utilizan los servicios que ofrece el sitio.</li>
+                    <hr>
+                    <li>La <strong>STPS</strong> no es responsable de la veracidad de la información publicada en las ofertas de empleo y los perfiles laborales de los candidatos de empleo, así como de los resultados finales del contacto entre empresas y candidatos.</li>
+                    <hr>
+                    <li>Queda absolutamente prohibido la utilización de los contenidos, logotipos y formatos de registro que utiliza el <strong>Portal del Empleo</strong>, salvo que la <strong>STPS</strong> lo autorice en forma explícita y por escrito.</li>
+                    <hr>
+                    <li>El <strong>Portal del Empleo</strong> no se responsabiliza de la inactividad del sitio web como consecuencia de causas ajenas como cortes de energía eléctrica, avería en el hosting, averías o cortes en las redes de comunicación, y en general debido a cualquier avería o fallo en nuestro sistema informático, ajenas a nuestra voluntad, comprometiéndonos a hacer todo lo que sea posible para restablecer el servicio a la brevedad posible.</li>
+                    <hr>
+                    <li>El usuario deberá comunicar al <strong>Portal del Empleo</strong> cualquier ilegalidad o anomalía que observe, tras estudiarla procederemos en consecuencia con toda la celeridad posible.</li>
+                    <hr>
+                    <li>Lea periódicamente las condiciones de uso, estas, pueden ser modificadas sin previo aviso.</li>
+                    
+                    <section id="candidatos">
+                        <hr><h3>De la sección <q>Candidatos</q></h3>
+                        <li>Los servicios que proporciona el <strong>Portal del Empleo</strong> a los candidatos de empleo del país son enteramente gratuitos.</li>
+                        <hr>
+                        <li>Para la utilización de los servicios que ofrece el <strong>Portal del Empleo</strong>, es necesario que los candidatos se registren en el sitio. Deberá hacerlo a partir de su Clave Única de Registro Poblacional (CURP) la cuál será validada en línea con la base de datos del Registro Nacional de Población (RENAPO). Si no cuenta todavía con su CURP, le pedimos se dirija a un Módulo CURP para tramitarla. Consulta las oficinas y horarios de atención haciendo <a href="http://www.gob.mx/tramites/ficha/obtencion-de-la-curp/SEGOB173" target="_blank">clic aquí</a>.</li>
+                        <hr>
+                        <li>El ingreso al <strong>Portal del Empleo</strong> será a través de un nombre de usuario y contraseña los cuales quedarán conformados de la siguiente manera:
+                            <ul>
+                                <li>Nombre de Usuario: Tienes dos alternativas para conformar el Nombre de usuario la primera es usar tu cuenta de correo electrónico, si ya tienes una o puedes generarla. La segunda opción es que generes un nombre de usuario de entre 8 y 12 caracteres utilizando letras mayúsculas, letras minúsculas y números puedes hacer una combinación.</li>
+                                <li>Contraseña: Se te solicitará cada vez que quieras tener acceso a tu Espacio y a tu Perfil Laboral, y debe ser una sola palabra de 8 a 12 caracteres como mínimo que pueden ser letras mayúsculas o minúsculas y/o números.</li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li>Si el resultado de la validación de la CURP es satisfactorio, podrás continuar con el llenado del formato de alta en el <strong>Portal del Empleo</strong>. En caso contrario te pedimos que acudas a un módulo de la CURP para regularizar tu situación. Consulta las oficinas y horarios de atención haciendo <a href="http://www.gob.mx/tramites/ficha/obtencion-de-la-curp/SEGOB173" target="_blank">clic aquí</a>.</li>
+                        <hr>
+                        <li>El registro de los candidatos sólo se hace una vez y nunca se cancela, por lo que si ya estas registrado e intentas realizar otro registro el <strong>Portal del Empleo</strong> no lo permitirá por duplicidad de la CURP.</li>
+                        <hr>
+                        <li>La cuenta de correo electrónico, tiene el carácter de nombre de usuario por lo cual se verifica su existencia en nuestra base de datos, si no cuenta con una cuenta de correo electrónico propia le sugerimos generar una ya que es el medio por el cual recibirá ofertas laborales.</li>
+                        <hr>
+                        <li>A partir de ese momento, el candidato de empleo será el único responsable de sus claves de ingreso al <strong>Portal del Empleo</strong> y el uso correcto que se le dé a las mismas para los fines que están especificados. Es importante que el usuario proteja sus claves, ya que si otras personas hacen un mal uso del <strong>Portal del Empleo</strong> usando la misma clave se corre el riesgo de perder acceso al sitio.</li>
+                        <hr>
+                        <li>Es compromiso de los candidatos de empleo garantizar en todo lo posible la veracidad y autenticidad de sus datos personales y perfil laboral que ingresen al <strong>Portal del Empleo</strong> a través del formato establecido para ello. Con fundamento en los artículos 18 fracciones II y 20 fracciones I y VI de la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental, se garantiza la seguridad de los datos personales y sólo serán difundidos con el consentimiento de los candidatos.</li>
+                        <hr>
+                        <li>Para mayor seguridad de los candidatos de empleo, únicamente empresas que previamente se hayan registrado en el <strong>Portal del Empleo</strong>, podrán acceder a sus datos personales y perfil laboral.</li>
+                        <hr>
+                        <li>Los candidatos de empleo podrán tener un manejo y control sobre sus datos personales una vez iniciada la sesión en el <strong>Portal del Empleo</strong>.</li>
+                        <hr>
+                        <li>El <strong>Portal del Empleo</strong> te permite mantener confidenciales los datos de tu domicilio y teléfono solo debes marcar la opción de confidencialidad correspondiente.</li>
+                        <hr>
+                        <li>En caso de que los candidatos de empleo no cuenten con acceso a Internet en forma personal, podrán acudir a las oficinas del Servicio Nacional de Empleo (SNE) de su entidad, donde podrán hacer uso de los servicios que ofrece el <strong>Portal del Empleo</strong> sin costo alguno.</li>
+                        <hr>
+                        <li>Es compromiso de todos los candidatos de empleo que hagan uso de los servicios que proporciona el <strong>Portal del Empleo</strong>, que la información que se obtenga del sitio se utilice únicamente para los propósitos de búsqueda de empleo.</li>
+                        <hr>
+                        <li>Si algún usuario del <strong>Portal del Empleo</strong> detecta que alguna de las ofertas consultadas no cumple con las presentes Políticas y Condiciones de Uso, puede dar aviso a la <strong>STPS</strong> a través de la opción de quejas que se encuentra en el Portal, proporcionando el nombre de la empresa y las ofertas de empleo que no cumplen con lo estipulado.</li>
+                        <hr>
+                        <li>No es responsabilidad de la <strong>STPS</strong> cualquier conflicto laboral, personal, legal o de cualquier otra índole, que pudiera darse entre el candidato de empleo y las empresas que buscan personal a través del <strong>Portal del Empleo</strong> y/o terceros.</li>
+                        <hr>
+                        <li>La <strong>STPS</strong> no es responsable de la veracidad de la información sobre ofertas de empleo que se difunde, ni de los resultados del contacto entre los empleadores y los buscadores de trabajo. En tal sentido, la <strong>STPS</strong> no es responsable de los conflictos laborales, personales, legales y de cualquier otra índole que se susciten entre empleador y buscador de trabajo derivados del contacto que motive la publicación de las ofertas de empleo en las bolsas de trabajo que colaboran en el Portal.</li>
+                        <hr>
+                        <li>Es posible que algunas empresas publiquen simultáneamente sus ofertas de empleo tanto en el <strong>Portal del Empleo</strong> como en las otras bolsas de trabajo por Internet a las que se tienen acceso desde la opción “Buscar en otras bolsas de trabajo por Internet”. El candidato podrá postularse a la oferta de empleo de su interés por el canal que más le convenga.</li>
+                        <hr>
+                        <li>El perfil laboral registrado en el <strong>Portal del Empleo</strong> tendrá una vigencia de un año, posteriores a la última fecha de actualización. En caso de cumplirse con este periodo de vigencia, el perfil del candidato será inactivado y será obligación del candidato volver a reactivar su perfil laboral.</li>
+                        <hr>
+                        <li>La <strong>STPS</strong> y el <strong>Portal del Empleo</strong> se reservan el derecho de dar de baja definitiva en cualquier momento y sin previo aviso, a los candidatos de empleo que no cumplan con las presentes Políticas y Condiciones de Uso.</li>
+                    </section>
+                    
+                        
+                        <section id="empresas"><hr><h3>De la sección <q>Empresas</q></h3><li>Los servicios que proporciona el <strong>Portal del Empleo</strong> a las empresas del país son enteramente gratuitos.</li><hr><li>Para la utilización de los servicios que ofrece el <strong>Portal del Empleo</strong>, es necesario que las empresas se registren en el sitio.</li><hr><li>Serán autorizadas todas aquellas empresas cuya información esté debidamente cumplimentada y que publiquen ofertas de trabajo debidamente sustentadas y reales y que cumplan con lo establecido en las presentes Políticas y Condiciones de Uso.</li><hr><li>Todas las empresas que se registren en el <strong>Portal del Empleo</strong> deben de proporcionar al menos un número de teléfono de contacto fijo, ya que será este el medio por el cual se validará el registro de la empresa.</li><hr><li>El <strong>Portal del Empleo</strong> requiere que al registrar su empresa se ingrese como dato obligatorio una cuenta de correo electrónico, la cual tiene el carácter de nombre de usuario por lo cual se verifica que sea única, si no cuenta con una cuenta de correo electrónico propia le solicitamos generar una.&nbsp;<span style="font-size: 9pt; line-height: 107%; font-family: Tahoma, sans-serif; background: whitesmoke;">La contraseña debe ser de 8 a 12 caracteres como mínimo y sin espacios, que pueden ser letras mayúsculas o minúsculas y/o números. No se admiten letras acentuadas ni caracteres especiales.</span></li><hr><li>El <strong>Portal del Empleo</strong> requiere que se ingrese como dato obligatorio la fecha de alta constitutiva de la empresa con la única intención de generar un identificador de empresa y garantizar la confiabilidad del registro.</li><hr><li>Una vez concluido el registro de su empresa inmediatamente debe proceder a dar de alta una oferta de empleo, ambos registros deben pasar al proceso de validación realizado por personal del centro de administración del <strong>Portal del Empleo</strong>. Mientras se lleva a cabo la validación puede seguir dando de alta ofertas de empleo. Una vez validada la información se le darán todos los permisos de uso en el <strong>Portal del Empleo</strong>.</li><hr><li>El registro de la empresa sólo se hace una vez y nunca se cancela, por lo que si ya está registrado e intenta realizar otro registro el <strong>Portal del Empleo</strong> no lo permitirá por duplicidad en el identificador de la empresa.</li><hr><li>A partir de ese momento, la empresa será la única responsable de su clave y el uso correcto que se le dé a la misma para los fines que están especificados. Es importante que el empleador proteja su clave, ya que si otras personas hacen mal uso del Portal usando la misma clave se corre el riesgo de perder acceso al sitio.</li><hr><li>Para un mejor control de referencia y manejo de las ofertas de empleo, el <strong>Portal del Empleo</strong> asignará un número de folio a todas las ofertas de empleo que las empresas usuarias den de alta en el sitio.</li><hr><li>Es obligación de las empresas proporcionar en forma clara y veraz la información de las ofertas de empleo que ingresen al <strong>Portal del Empleo</strong> conforme al formato de registro correspondiente.</li><hr><li>Las ofertas de empleo que se ofrezcan a través del <strong>Portal del Empleo</strong> deben estar debidamente respaldadas por contratos legalmente válidos y vigentes. Están expresamente prohibidas en el Portal las ofertas de empleo que <strong>a)</strong> exijan invertir dinero a los candidatos; <strong>b)</strong> aquellas que correspondan a empresas “pirámide” o negocios tipo multinivel y oportunidades de negocios; <strong>c)</strong> que impliquen la contratación de menores sin la autorización legal; <strong>d)</strong> las que están relacionadas con el entretenimiento de adultos, ocio nocturno o contenidos pornográficos; <strong>e)</strong> las que contraten personal solamente con pago por comisión o cambaceo; <strong>f)</strong> Trabajos que no paguen por lo menos el salario mínimo diario; <strong>g)</strong> Trabajos que requieran que el candidato, o empleado, vaya a un entrenamiento no pagado para ser contratado; <strong>h)</strong> contengan referencias obscenas, difamatorias, amenazantes, acosador, abusivas; <strong>i)</strong> Cualquier cosa que sea embarazosa u ofensiva para otra persona o entidad; <strong>j)</strong> No debe publicar simultáneamente la misma oferta.</li><hr><li>Asimismo, no están permitidas y no serán autorizadas en el <strong>Portal del Empleo</strong> las ofertas de empleo que pertenezcan a empresas con nombre irreal o genérico o que demeriten la calidad de la información que ofrece el sitio, ya sea porque están repetidas o porque contienen datos de contacto en los campos de funciones y actividades a realizar, observaciones, y/o conocimientos requeridos.</li><hr><li>Tampoco están permitidas y no serán autorizadas los requerimientos de personal para servicios en casas-habitación.</li><hr><li>Las Agencias de Colocación de Trabajadores y/o de Reclutamiento y Selección de Recursos Humanos que hagan uso del <strong>Portal del Empleo</strong>, deberán contar con el registro y autorización de funcionamiento otorgado por la <strong>STPS</strong>, conforme a lo estipulado en artículo 4 del Reglamento de Agencia de Colocación de Trabajadores publicado en el Diario Oficial de la Federación el 3 de marzo de 2006.</li><hr><li>En las ofertas de trabajo se debe incluir toda la información requerida de manera clara y concisa. Los oferentes de empleo que se registren en el sitio dan su cabal consentimiento para que el <strong>Portal del Empleo</strong> proporcione sus datos a los candidatos de empleo que estén interesados en postularse para las ofertas que ofrezcan. Con fundamento en el artículo 19 de la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental, y en las fracciones II y III del Trigésimo Sexto de los Lineamientos Generales para la Clasificación y Desclasificación de la Información de las Dependencias y Entidades de la Administración Pública Federal, la información de las empresas registradas se considera clasificada como comercial reservada; salvo para los candidatos de empleo, registrados en el sitio, al momento de postular las citadas ofertas.</li><hr><li>La <strong>STPS</strong> revisará puntualmente la información y contenido de las ofertas de empleo que se inserten en el sitio, y en un plazo no mayor a 15 horas entre semana y 48 horas en fin de semana, publicará en el <strong>Portal del Empleo</strong> las ofertas que cumplan con las presentes Políticas y Condiciones de Uso.</li><hr><li>Cuando la <strong>STPS</strong> identifique que se haya dado de alta una oferta de empleo no admitida o prohibida en el <strong>Portal del Empleo</strong> de acuerdo a las presentes Políticas y Condiciones de Uso, procederá a su baja en forma definitiva, reservándose el derecho de no admitir la publicación de más ofertas de empleo por parte de la empresa responsable de la misma. La <strong>STPS</strong> se reserva el derecho de dar de baja definitiva en cualquier momento y sin previo aviso, a las empresas que no cumplan con las presentes Políticas y Condiciones de Uso.</li><hr><li>No es responsabilidad de la <strong>STPS</strong> cualquier conflicto laboral, personal, legal o de otra índole, que pudiera darse entre el candidato de empleo y las empresas que buscan personal a través del <strong>Portal del Empleo</strong> y/o terceros.</li><hr><li>Las ofertas que se publiquen en el <strong>Portal del Empleo</strong> tendrán una vigencia señalada por la empresa en el formato de alta de ofertas; cuando se cumpla con este periodo de vigencia, serán dadas de baja. Las empresas estarán en posibilidades de volver a darlas de alta si así lo requieren, o cambiar esta vigencia a través de la opción de Espacio para Empresas.</li><hr><li>La <strong>STPS</strong> no garantiza ni es responsable de que las empresas usuarias del <strong>Portal del Empleo</strong> encuentren en el sitio al personal necesario para cubrir sus ofertas.</li><hr><li>Reglas para publicar una Oferta en el <strong>Portal del Empleo</strong>
+                            <ul>
+                                <li>El Puesto ofrecido debe ser acorde a la Ocupación en la que lo está clasificando, además de ser congruente con la Escolaridad requerida y las actividades que va a realizar.</li>
+                                <li>Se debe precisar con claridad los requerimientos de conocimientos y habilidades para desempeñar el puesto y las actividades a realizar en el mismo.</li>
+                                <li>Nombre del puesto: deberá reflejar las actividades a realizar y se debe escribir de la siguiente manera:</li>
+                                <li>Singular y que indique el género, ejemplo: costurera, enfermera, …</li>
+                                <li>Sin utilizar abreviaturas</li>
+                                <li>Sin puntos al final del nombre</li>
+                                <li>Usar diéresis cuando se requiera</li>
+                                <li>En los puestos de ayudante general o de obrero general, especificar entre paréntesis el área para la que se requiere, ejemplo: ayudante general (almacén).</li>
+                                <li>En los puestos de vendedor, especificar el tipo de mercancía a vender</li>
+                                <li>En el caso de guardia de seguridad, no utilizar elemento de seguridad</li>
+                                <li>No anotar observaciones en este campo es sólo para el nombre del puesto</li>
+                            </ul>
+                        </li></section>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                    
+                    <section id="sne">
+                        <hr><h3>De la sección <q>Servicio Nacional de Empleo<q></q></q></h3>
+                        <li>Los Talleres para Buscadores de Empleo son una estrategia de información complementaria de las acciones de vinculación laboral. En tal virtud, la <strong>STPS</strong> no garantiza que la participación en los talleres dé como resultado la colocación de los candidatos en un empleo ni su permanencia en él.</li>
+                        <hr>
+                        <li>No es responsabilidad de la <strong>STPS</strong> cualquier inconveniente provocado por la cancelación, reprogramación o cambio de sede de los talleres presenciales.</li>
+                        <hr>
+                        <li>Las condiciones de acceso a las modalidades del Subprograma de Becas a la Capacitación (Bécate), se regirán por las <a href="/download/sne/reglas-operacion-pae-2016.pdf" target="_blank">Reglas de Operación del Programa de Apoyo al Empleo</a>.</li>
+                        <hr>
+                        <li>Para ser registrado en cualesquiera de las modalidades del Subprograma de Becas a la Capacitación (Bécate), los interesados deberán acudir a la oficina del Servicio Nacional de Empleo en su Entidad y cumplir con los requisitos establecidos.</li>
+                    </section>
+                    <hr>
+                    <h3>Video currículum</h3>
+                    <li>El <strong>Portal del Empleo</strong> revisará el contenido de la información del video currículum para verificar que cumplen las condiciones de uso y de ser satisfactoria la revisión autorizara su publicación.</li>
+                    <hr>
+                    <li>Todos los datos aportados por el usuario, escritos o en video, han de ser propios y verdaderos. El usuario es responsable único de la información aportada y de su veracidad. Está totalmente prohibida la suplantación de personalidad de persona física o jurídica.</li>
+                    <hr>
+                    <li>El usuario afirma que es titular en exclusiva de todos los derechos de propiedad intelectual del referido vídeo.</li>
+                    <hr>
+                    <li>Es requisito indispensable por parte del candidato de empleo disponer de video currículum, alojado en un sitio de Internet especializado en videos proporcionar su URL (dirección web) para que el video pueda ser visto por las empresas que están interesadas en su perfil laboral.</li>
+                    <hr>
+                    <li>La duración del video currículum no podrá exceder de tres minutos.</li>
+                    <hr>
+                    <li>El video currículum ha de tener unos mínimos de calidad. En el caso de que no los cumpla, podrá ser rechazado.</li>
+                    <hr>
+                    <li>En el video currículum no se podrá dar datos de contacto como teléfono, dirección web o e-mail. A los datos de contacto solo podrán acceder empresarios registrados en nuestra web bajo las condiciones de uso vigentes.</li>
+                </ol>
+
+            </div>
+        </div>
+    </main><!-- /.container -->
+
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="Comparativo">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regrear a resultados</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="comparar.html"></iframe>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <!---div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div--->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+
+
+
+</body></html>

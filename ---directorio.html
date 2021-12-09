@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">Arriba</button>
+    <header class="back-bt header-interna text-center fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="text-white" href="/static/acerca-sne.html"><span class="material-icons">keyboard_backspace</span> Regresar a Acerca del SNE</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4">
+                            <a href="acerca-sne.html" class="text-white"> Acerca del SNE</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="servicios-intermediacion-laboral.html" class="text-white active"> Programas y servicios</a>
+                        </li>
+                        <li class="nav-item mr-4"><a href="consejos-empleo.html" class="text-white">Consejos de empleo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main class="container" id="text">
+        <div class="row bg-white p-3 mt-5">
+            <div class="col-md-4">
+                <div id="main-menu" class="list-group">
+                    <a href="servicios-intermediacion-laboral.html" class="list-group-item">Servicios de Intermediación Laboral</a>
+                    <a href="movilidad-laboral.html" class="list-group-item">Movilidad Laboral</a>
+                    <a href="#" class="list-group-item">Empleos en el Extranjero</a>
+                    <a href="periodico-digital.html" class="list-group-item">Periódico Digital de Empleo</a>
+                    <a href="#" class="list-group-item">Solicita una Cita</a>
+                    <a href="directorio.html" class="list-group-item active">Directorio</a>
+                    <a href="#sub-menu" class="list-group-item" data-toggle="collapse" data-parent="#main-menu">Otros programas <span class="material-icons">expand_more</span></a>
+                    <div class="collapse list-group-level1" id="sub-menu">
+                        <a href="otras-plataformas.html" class="list-group-item" data-parent="#sub-menu">Empleos en otras plataformas</a>
+                        <a href="bolsa-trabajo-tren-maya.html" class="list-group-item" data-parent="#sub-menu">Bolsa de trabajo Tren Maya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 list">
+                <h1 class="mb-5">Directorio de Oficinas del Servicio Nacional de Empleo</h1>
+                <p>Selecciona un estado de la lista del catálogo para mostrar los datos de las oficinas del SNE</p>
+                <div class="row bg-white mt-3">
+            
+            <div class="col-6 text-left mb-4">
+               <label for="">Directorio de Oficinas</label>
+               <select title="OSNEs" class="form-control selectpicker" id="oficinaselectedchange" name="oficina">
+                  <option value="entidad">Selecciona una entidad</option>
+                  <option value="">Aguascalientes</option>
+                  <option value="BCN">Baja California</option>
+                  <option value="BCS">Baja California Sur</option>
+                  <option value="CAM">Campeche</option>
+                  <option value="CHP">Chiapas</option>
+                  <option value="CHI">Chihuahua</option>
+                  <option value="CDMX">Ciudad de México</option>
+                  <option value="COA">Coahuila</option>
+                  <option value="COL">Colima</option>
+                  <option value="DUR">Durango</option>
+                  <option value="GTO">Guanajuato</option>
+                  <option value="GRO">Guerrero</option>
+                  <option value="HGO">Hidalgo</option>
+                  <option value="JAL">Jalisco</option>
+                  <option value="MEX">México</option>
+                  <option value="MIC">Michoacán</option>
+                  <option value="MOR">Morelos</option>
+                  <option value="NAY">Nayarit</option>
+                  <option value="NLE">Nuevo León</option>
+                  <option value="OAX">Oaxaca</option>
+                  <option value="PUE">Puebla</option>
+                  <option value="QRO">Querétaro</option>
+                  <option value="ROO">Quintana Roo</option>
+                  <option value="SLP">San Luis Potosí</option>
+                  <option value="SIN">Sinaloa</option>
+                  <option value="SON">Sonora</option>
+                  <option value="TAB">Tabasco</option>
+                  <option value="TAM">Tamaulipas</option>
+                  <option value="TLX">Tlaxcala</option>
+                  <option value="VER">Veracruz</option>
+                  <option value="YUC">Yucatán</option>
+                  <option value="ZAC">Zacatecas</option>
+               </select>
+            </div>
+            <div class="col-md-6 text-left mb-4">
+               <label for="">Alcaldía o Municipio</label>
+               <select title="OSNEs" class="form-control selectpicker" id="oficinaselectedchange" name="oficina">
+                  <option value="entidad">Selecciona una entidad</option>
+                  <option value="ags">Aguascalientes</option>
+                  <option value="calvillo">Calvillo</option>
+                  <option value="jesus-maria">Jesús María</option>
+               </select>
+            </div>
+            <section class="container mt-3">
+               <hr>
+               <div class="mb-3" id="">
+                  <h2>Ciudad de México</h2>
+                  <h3 class="py-3"><q><strong>Unidad Central</strong></q></h3>
+               </div>
+               <div class="row py-2">
+                  <div class="col-md-1 text-light-green">
+                     <span class="material-icons">pin_drop</span>
+                  </div>
+                  <div class="col-md-11">
+                     <h3 class="m-0">Dirección</h3>
+                     <p class="m-0">Calz. San Antonio Abad No.32, (Planta Baja), Col. Tránsito, Deleg, Cuauhtémoc, C.P. 06820</p>
+                  </div>
+               </div>
+               <div class="row py-2">
+                  <div class="col-md-1 text-light-green">
+                     <span class="material-icons">timer</span>
+                  </div>
+                  <div class="col-md-11">
+                     <h3 class="m-0">Horario</h3>
+                     <p class="m-0 text-teal"> L a V de 9 a 15 hrs.</p>
+                  </div>
+               </div>
+               <div class="row py-2">
+                  <div class="col-md-1 text-light-green">
+                     <span class="material-icons">phone</span>
+                  </div>
+                  <div class="col-md-11">
+                     <h3 class="m-0">Teléfono</h3>
+                     <p>5709 3233 Ext. 3042</p>
+                  </div>
+               </div>
+               <div class="row py-2">
+                  <div class="col-md-1 text-light-green">
+                     <span class="material-icons">email</span>
+                  </div>
+                  <div class="col-md-11">
+                     <h3 class="m-0">Correo electrónico</h3>
+                     <a href="subdireccion.snyco@gmail.com">subdireccion.snyco@gmail.com</a>
+                  </div>
+               </div>
+               <div class="text-center py-2">
+                  <button type="submit" class="btn btnPrimary">Haz una cita</button>
+               </div>
+            </section>
+            <section class="container mt-3">
+               <hr>
+               <div class="mb-3" id="">
+                  <h3 class="py-3"><q><strong>Unidad Regional, Cuauhtémoc</strong></q></h3>
+               </div>
+               <div class="row py-2">
+                  <div class="col-md-1 text-light-green">
+                     <span class="material-icons">pin_drop</span>
+                  </div>
+                  <div class="col-md-11">
+                     <h3 class="m-0">Dirección</h3>
+                     <p class="m-0">Calz. San Antonio Abad No. 32, Col. Tránsito,
+                        Deleg, Cuauhtémoc, C.P. 06820
+                     </p>
+                  </div>
+               </div>
+               <div class="row py-2">
+                  <div class="col-md-1 text-light-green">
+                     <span class="material-icons">timer</span>
+                  </div>
+                  <div class="col-md-11">
+                     <h3 class="m-0">Horario</h3>
+                     <p class="m-0 text-teal"> L a V de 9 a 15 hrs.</p>
+                  </div>
+               </div>
+               <div class="row py-2">
+                  <div class="col-md-1 text-light-green">
+                     <span class="material-icons">phone</span>
+                  </div>
+                  <div class="col-md-11">
+                     <h3 class="m-0">Teléfono</h3>
+                     <p>5038 0200 Ext. 3045</p>
+                  </div>
+               </div>
+               <div class="row py-2">
+                  <div class="col-md-1 text-light-green">
+                     <span class="material-icons">email</span>
+                  </div>
+                  <div class="col-md-11">
+                     <h3 class="m-0">Correo electrónico</h3>
+                     <a href="uosecuauhtemoc@gmail.com">uosecuauhtemoc@gmail.com</a>
+                  </div>
+               </div>
+               <div class="text-center py-2">
+                  <button type="submit" class="btn btnPrimary">Haz una cita</button>
+               </div>
+               <hr>
+               <div class="row mb-3">
+                  <div class="col-md-1">
+                     <a href=""><span class="material-icons">email</span></a>
+                  </div>
+                  <div class="col-md-11">
+                     <h3 class="m-0">Correo electrónico</h3>
+                     <a href="portal_empleo@stps.gob.mx">portal_empleo@stps.gob.mx</a>
+                  </div>
+               </div>
+            </section>
+         
+            </div>
+        </div>
+        </div>
+    </main>
+    <!-- /.container -->
+    <footer class="mt-110px bg-white">
+        <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+        </div>
+        <div class="green-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 mt-3">
+                        <ul class="nav">
+                            <li class="list-inline-item pl-2"><a href="/static/acerca-sne.html" class="text-white">Servicio Nacional del Empleo</a></li>
+                            <li class="list-inline-item pl-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones </a></li>
+                            <li class="list-inline-item pl-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 text-right mt-3"><a href="necesitas-ayuda.html">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- The Modal -->
+    <div class="modal fade" id="Comparativo">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regrear a resultados</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="comparar.html"></iframe>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <!---div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div--->
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

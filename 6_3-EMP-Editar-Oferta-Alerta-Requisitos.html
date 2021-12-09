@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css'>
+    <link href="assets/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!---icons=-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <!---RESPONSIVE MENU--->
+            <!-- The overlay -->
+            <div id="myNav" class="overlay1">
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <div class="container">
+                        <div class="col-12">
+                            <div class="text-center"><img class="rounded-circle" src="assets/img/avatar-150.jpg" alt="avatar-150"></div>
+                            <div class="text-center my-3">
+                                <h2 class="m-0">CRUMA y Asociados</h2>
+                            </div>
+                            <hr class="hr-white">
+                            <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                                <li class="p-1"><a href="#" class="selected"><i class="material-icons">person_search</i><br>Ofertas de empleo</a></li>
+                                <li class="p-1"><a href="#"><i class="material-icons">star</i><br>Candidatos</a></li>
+                                <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Notificaciones</a></li>
+                                <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Crear oferta</a></li>
+                            </ul>
+                            <hr class="hr-white">
+                        </div>
+                        <div class="col-12">
+                            <h2>Buscador</h2>
+                            <form>
+                                <div class="form-row justify-content-md-center">
+                                    <div class="form-group col-md-6 text-center">
+                                        <label class="text-white px19" for="que">¿Qué?</label>
+                                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                                    </div>
+                                    <div class="form-group col-md-6 text-center">
+                                        <label class="text-white px19" for="donde">¿Dónde?</label>
+                                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                                    </div>
+                                    <div class="clearfix">&nbsp;</div>
+                                    <div class="form-row col-12">
+                                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---RESPONSIVE MENU--->
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse">
+                    <span onclick="openNav()" class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4 border-right">
+                            <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search &nbsp;</i><br>
+                                Buscar</a><span>&nbsp; &nbsp; &nbsp;</span>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="emp-ofertas-activas.html" class="text-white"><i class="material-icons">business_center</i><br>
+                                Ofertas de empleo</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white"><i class="material-icons">people</i><br>
+                                Candidatos</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a href="#" class="text-white">
+                                <i class="material-icons">notifications</i>
+                                <span class="badge badge-important">12</span>
+                                <br>
+                                Notificaciones</a>
+                        </li>
+                        <li class="mr-4"><button type="submit" class="btn btn-gold px16 align-center">Crear oferta</button></li>
+                        <li class="nav-item">
+                            <div class="row">
+                                <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"></div>
+                                <div class="col-8 text-left">
+                                    <h4 class="montserrat-light text-white">Hola Kruma y Aso</h4>
+                                    <a href="#" class="text-white">Cerrar sesión</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-white"><span class="material-icons">highlight_off</span> Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav " role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <img src="assets/img/back_icon.png" alt="star"> Regresar a ofertas activas
+                        </a>
+                    </li>
+                </ul>
+                <div id="options" class="row">
+                    <div class="col-12 text-left">
+                        <ul class="nav">
+                            <li class="nav-link px-1"><a href="#"><span class="material-icons">loop</span> Reutilizar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-9">
+                <div class="bg-white p-3 mb-3 border">
+                    <div class="d-flex mb-3">
+                        <div class="mr-auto">
+                            <h3>Anuncio de tu empleo</h3>
+                        </div>
+
+                        <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#EditarOferta"><span class="material-icons px14">edit</span> Modificar</a>
+                    </div>
+                    <hr>
+                    <div class="row mb-2">
+                        <div class="col-md-8">
+                            <h2 class="montserrat-regular px28">Arquitecto supervisor</h2>
+                            <h3 class="text-handicap-blue"><span class="material-icons">accessible_forward</span> Aceptamos personas con discapacidad</h3>
+                        </div>
+                        <div class="col-md-4 text-md-right">
+                            <h3 class="montserrat-extraLight">Salario mensual neto</h3>
+                            <h2 class="montserrat-regular mb-4 px28">$30,000.00</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3>Experiencia en el puesto*: <span class="font-weight-normal">2 años</span></h3>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Escolaridad*: <span class="font-weight-normal">Licenciatura</span></h3>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 text-md-right">
+                            <h5 class="montserrat-thin">Folio: 20384</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 text-center">
+                            <img class="logo80" src="assets/img/logo-empresa.jpg" alt="logo de la empresa">
+                        </div>
+                        <div class="col-lg-9">
+                            <h3>Decripción</h3>
+                            <p class="montserrat-light px16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam tellus et placerat vulputate. Praesent mi ex, sollicitudin eget dolor eu, rhoncus molestie nulla. Ut at eros ante. Etiam in erat tempor, elementum est eu, porttitor leo. Duis nec erat urna. Cras sollicitudin, quam sed viverra ultricies, ipsum elit posuere sem, vitae laoreet purus ipsum eget sapien. Integer dignissim ornare turpis, eget posuere urna viverra at. Donec justo mi, elementum ut gravida id, vulputate sit amet tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean lobortis ullamcorper porttitor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 mb-3 border">
+                    <div class="d-flex mb-3">
+                        <h2 class="mr-auto">Ubicación de tu empleo</h2>
+                        <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#EditarUbicacion"><span class="material-icons px14">edit</span> Modificar</a>
+                    </div>
+                    <hr>
+                    <div class="row mb-2">
+                        <div class="col-12">
+                            <p class="m-0">Col. San Fernando, Tlalpan, 14050, Ciudad de México</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 mb-3 border">
+                    <div class="d-flex mb-3">
+                        <h2 class="mr-auto">Requisitos</h2>
+                        <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#EditarRequisitos"><span class="material-icons px14">edit</span> Modificar</a>
+                    </div>
+                    <hr>
+                    <div class="row mb-2">
+                        <div class="col-lg-6">
+                            <h3>Conocimientos y herramientas</h3>
+                            <ul>
+                                <li>Manejo de excel intermedio</li>
+                                <il>Autocad</il>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Habilidades o competencias</h3>
+                            <ul>
+                                <li>Trabajo en equipo</li>
+                                <il>Comunicación efectiva</il>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-lg-6">
+                            <h3>Idioma</h3>
+                            <ul>
+                                <li>Inglés avanzado (realizar conversaciones con clientes)</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Disponibilidad de la persona</h3>
+                            <ul>
+                                <li>No es necesario viajar</li>
+                                <il>No es necesario cambiar de residencia</il>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 mb-3 border">
+                    <div class="d-flex mb-3">
+                        <h2 class="mr-auto">Beneficios de la empresa</h2>
+                        <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#EditarEmpresaOfrece"><span class="material-icons px14">edit</span> Modificar</a>
+                    </div>
+                    <hr>
+                    <div class="row mb-2">
+                        <div class="col-lg-6">
+                            <h3>Contratación</h3>
+                            <ul>
+                                <li>Contrato por tiempo determinado</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Jornada laboral</h3>
+                            <ul>
+                                <li>Tiempo completo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-lg-6">
+                            <h3>La empresa ofrece</h3>
+                            <ul>
+                                <li>Prestaciones de ley</li>
+                                <li>Seguro de vida</li>
+                                <li>Comedor</li>
+                                <li>Vales de despensa</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Horario</h3>
+                            <ul>
+                                <li>Lunes a jueves 8:30 am a 6:30 pm</li>
+                                <il>Viernes 8:30 am a 3:00pm</il>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 mb-3 border">
+                    <div class="d-flex mb-3">
+                        <h2 class="mr-auto">Funciones</h2>
+                        <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#EditarFunciones"><span class="material-icons px14">edit</span> Modificar</a>
+                    </div>
+                    <hr>
+
+
+                    <ul>
+                        <li>Elaboración de RENDERS</li>
+                        <li>Desarrollo de propuestas conceptuales</li>
+                        <li>Lavantamientos</li>
+                        <li>Elaboración de catálogo de conceptos</li>
+                    </ul>
+
+
+                </div>
+                <div class="bg-white p-3 mb-3 border">
+                    <div class="d-flex mb-3">
+                        <h2 class="mr-auto">Video de la oferta de empleo</h2>
+                        <a href="" class="px14 ml-auto" data-toggle="modal" data-target="#EditarVideoOferta"><span class="material-icons px14">edit</span> Modificar</a>
+                    </div>
+                    <hr>
+
+
+                    <div class="col-12 embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iG-CSw4evGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+
+                </div>
+                
+                
+                
+            </div>
+            <div class="col-lg-3">
+                <div class="bg-white mb-3 p-3 border">
+                  <div class="d-flex mb-3">
+                     <h2 class="mr-auto">Datos de reclutamiento</h2>
+                     <a href="#" class="px14 ml-auto" data-toggle="modal" data-target="#EditarDatosOferta"><span class="material-icons px14">edit</span> Modificar</a>
+                  </div>
+                  <hr>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Vigencia de la oferta</h3>
+                     <small>01-10-2020 al 15-12-2020</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Vacantes</h3>
+                     <small>4</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Lista de postulaciones</h3>
+                     <small>100</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Proceso de reclutamiento</h3>
+                     <small>
+                         <ul>
+                             <li>Entrevista</li>
+                             <li>Examen en línea</li>
+                             <li>Examen presencial</li>
+                         </ul>
+                     </small>
+                  </div>
+               </div>
+               <div class="bg-white mb-3 p-3 border">
+                  <div class="d-flex mb-3">
+                     <h2 class="mr-auto">Datos de contacto con el SNE</h2>
+                     <a href="#" class="px14 ml-auto" data-toggle="modal" data-target="#EditarDatosContacto"><span class="material-icons px14">edit</span> Modificar</a>
+                  </div>
+                  <hr>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Lorena Mendoza Hijar</h3>
+                     <small>Gerente de Recursos Humanos</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Teléfono</h3>
+                     <small>(55) 5555-5555 ext: 4635</small>
+                  </div>
+                  <div class="text-left mb-3">
+                     <h3 class="m-0">Correo electrónico</h3>
+                     <small>lorena.hijar@miempresa.com.mx</small>
+                  </div>
+               </div>
+               <div class="bg-white mb-3 p-3 border">
+                  <div class="d-flex mb-3">
+                     <h2 class="mr-auto">Oferta de empleo</h2>
+                     <!---a href="#" class="px14 ml-auto" data-toggle="modal" data-target="#EditarDatosContacto"><span class="material-icons px14">edit</span> Modificar</a--->
+                  </div>
+                  <hr>
+                  <p>Si desactivas tu Oferta de Empleo, no podrás recibir postulaciones de candidatos.</p>
+                  <div class="form-group form-inline">
+                                <label for="">Activar oferta</label>&nbsp;&nbsp;&nbsp;
+                                <div class="toggle btn btn-sm btnPrimary" data-toggle="toggle" role="button" style="width: 50px; height: 31px;"><input type="checkbox" checked="" data-toggle="toggle" data-width="50" data-on="Si" data-off="No"><div class="toggle-group"><label for="" class="btn btnPrimary btn-sm toggle-on">Si</label><label for="" class="btn btn-light btn-sm toggle-off">No</label><span class="toggle-handle btn btn-light btn-sm"></span></div></div>
+
+                            </div>
+               </div>
+            </div>
+        </div>
+    </main>
+    <!-- /.container -->
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <!-- The Modal -->
+    <div class="modal fade" id="Modal-xl" tabindex="-1" role="dialog" aria-labelledby="Modal-xl" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal editarOferta -->
+    <div class="modal fade" id="EditarOferta" tabindex="-1" role="dialog" aria-labelledby="EditarOferta" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ad" class="form-row d-flex align-items-start w-100">
+                        <div class="form-group col-md-12">
+                            <h2>Anuncio de tu empleo</h2>
+                            <small>(*) Datos requeridos</small>
+                            <hr>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="">Título de la oferta*</label>
+                            <input type="text" class="form-control" id="" placeholder="Escribir el título">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="">Experiencia en el puesto*</label>
+                            <select id="" class="form-control">
+                                <option selected>Selecciona...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="">Salario mensual neto ofrecido*</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="" />
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="">-</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Habilitar un rango de salario</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="">Escolaridad*</label>
+                            <select id="" class="form-control">
+                                <option selected>Selecciona...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <p>¿Aceptas personas con discapacidad?
+                            <p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">SI</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">NO</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="">Describe tu oferta</label>
+                            <textarea rows="3" class="form-control" id="" placeholder="Contador público con experiencia en el sector de licitaciones y presupuestos"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btnPrimary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal editarUbicacion -->
+    <div class="modal fade" id="EditarUbicacion" tabindex="-1" role="dialog" aria-labelledby="EditarUbicacion" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ad" class="form-row d-flex align-items-start w-100">
+                        <div class="form-group col-md-12">
+                            <h2>Ubicación</h2>
+                            <small>(*) Datos requeridos</small>
+                            <hr>
+                        </div>
+                        <div id="panel panel-default experienceRow" class="form-row d-flex align-items-end w-100">
+                            <div class="form-group col-md-4 mt-3">
+                                <label for="">Código Postal*</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button class="btn btnPrimary" type="button"> Validar</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-8 border-left">
+                                <a href="#" class=""><span class="material-icons">location_on</span> Usar mi ubicación</a>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Entidad Federativa</label>
+                                <select id="" class="form-control">
+                                    <option selected="">Selecciona...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Municipio o alcaldía</label>
+                                <select id="" class="form-control">
+                                    <option selected="">Selecciona...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Colonia*</label>
+                                <select id="" class="form-control">
+                                    <option selected="">Selecciona...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Localidad*</label>
+                                <select id="" class="form-control">
+                                    <option selected="">Selecciona...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Calle*</label>
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="">Número exterior*</label>
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="">Número interior</label>
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="">Entre qué calles se encuentra o alguna referencia*</label>
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                            <div id="panel panel-default experienceRow" class="form-row d-flex align-items-end w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btnPrimary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal editarRequisitos -->
+    <div class="modal fade" id="EditarRequisitos" tabindex="-1" role="dialog" aria-labelledby="EditarRequisitos" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ad" class="form-row d-flex align-items-start w-100">
+                        <div class="form-group col-md-12">
+                            <h2>Requisitos</h2>
+                            <small>(*) Datos requeridos</small>
+                            <hr>
+                        </div>
+                        <div id="Knowledge" class="">
+                            <div id="" class="form-row d-flex align-items-end w-100">
+                                <div class="col-md-6">
+                                    <label for="inputPassword4">Conocimientos y herramientas*</label>
+                                    <input type="text" class="form-control my-2" id="" placeholder="">
+                                    <input type="text" class="form-control my-2" id="" placeholder="">
+                                    <input type="text" class="form-control my-2" id="" placeholder="">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="">Experiencia*</label>
+                                    <select id="" class="form-control my-2">
+                                        <option selected>Selecciona...</option>
+                                        <option>...</option>
+                                    </select>
+                                    <select id="" class="form-control my-2">
+                                        <option selected>Selecciona...</option>
+                                        <option>...</option>
+                                    </select>
+                                    <select id="" class="form-control my-2">
+                                        <option selected>Selecciona...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <a id="addOtherStudies" href="#."><span class="material-icons">add</span> Agregar otro conocimiento</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="lang" class="">
+                            <div id="" class="form-row d-flex align-items-end w-100">
+                                <div class="form-group col-md-6">
+                                    <label for="">Idioma</label>
+                                    <select id="" class="form-control">
+                                        <option selected>Selecciona...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Certificación</label>
+                                    <select id="" class="form-control">
+                                        <option selected>Selecciona...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <a id="addLang" href="#."><span class="material-icons">add</span> Agregar otro idioma</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Skills" class="">
+                            <div id="" class="form-row d-flex align-items-end w-100">
+                                <div class="form-group col-12">
+                                    <label for="">Habilidades o competencias</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-12">
+                                    <a href="" class="btn btn-sm btn-secondary">Organización</a>
+                                    <a href="" class="btn btn-sm btn-secondary">Orientación al cliente</a>
+                                    <a href="" class="btn btn-sm btn-secondary">Creativo e innovador</a>
+                                    <a href="" class="btn btn-sm btn-secondary">Trabajo en equipo</a>
+                                </div>
+                                <div class="form-group col">
+                                    <a id="addLang" href="#."><span class="material-icons">add</span>Mostrar más habilidades</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Skills" class="">
+                            <h3>Disponibilidad para viajar</h3>
+                            <div class="form-group form-inline">
+                                <label for="">¿Es necesario viajar?</label>&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" checked data-toggle="toggle" data-width="50" data-on="Si" data-off="No">
+
+                            </div>
+                            <div class="form-group form-inline">
+                                <label for="">¿Es necesario cambiar de domicilio?</label>&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" checked data-toggle="toggle" data-width="50" data-on="Si" data-off="No">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btnPrimary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal editarFunciones -->
+    <div class="modal fade" id="EditarFunciones" tabindex="-1" role="dialog" aria-labelledby="EditarFunciones" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ad" class="form-row d-flex align-items-start w-100">
+                        <div class="form-group col-md-12">
+                            <h2>Funciones</h2>
+                            <small>(*) Datos requeridos</small>
+                            <hr>
+                        </div>
+                        <div id="Activities" class="">
+                            <div id="" class="form-row d-flex align-items-end w-100">
+                                <div class="form-group col-12">
+
+                                    <input type="text" class="form-control my-2" id="" placeholder="Ejemplo: Preparar, hornear, elaborar piezas de pan">
+                                    <input type="text" class="form-control my-2" id="" placeholder="Ejemplo: Preparar, hornear, elaborar piezas de pan">
+                                </div>
+                                <div class="form-group col">
+                                    <a id="addLang" href="#."><span class="material-icons">add</span>Agregar otra función</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btnPrimary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal editarJornadaLaboral -->
+    <div class="modal fade" id="EditarJornadaLaboral" tabindex="-1" role="dialog" aria-labelledby="EditarJornadaLaboral" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ad" class="form-row d-flex align-items-start w-100">
+                        <div class="form-group col-md-12">
+                            <h2>Jorrnada Laboral y horario</h2>
+                            <small>(*) Datos requeridos</small>
+                            <hr>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Tiempo completo</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Medio tiempo</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3">Fines de semana</label>
+                            </div>
+                        </div>
+                        <hr class="width-100">
+                        <h3>Horario</h3>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="">Días laborales*</label>
+                                <select id="" class="form-control">
+                                    <option selected>Selecciona...</option>
+                                    <option>Opción</option>
+                                    <option>Opción</option>
+                                    <option>Opción</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <p>Selecciona los días</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">lunes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Martes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Miércoles</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Jueves</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Vierness</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Sábado</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Domingo</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="width-100">
+                        <div class="form-row width-100">
+                            <div class="form-group col-md-6">
+                                <label for="">Horario de entrada*</label>
+                                <select id="" class="form-control">
+                                    <option selected>Selecciona...</option>
+                                    <option>Opción</option>
+                                    <option>Opción</option>
+                                    <option>Opción</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Horario de salida*</label>
+                                <select id="" class="form-control">
+                                    <option selected>Selecciona...</option>
+                                    <option>Opción</option>
+                                    <option>Opción</option>
+                                    <option>Opción</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btnPrimary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal editarEmpresaOfrece -->
+    <div class="modal fade" id="EditarEmpresaOfrece" tabindex="-1" role="dialog" aria-labelledby="EditarEmpresaOfrece" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ad" class="form-row d-flex align-items-start w-100">
+                        <div class="form-group col-md-12">
+                            <h2>La empresa ofrece</h2>
+                            <small>(*) Datos requeridos</small>
+                            <hr>
+                        </div>
+                        <div class="form-row d-flex align-items-end col-12">
+                            <div class="form-group col-md-6">
+                                <label for="">Contratación*</label>
+                                <select id="" class="form-control">
+                                    <option selected>Selecciona...</option>
+                                    <option>Opción</option>
+                                    <option>Opción</option>
+                                    <option>Opción</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Otra</label>
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+
+                        </div>
+
+                        <div id="Offers" class="">
+                            <div id="" class="form-row d-flex align-items-end w-100">
+                                <div class="form-group col-12">
+                                    <label for="">La empresa ofrece*</label>
+                                    <input type="text" class="form-control" id="" placeholder="Ejemplo: Prestaciones de ley"><br>
+                                    <input type="text" class="form-control" id="" placeholder="Ejemplo: Bono por puntualidad"><br>
+                                    <input type="text" class="form-control" id="" placeholder="Ejemplo: Servicio de comedor dentro del horario de la empresa">
+                                </div>
+                                <div class="form-group col-12">
+                                    <a id="addLang" href="#."><span class="material-icons">add</span>Agregar otro beneficio</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <h3>Jornada laboral</h3>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Tiempo completo</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Medio tiempo</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">Fines de semana</label>
+                    </div>
+                    <hr>
+                    <h3>Horario</h3>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="">Días laborales*</label>
+                            <select id="" class="form-control">
+                                <option selected>Selecciona...</option>
+                                <option>Opción</option>
+                                <option>Opción</option>
+                                <option>Opción</option>
+                            </select>
+                        </div>
+                        <div class="col-md-8">
+                           <p>Selecciona los días</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">lunes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Martes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Miércoles</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Jueves</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Vierness</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Sábado</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Domingo</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="">Horario de entrada*</label>
+                            <select id="" class="form-control">
+                                <option selected>Selecciona...</option>
+                                <option>Opción</option>
+                                <option>Opción</option>
+                                <option>Opción</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="">Horario de salida*</label>
+                            <select id="" class="form-control">
+                                <option selected>Selecciona...</option>
+                                <option>Opción</option>
+                                <option>Opción</option>
+                                <option>Opción</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mt-5 form-group text-center">
+                        <a href="reg-emp-oferta-01.html" onclick="goBack()" class="montserrat-regular px19 px-4"> Regresar</a>
+                        <a href="reg-emp-oferta-03.html" class="btn btn-lg btnPrimary">Guardar y continuar</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Modal editarDatosOferta -->
+    <div class="modal fade" id="EditarDatosOferta" tabindex="-1" role="dialog" aria-labelledby="EditarDatosOferta" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ad" class="form-row d-flex align-items-start w-100">
+                        <div class="form-group col-md-12">
+                            <h2>Datos de la oferta</h2>
+                            <small>(*) Datos requeridos</small>
+                            <hr>
+                        </div>
+                        <div class="col-12">
+                            <div id="lang" class="">
+                                <div id="langRow" class="form-row d-flex align-items-end w-100">
+                                    <div class="form-group col-md-6">
+                                        <label for="Vacantes">Número de vacantes disponibles*</label>
+                                        <input type="text" class="form-control" id="Vacantes" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="Postulaciones">Límite de postulaciones*</label>
+                                        <input type="text" class="form-control" id="Postulaciones" placeholder="">
+                                    </div>
+                                </div>
+                                <h3>Elije la fecha de publicación de tu oferta &lpar;Vigencia&rpar;</h3>
+                                <div id="langRow" class="form-row d-flex align-items-end w-100">
+                                    <div class="form-group col-md-6">
+                                        <label for="">Inicia*</label>
+                                        <input id="datepicker2" class="datepicker" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Finaliza*</label>
+                                        <input id="datepicker3" class="datepicker" />
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div id="recruitment" class="">
+                                <h3>Deseas agregar algún proceso de reclutamiento</h3>
+                                <div id="Knowledge" class="form-row d-flex align-items-end w-100">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Nombre del paso</label>
+                                        <ol>
+                                            <li><input type="text" class="form-control my-2" id="1" placeholder=""></li>
+                                            <li><input type="text" class="form-control my-2" id="2" placeholder=""></li>
+                                            <li><input type="text" class="form-control my-2" id="3" placeholder=""></li>
+                                        </ol>
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Descripción</label>
+                                        <ul>
+                                            <li><input type="text" class="form-control my-2" id="1" placeholder=""></li>
+                                            <li><input type="text" class="form-control my-2" id="2" placeholder=""></li>
+                                            <li><input type="text" class="form-control my-2" id="3" placeholder=""></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <a id="addOtherStudies" href="#."><span class="material-icons">add</span> Agregar otro paso</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 form-group text-center">
+                                <a href="reg-emp-oferta-02.html" onclick="goBack()" class="montserrat-regular px19 px-4"> Regresar</a>
+                                <a href="reg-emp-oferta-04.html" class="btn btn-lg btnPrimary">Guardar y continuar</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Modal editarDatosContacto -->
+    <div class="modal fade" id="EditarDatosContacto" tabindex="-1" role="dialog" aria-labelledby="EditarDatosOferta" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ad" class="form-row d-flex align-items-start w-100">
+                        <div class="form-group col-md-12">
+                            <h2>Datos de ccontacto con el SNE</h2>
+                            <small>(*) Datos requeridos</small>
+                            <hr>
+                        </div>
+                        <div class="col-12">
+                            <div id="contact" class="row">
+                                <div class="form-group col-md-4">
+                                    
+                                    <label for="">Nombre (s)</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Apellido (s)</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Cargo del contacto</label>  
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Correo electrónico</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Repetir correo electrónico</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Teléfono fijo</label>
+                                    <input type="tel" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Extensión</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                            </div>
+                            <hr>
+                            
+                            <div class="mt-5 form-group text-center">
+                                <a href="reg-emp-oferta-02.html" onclick="goBack()" class="montserrat-regular px19 px-4"> Regresar</a>
+                                <a href="reg-emp-oferta-04.html" class="btn btn-lg btnPrimary">Guardar y continuar</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Modal editarVideoOferta-->
+    <div class="modal fade" id="EditarVideoOferta" tabindex="-1" role="dialog" aria-labelledby="EditarVideoOferta" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="ad" class="form-row d-flex align-items-start w-100">
+                        <div class="form-group col-md-12">
+                            <h2>Acerca de esta oferta</h2>
+                            <small>(*) Datos requeridos</small>
+                            <hr>
+                        </div>
+                        <div class="col-12">
+                            <div id="VideoCV" class="">
+                                <div id="" class="form-row d-flex align-items-end w-100">
+                                    <div class="form-group col-12">
+                                        <a href="#" data-toggle="modal" data-target="#ModalVideoEMP">¿Cómo hacer en video una oferta de trabajo?</a>
+                                        <p>Comparte el enlace de tu oferta de empleo en video</p>
+                                        <label for="">Dirección electrónica Youtube</label>
+                                        <input type="text" class="form-control" id="" placeholder="Https://www.youtube.com/tu videoCV">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btnPrimary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade autoclose" id="mensaje" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    
+                    <hr>
+                    
+                    <h2 class="text-center">La información de <span class="font-weight-bold">los requisitos de tu oferta de empleo</span> se ha actualizado</h2>
+                    <hr>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js'></script>
+    <script src="assets/js/bootstrap4-toggle.min.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script src="assets/js/assets.js"></script>
+    <script>
+        $('#btnShowAlert').on('click', function() {
+            $('#myAlert').style('display', 'block');
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#mensaje").modal('show');
+        });
+        setTimeout(function() {
+        $('#mensaje').modal('hide')
+        }, 4000);
+    </script>
+</body>
+
+</html>
+
+
+
+

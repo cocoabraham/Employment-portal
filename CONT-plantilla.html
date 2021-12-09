@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">Arriba</button>
+    <header class="back-bt header-interna text-center fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="text-white" href="#" onclick="goBack()" role="button"><span class="material-icons">keyboard_backspace</span> Regresar al Portal del empleo</a>
+                        </li>
+                    </ul>
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item mr-4">
+                        <a href="acerca-sne.html" class="text-white"> Acerca del SNE</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="servicios-intermediacion-laboral.html" class="text-white active"> Programas y servicios</a>
+                     </li>
+                     <li class="nav-item mr-4"><a href="consejos-empleo.html" class="text-white">Consejos de empleo</a></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                                    Cerrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="container" id="text">
+        <div class="row bg-white p-3 mt-5">
+            <div class="col-md-4">
+                <div id="main-menu" class="list-group">
+                <a href="#sub-menu" class="list-group-item active" data-toggle="collapse" data-parent="#main-menu">opción 1 <span class="material-icons">expand_more</span></a>
+                <div class="collapse list-group-level1" id="sub-menu">
+                    <a href="#" class="list-group-item" data-parent="#sub-menu">Sub opción 1</a>
+                    <a href="#" class="list-group-item" data-parent="#sub-menu">Sub opción 2</a>
+                    <a href="#sub-sub-menu" class="list-group-item" data-toggle="collapse" data-parent="#sub-menu">Sub opción 3 <span class="material-icons">expand_more</span></a>
+                    <div class="collapse list-group-level2" id="sub-sub-menu">
+                        <a href="#" class="list-group-item" data-parent="#sub-sub-menu">Sub Sub opción 1</a>
+                        <a href="#" class="list-group-item" data-parent="#sub-sub-menu">Sub Sub opción 2</a>
+                        <a href="#" class="list-group-item" data-parent="#sub-sub-menu">Sub Sub opción 3</a>
+                    </div>
+                </div>
+              
+                <a href="#" class="list-group-item">opción 2</a>
+                <a href="#" class="list-group-item">opción 3</a>
+                <a href="#" class="list-group-item">opción 4</a>
+                <a href="#" class="list-group-item">opción 5</a>
+            </div>
+            </div>
+            <div class="col-md-8 list">
+                <h1 class="mb-5">Título</h1>
+                <h3 class="lh-25">Sub título</h3>
+                <ul>
+                    <li><a href="">bullets</a></li>
+                    <li><a href="">bullets</a></li>
+                    <li><a href="">bullets</a></li>
+                </ul>
+                <a href="" data-toggle="modal" data-target="#Modal">abrir modal</a>                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis risus lorem, et facilisis diam malesuada quis. Nam et lectus a est ornare egestas. Ut ac sem leo. Maecenas laoreet non neque eget consequat. Donec ornare nec nisi porta iaculis. Aenean congue nibh dolor, non pulvinar odio faucibus at. Aliquam erat volutpat. Integer ut magna at eros suscipit consectetur. Phasellus a arcu in nibh tempor rutrum. Ut elementum, sem ut sollicitudin tempor, augue ligula maximus felis, eget pellentesque magna diam et lacus. Suspendisse potenti. Vivamus convallis blandit odio. Ut finibus iaculis dui ac condimentum.</p>
+
+<p>Quisque justo turpis, elementum quis dolor id, pretium congue elit. Aenean sem metus, commodo vitae nunc vel, egestas posuere purus. Suspendisse sed ipsum risus. Ut sed bibendum lectus, ac molestie massa. Integer semper, massa id cursus fringilla, risus neque convallis nisi, sed congue nisl purus sed tortor. Vivamus quis purus id risus pulvinar lacinia dignissim sed tellus. Duis dictum lectus at lorem aliquet, eget suscipit tortor efficitur. Vivamus aliquam finibus turpis, et aliquam dolor congue vitae. Aliquam aliquet elementum felis, nec luctus sapien pharetra quis. Aliquam erat volutpat. Nunc vel velit varius, scelerisque purus in, ultrices tortor. Donec aliquet, sapien vel finibus lobortis, tellus erat faucibus lectus, non facilisis tortor nibh et sapien. Sed tristique diam non diam iaculis vulputate. Sed suscipit sem mauris, et ullamcorper ligula facilisis vitae. Mauris sem lorem, varius eget semper sit amet, volutpat eget nulla. Aenean vel lacinia quam.</p>
+
+<p>Praesent suscipit ex at lacus facilisis, id iaculis quam ullamcorper. Aenean consequat vel massa nec pretium. Phasellus laoreet urna sed maximus ultrices. Phasellus vehicula viverra nunc et consequat. Integer at felis vitae erat accumsan egestas eget ac elit. Etiam accumsan ligula elementum, posuere erat at, bibendum est. Proin quis mattis ex. Cras tristique rutrum nibh nec sodales. Mauris nisl odio, scelerisque et metus nec, ullamcorper dignissim lorem. Suspendisse vitae gravida tellus. Aliquam at consectetur nibh. Suspendisse vestibulum eu tortor ut semper. Morbi sed nibh porta, viverra nulla et, pellentesque sem.</p>
+
+<p>Duis vel lacus mollis, condimentum elit in, commodo erat. Nam pellentesque in ex vitae molestie. Aliquam pretium nunc id nibh fermentum condimentum. Donec at pharetra elit, sed hendrerit turpis. Nullam feugiat libero vel mollis pellentesque. Aliquam eget ante arcu. In imperdiet sollicitudin erat, eu porta sapien consequat vitae. Phasellus ut mollis ante, in malesuada nibh. Nunc sapien leo, congue eu malesuada non, varius eget nisl. Nam sit amet ante feugiat, venenatis purus ac, convallis nisi.</p>
+
+<p>Curabitur vitae tortor ut lectus interdum faucibus nec vel lectus. Nullam vel dui sed justo mollis rutrum. Donec nunc libero, rhoncus non ligula quis, vulputate tempor ipsum. Mauris tempor consectetur mollis. Aenean eleifend vestibulum rutrum. Cras viverra vel dui sed elementum. Etiam consequat mollis risus, eu ultricies augue blandit vitae. Quisque porttitor pharetra placerat. Curabitur ornare dictum auctor.</p>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+    <!-- /.container -->
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+<div class="modal fade" id="Modal">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regrear</a></h3>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <h2>Título</h2>
+                  <p class="montserrat-regular">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend fermentum fringilla. Integer urna turpis, tempor in ultricies non, laoreet eget turpis. Pellentesque vestibulum tellus vitae mi vehicula posuere. Fusce dolor sem, sodales eget gravida quis, efficitur ut ex. Pellentesque at tortor et arcu molestie consequat eget eget ante. Phasellus blandit ut ante vitae pharetra. Donec a ligula fringilla, accumsan tortor id, finibus tellus. Integer tempus felis at libero eleifend, nec sodales orci pharetra. Donec a ullamcorper felis. Suspendisse diam libero, euismod sed arcu ac, gravida hendrerit metus. Maecenas et velit eros. Suspendisse facilisis libero vel sapien egestas aliquam. Nulla eget dictum lacus. Vestibulum bibendum diam in elementum mattis.
+
+
+     
+                  
+                  <div class="mt-5 form-group text-center">
+                     <button type="button" class="btn btn-lg btnPrimary" data-dismiss="modal">Cerrar</button>
+                  </div>
+               </div>
+               <!-- Modal footer -->
+               <!---div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div--->
+            </div>
+         </div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#main-menu a").click(function() {
+                $("#main-menu a").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+        <header class="back-bt header-registro text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+
+
+                </div>
+            </nav>
+            <div class="grey-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 text-left mt-2"><a href="#" onclick="goBack()"><span class="material-icons">keyboard_backspace</span> Regresar</a></div>
+                        <div class="col-6 text-right mt-2"><a href="">Cerrar <span class="material-icons">close</span></a></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 15%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <div id="main" class="container">
+            <div class="content-wrap">
+                <h1 class="mt-5">Comencemos</h1>
+                <p>Vamos a crear tu cuenta</p>
+                <hr>
+                <h3>Datos de acceso</h3>
+                <small>(*) Datos requeridos</small>
+                <hr>
+
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Nombre*</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+                                <div class="form-group col-md-6">
+
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Correo electrónico*</label> <small class="float-right"><a href="">No tengo correo</a></small>
+                                    <input type="email" class="form-control" id="">
+
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Confirmar correo electrónico*</label>
+                                    <input type="email" class="form-control" id="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Contraseña*</label>
+                                    <input type="password" class="form-control" id="">
+                                    <ul class="no-bullets">
+                                        <li><small>Utiliza ocho caracteres</small></li>
+                                        <li><small class="text-danger">Utiliza una letra mayúscula como mínimo</small></li>
+                                        <li><small class="text-success">Utiliza un número como mínimo</small></li>
+                                    </ul>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Confirmar contraseña*</label>
+                                    <input type="password" class="form-control" id="">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-secondary">Regresar</button>
+                            <!---button type="submit" class="btn btn-lg btnPrimary">Crear cuenta</button--->
+                            <a href="reg-bt-02.html" class="btn btn-lg btnPrimary">Crear cuenta</a>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <h3>Puedes registrarte con una de tus redes sociales.</h3>
+                            <br>
+                            <ul class="no-bullets">
+                                <li class="my-3"><a href="#"><img src="assets/img/cuenta_facebook.png"> </a></li>
+                                <li class="my-3"><a href="#"><img src="assets/img/cuenta_google.png"> </a></li>
+                                <li class="my-3"><a href="#"><img src="assets/img/cuenta-inkedin.png"> </a></li>
+                            </ul>
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div><!-- /.container -->
+</div>
+
+    <footer class="bg-white footerBtm">
+        <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+        </div>
+        <div class="green-bar">
+            <div class="container">
+                    <div class="d-flex flex-row text-center">
+                        <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                        <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                        <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                        <div class="ml-auto p-2"><a href="necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/assets.js"></script>
+
+</body>
+
+</html>

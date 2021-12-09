@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+    <header class="back-bt header-interna text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search</i><br>Buscar</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link montserrat montserrat-regular" href="#">Regístrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link montserrat montserrat-regular gbutton" href="#">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="collapse" id="searchDiv">
+                    <div class="form-row align-items-end justify-content-center py-3">
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="que">¿Qué?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                        </div>
+                        <div class="col-auto text-left">
+                            <label class="text-white px19" for="donde">¿Dónde?</label>
+                            <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-lg closeSearchBar">
+                                    Cerrar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-lg-4">
+                <div class="bg-white p-3">
+                    <h3>Filtrar</h3>
+                    <p class="montserrat-extraLight">Para utilizar los filtros necesitas <a href="#">iniciar sesión</a></p>
+
+                    <p class="montserrat-extraLight">¿Eres nuevo en el Portal del empleo?
+                        <a href="#">Regístrate aquí</a></p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <ul id="results" class="nav mb-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#tab-1" data-target="etab-p1, .etabi-img1" role="tab" data-toggle="tab">
+                            Empleos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tab-2" data-target=".etab-p2, .etabi-img2" role="tab" data-toggle="tab">
+                            Candidatos
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content tab-space">
+                    <div class="tab-pane active etab-p1">
+                        <p>Mostrando 50 de 3,503 empleos</p>
+                    </div>
+                    <div class="tab-pane etab-p2">
+                        <p>Mostrando 10 de 1,265,403 candidatos</p>
+                    </div>
+                </div>
+                <div id="options" class="row">
+                    <div class="col-7 text-left">
+                        <ul class="nav">
+                            <li class="nav-link px-1"><a href="#" class="unactive" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para poder usar estos controles, es necesario que inicies sesión."><i class="material-icons">star</i> Guardar</a></li>
+                            <li class="nav-link px-1"><a href="#" class="unactive" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para poder usar estos controles, es necesario que inicies sesión."><i class="material-icons">people</i> Comparar</a></li>
+                            <li class="nav-link px-1"><a href="#" class="unactive" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Para poder usar estos controles, es necesario que inicies sesión."><i class="material-icons">share</i> Compartir</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 text-right">
+                        <ul class="nav">
+                            <li class="nav-link">
+                                <div>
+                                    <select class="montserrat px16">
+                                        <option>Ordenar por:</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+
+                                </div>
+                            </li>
+                            <li class="nav-link  px-1"><a href="#"><i class="material-icons">sort_by_alpha</i></a></li>
+                            <li class="nav-link  px-1"><a href="#"><i class="material-icons">pin_drop</i></a></li>
+                            <li class="nav-link  px-1"><a href="#"><i class="material-icons">apps</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content tab-space">
+                    <div class="tab-pane active etabi-img1">
+                        <div class="list">
+                            <div class="row">
+                                <div class="col-12 p-3">
+                    <iframe class="w100" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d120440.03331454599!2d-99.21776692867216!3d19.379929649121863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d19.283967999999998!2d-99.1166464!4m5!1s0x85d1f8866458ed7d%3A0xeb63a225faf03f07!2sEje%203%20Nte.%20Camarones%20494%2C%20Col%20del%20Recreo%2C%20Azcapotzalco%2C%2002070%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!3m2!1d19.473174099999998!2d-99.1811367!5e0!3m2!1ses-419!2smx!4v1598487313480!5m2!1ses-419!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane etabi-img2">
+                        <div class="list">
+                            <div class="row">
+                                <div class="col-12 p-3">
+                    <iframe class="w100" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d120440.03331454599!2d-99.21776692867216!3d19.379929649121863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d19.283967999999998!2d-99.1166464!4m5!1s0x85d1f8866458ed7d%3A0xeb63a225faf03f07!2sEje%203%20Nte.%20Camarones%20494%2C%20Col%20del%20Recreo%2C%20Azcapotzalco%2C%2002070%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!3m2!1d19.473174099999998!2d-99.1811367!5e0!3m2!1ses-419!2smx!4v1598487313480!5m2!1ses-419!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><!-- /.container -->
+
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.shortDesc').each(function(f) {
+
+                var newstr = $(this).text().substring(0, 100);
+                $(this).text(newstr);
+
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#results a').click(function() {
+                var href = $(this).attr('href');
+                var num = href.split("-")[1];
+                $('.tab-pane').css('display', 'none');
+                $("[class^='etab-'][class^='etabi-']").removeClass('show');
+                $(".etab-p" + num).css('display', 'block');
+                $(".etabi-img" + num).css('display', 'block');
+                $(".etab-p" + num).addClass('show');
+                $(".etabi-img" + num).addClass('show');
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
+</html>

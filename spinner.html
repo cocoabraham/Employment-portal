@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/rangeslider.css" rel="stylesheet" type="text/css" media="all">
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-body">
+    <div id="overlay">
+       <div class="spinner"></div>
+    </div>
+       
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+    <header class="back-bt header-home text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <!---RESPONSIVE MENU--->
+            <!-- The overlay -->
+            <div id="myNav" class="overlay1">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+
+                <div class="overlay-content">
+                    <div class="container">
+                        <div class="col-12">
+
+
+                            <hr class="hr-white">
+                            <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                                <li class="p-1"><a href="0-Registro-BT-EMP.html"><i class="material-icons">how_to_reg</i><br>Regístrate</a></li>
+                                <li class="p-1"><a href="#" data-toggle="modal" data-target="#login"><i class="material-icons">login</i><br>Iniciar sesión</a></li>
+                            </ul>
+                            <hr class="hr-white">
+                        </div>
+
+                        <div class="col-12">
+                            <h2>Buscador</h2>
+                            <form>
+                                <div class="form-row justify-content-md-center">
+                                    <div class="form-group col-md-6 text-center">
+                                        <label class="text-white px19" for="que">¿Qué?</label>
+                                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                                    </div>
+                                    <div class="form-group col-md-6 text-center">
+                                        <label class="text-white px19" for="donde">¿Dónde?</label>
+                                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                                    </div>
+                                    <div class="clearfix">&nbsp;</div>
+                                    <div class="form-row col-12">
+                                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!---RESPONSIVE MENU--->
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="logoPEHeaderSS img-fluid" src="assets/img/logosBCO.png" alt="Logo Portal del empleo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse">
+                    <span onclick="openNav()" class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link montserrat montserrat-regular" href="0-Registro-BT-EMP.html">Regístrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link montserrat montserrat-regular gbutton" href="#" data-toggle="modal" data-target="#login">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <img class="logoPE mt-3 img-fluid" src="assets/img/logo-PE.png" alt="Logo Portal del empleo">
+            <h1 class="mt-5 text-white montserrat-semiBold px32">Encuentra empleo o candidatos</h1>
+            <form>
+                <div class="form-row justify-content-md-center">
+                    <div class="form-group col-md-4 text-left">
+                        <label class="text-white px19" for="que">¿Qué?</label>
+                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                    </div>
+                    <div class="form-group col-md-4 text-left">
+                        <label class="text-white px19" for="donde">¿Dónde?</label>
+                        <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                    </div>
+                    <div class="clearfix">&nbsp;</div>
+                    <div class="form-row col-12">
+                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </header>
+    <main class="container">
+        CONTENIDO!!!!!
+    </main>
+    <!-- /.container -->
+    <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <!-- The Modal -->
+    <div class="modal fade" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title text-center">Inicia sesión en el Portal del Empleo</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <form accept-charset="UTF-8" role="form">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Correo" name="email" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input name="remember" type="checkbox" value="Remember Me"> Permanecer conectado
+                                                </label>
+                                            </div>
+                                            <input class="btn btn-lg btnPrimary btn-block" type="submit" value="Iniciar sesión">
+                                        </fieldset>
+                                    </form>
+                                    <hr />
+                                    <p class="text-center">O inicia sesión con:</p>
+                                    <a href="#" class="btn btn-lg btn-facebook btn-block" type="submit" value="Login via facebook">Facebook</a>
+                                    <a href="#" class="btn btn-lg btn-google btn-block" type="submit" value="Login via Google">Google</a>
+                                    <a href="#" class="btn btn-lg btn-linkedin btn-block" type="submit" value="Login via LinkedIn">Linked In</a>
+                                    <hr>
+                                    <p class="text-center"><a href="05_1_1-BT-Recuperar-contrasena.html">¿Olvidaste tu contraseña?</a></p>
+                                    <p class="text-center">¿Eres nuevo en el Portal del empleo? <a href="0-Registro-BT-EMP.html">Regístrate aquí</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Modal footer -->
+                <!---div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div--->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>

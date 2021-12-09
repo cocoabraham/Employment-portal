@@ -1,0 +1,656 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="../../../../favicon.ico">
+      <title>Portal del Empleo</title>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+      <!-- Place your stylesheet here-->
+      <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+      <!--- montserrat font-->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+      <!---icons--->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
+   <body class="bg-body">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+      <header class="back-bt header-interna text-center">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+            <!---RESPONSIVE MENU--->
+            <!-- The overlay -->
+            <div id="myNav" class="overlay1">
+               <!-- Button to close the overlay navigation -->
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <div class="container">
+                     <div class="col-12">
+                        <div class="text-center"><img class="rounded-circle" src="assets/img/avatar-150.jpg" alt="avatar-150"></div>
+                        <div class="text-center my-3">
+                           <h2 class="m-0">Jorge Rangel Aragón</h2>
+                        </div>
+                        <hr class="hr-white">
+                        <ul class="no-bullets d-flex justify-content-around d-lg-none text-center">
+                           <li class="p-1"><a href="#" class="selected"><i class="material-icons">person_search</i><br>Ofertas de empleo</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">star</i><br>CV</a></li>
+                           <li class="p-1"><a href="#"><i class="material-icons">check_circle</i><br>Notificaciones</a></li>
+                        </ul>
+                        <hr class="hr-white">
+                     </div>
+                     <div class="col-12">
+                        <h2>Buscador</h2>
+                        <form>
+                           <div class="form-row justify-content-md-center">
+                              <div class="form-group col-md-6 text-center">
+                                 <label class="text-white px19" for="que">¿Qué?</label>
+                                 <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                              </div>
+                              <div class="form-group col-md-6 text-center">
+                                 <label class="text-white px19" for="donde">¿Dónde?</label>
+                                 <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                              </div>
+                              <div class="clearfix">&nbsp;</div>
+                              <div class="form-row col-12">
+                                 <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!---RESPONSIVE MENU--->
+            <div class="container">
+               <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse">
+               <span onclick="openNav()" class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item mr-4 border-right">
+                        <a class="text-white" data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">search &nbsp;</i><br>
+                        Buscar</a><span>&nbsp; &nbsp; &nbsp;</span>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white"><i class="material-icons">business_center</i><br>
+                        Ofertas de empleo</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white"><i class="material-icons">person</i><br>
+                        CV</a>
+                     </li>
+                     <li class="nav-item mr-4">
+                        <a href="#" class="text-white">
+                        <i class="material-icons">notifications</i>
+                        <span class="badge badge-important">12</span>
+                        <br>
+                        Notificaciones</a>
+                     </li>
+                     <li class="nav-item">
+                        <div class="row">
+                           <div class="col-4 m-0"><img src="assets/img/avatar.png" alt="avatar"></div>
+                           <div class="col-8 text-left">
+                              <h4 class="montserrat-light text-white">Hola Jorge</h4>
+                              <a href="#" class="text-white">Cerrar sesión</a>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="container">
+            <form>
+               <div class="collapse" id="searchDiv">
+                  <div class="form-row align-items-end justify-content-center py-3">
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="que">¿Qué?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="que" placeholder="Trabajo, profesión, oficio o habilidad">
+                     </div>
+                     <div class="col-auto text-left">
+                        <label class="text-white px19" for="donde">¿Dónde?</label> <input type="text" class="form-control height-50 inputBorder inputShadow" id="donde" placeholder="Ciudad, alcaldía o código postal">
+                     </div>
+                     <div class="col-auto">
+                        <button type="submit" class="btn btn-gold px19 align-center mt-3 btn-xl">Buscar</button>
+                     </div>
+                     <div class="col-auto">
+                        <div class="form-check mb-2">
+                           <a data-toggle="collapse" href="#searchDiv" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-white"><span class="material-icons">highlight_off</span> Cerrar</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </header>
+      <main class="container">
+         <div class="row">
+            <div class="col-12">
+               <ul class="nav " role="tablist">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="#">
+                     <img src="assets/img/back_icon.png" alt="back"> Regresar a te buscan
+                     </a>
+                  </li>
+               </ul>
+               <div id="options" class="row">
+                  <div class="col-12 text-left">
+                     <ul class="nav">
+                        <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#Share"><i class="material-icons">share</i> Compartir</a></li>
+                        <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#report"><i class="material-icons">flag</i> Denunciar</a>
+                        </li>
+                        <li class="nav-link px-1"><a href="#" data-toggle="modal" data-target="#mensajeBorrar"><i class="material-icons">delete</i> Borrar</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row justify-content-md-center mt-3">
+            <div class="col-lg-9">
+               <div class="list">
+                  <div class="row">
+                     <div class="backItemDetail">
+                        <div class="row">
+                           <div class="col-1">
+                              <ul class="nav">
+                                 <!---li class="ml-1"><i class="material-icons">star</i></li--->
+                              </ul>
+                           </div>
+                           <div class="col-md-7">
+                              <h3 class="montserrat-extraLight">Oferta de empleo</h3>
+                              <h2 class="montserrat-regular px28">Diseñador</h2>
+                              <h3 class="montserrat-extraLight">Lugar: Coyoacán, Ciudad de México <a href="#">¿Cómo llegar?</a></h3>
+                              <h3 class="montserrat-extraLight">Empresa: <a href="#">Arkiplus</a></h3>
+                              <h3 class="montserrat-regular">Vigente hasta el 20 de mayo del 2020 </h3>
+                              <h3 class="text-handicap-blue"><span class="material-icons">accessible_forward</span> Aceptamos personas con discapacidad</h3>
+                           </div>
+                           <div class="col-md-4 text-md-right">
+                              <h3 class="montserrat-extraLight">Salario mensual neto</h3>
+                              <h2 class="montserrat-regular mb-4 px28">$30,000.00</h2>
+                              <h2><span class="material-icons">thumb_down</span> No me interesa</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                           <div class="col-10 backMatchDetail">
+                             <a href="" class="mr-1">Visualizar CV</a> <a href="" class="ml-1">Actualizar CV</a>
+                              
+                           </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                           <div class="col-12 text-md-right">
+                              <h5 class="montserrat-thin">Folio: 20384</h5>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-1">&nbsp;</div>
+                           <div class="col-7 text-left">
+                              <h3>Decripción</h3>
+                              <p class="montserrat-light px16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam tellus et placerat vulputate. Praesent mi ex, sollicitudin eget dolor eu, rhoncus molestie nulla. Ut at eros ante. Etiam in erat tempor, elementum est eu, porttitor leo. Duis nec erat urna. Cras sollicitudin, quam sed viverra ultricies, ipsum elit posuere sem, vitae laoreet purus ipsum eget sapien. Integer dignissim ornare turpis, eget posuere urna viverra at. Donec justo mi, elementum ut gravida id, vulputate sit amet tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean lobortis ullamcorper porttitor</p>
+                              <h3 class="mt-5">Requisitos</h3>
+                              <ul>
+                                 <li class="montserrat-light px16">Edad 25 a 35 años</li>
+                                 <li class="montserrat-light px16">Genero: Femenino</li>
+                                 <li class="montserrat-light px16">Estado civil: Indistinto</li>
+                                 <li class="montserrat-light px16">Escolaridad: Licenciatura en diseño gráfico</li>
+                                 <li class="montserrat-light px16">Experiencia mínima de 1 año en diseño web</li>
+                              </ul>
+                              <h3 class="mt-5">Horario</h3>
+                              <ul class="no-bullets">
+                                 <li class="montserrat-light px16">Lunes a jueves: 8:30 am - 6:30 pm</li>
+                                 <li class="montserrat-light px16">Viernes: 8:30 am - 3:00 pm</li>
+                              </ul>
+                              <h3 class="mt-5">Funciones y actividades</h3>
+                              <ul>
+                                 <li class="montserrat-light px16">Diseñar, maquetar, generar propuestas, programar, implementar y optimizar páginas web empresariales.</li>
+                                 <li class="montserrat-light px16">Diseñar los diferentes materiales gráficos de comunicación.</li>
+                                 <li class="montserrat-light px16">Aplicar la lñínea gráfica y generar cntenidos en los materiales de comunicación y medios digitales..</li>
+                              </ul>
+                              <h3 class="mt-5">La empresa ofrece</h3>
+                              <ul>
+                                 <li class="montserrat-light px16">Prestaciones de ley y superiores.</li>
+                                 <li class="montserrat-light px16">Seguro de vidan.</li>
+                                 <li class="montserrat-light px16">Comedor.</li>
+                                 <li class="montserrat-light px16">Vales de despensa.</li>
+                              </ul>
+                           </div>
+                           <div class="col-4 mt-2 text-center">
+                              <img class="logo80" src="assets/img/logo-empresa.jpg" alt="logo de la empresa">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-12 text-center mt-5">
+                              <h2><span class="material-icons">thumb_down</span> No me interesa</h2>
+                              
+                           </div>
+                        </div>
+                        <hr>
+                        <div class="col-md-8 embed-responsive embed-responsive-16by9">
+                           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iG-CSw4evGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="bg-white p-3 tect-center box-shadow mb-3">
+                  <a href=""><span class="material-icons">info</span> Consejos de empleo</a>
+              </div>
+               <div class="bg-white p-3 text-center box-shadow">
+                  <h4>35 empleos relacionados</h4>
+                  <hr>
+                  <ul class="no-bullets mt-3">
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                  </ul>
+                  <a href="#" class="px16 montserrat-thin">Ver todos los empleos</a>
+               </div>
+               <div class="bg-white p-3 text-center mt-4 box-shadow">
+                  <h4>Empleos que has visto</h4>
+                  <hr>
+                  <ul class="no-bullets mt-3">
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                     <li>
+                        <div class="row">
+                           <div class="col-8 text-left">
+                              <h4 class="text-light-green montserrat-extraLight px14">Diseñador web</h4>
+                              <h4 class="montserrat-extraLight px12 text-light-grey">Salario mensual neto</h4>
+                              <h3 class="montserrat-regular text-grey">$30,000.00</h3>
+                              <p class="px14">95% a tu medida</p>
+                           </div>
+                           <div class="col-4 text-right"><i class="material-icons text-light-green">star</i></div>
+                        </div>
+                        <hr>
+                     </li>
+                  </ul>
+                  <a href="#" class="px16 montserrat-thin">Ver todos los empleos</a>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!-- /.container -->
+      <footer class="mt-110px bg-white">
+         <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+         </div>
+         <div class="green-bar">
+            <div class="container">
+               <div class="d-flex flex-row text-center">
+                  <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                  <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                  <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                  <div class="ml-auto p-2"><a href="static/necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Modal compartir-->
+      <div class="modal fade" id="Share" tabindex="-1" role="dialog" aria-labelledby="Share" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="form-group col-md-12">
+                        <h2>Compartir</h2>
+                     </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                     <div class="col text-center">
+                        <a href="">
+                           <img class="img50" src="assets/img/icon-whatsapp.png">
+                           <p>Whats app</p>
+                        </a>
+                     </div>
+                     <div class="col text-center">
+                        <a href="">
+                           <img class="img50" src="assets/img/icon-facebook.png">
+                           <p>Facebook</p>
+                        </a>
+                     </div>
+                     <div class="col text-center">
+                        <a href="">
+                           <img class="img50" src="assets/img/icon-twitter.png">
+                           <p>Twitter</p>
+                        </a>
+                     </div>
+                     <div class="col text-center">
+                        <a href="">
+                           <img class="img50" src="assets/img/icon-email.png">
+                           <p>Correo</p>
+                        </a>
+                     </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                     <div class="form-group col-md-12">
+                        <h3>Dirercción URL</h3>
+                        <input class="col-10 ur" type="url" placeholder="https://www.trabajo.gob.mx" id="">
+                        <a href=""><small>Copiar URL</small></a>
+                     </div>
+                     <br />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal denunciar-->
+      <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-labelledby="Share" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="form-group col-md-12">
+                        <h2>Denunciar</h2>
+                        <p><small>Todas las denuncias son anónimas</small></p>
+                     </div>
+                  </div>
+                  <h3>¿Qué está mal con la oferta de empleo "Diseñador"?</h3>
+                  <hr>
+                  <p>Selecciona un motivo</p>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                     <label class="form-check-label" for="exampleRadios1">
+                     Es discriminatorio
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                     <label class="form-check-label" for="exampleRadios2">
+                     Parece un fraude o pirámide
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                     <label class="form-check-label" for="exampleRadios3">
+                     La dirección no existe
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                     <label class="form-check-label" for="exampleRadios4">
+                     El empleo ya no está disponible
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                     <label class="form-check-label" for="exampleRadios5">
+                     Solicita invertir dinero / compra de uniformes / pago de exámenes
+                     </label>
+                  </div>
+                  <hr>
+                  <div class="form-group">
+                     <label for="exampleFormControlTextarea1">Cuéntanos un poco más</label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <hr>
+                  <div class="mt-5 form-group text-center">
+                     <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                     <a href="#" class="montserrat-regular px19 px-4">Cancelar</a>
+                     <a href="#" class="btn btn-lg btnPrimary">Denunciar</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade autoclose" id="mensajeBorrar" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <hr>
+                  <h2 class="text-center">La oferta de empleo <span class="font-weight-bold">xxxxxxxxxx</span> se ha movido a la <span class="font-weight-bold">papelera</span></h2>
+                  <hr>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade autoclose" id="mensajePostular" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <hr>
+                  <h2 class="text-center">Te has <span class="font-weight-bold">postulado</span> al empleo <span class="font-weight-bold">"Diseñador"</span></h2>
+                  <hr>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade autoclose" id="mensajeNoInteresa" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a>
+                  <button type="button" class="close text-white" data-dismiss="modal">×</button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="form-group col-md-12">
+                        <h2>No me interesa</h2>
+                        
+                     </div>
+                  </div>
+                  <h3>Si no te interesa la oferta, coméntale el motivo al Empleador.</h3>
+                  <hr>
+                  <p>Selecciona un motivo</p>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                     <label class="form-check-label" for="exampleRadios1">
+                     Ya tengo empleo
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                     <label class="form-check-label" for="exampleRadios2">
+                     Estoy buscando otro tipo de trabajo
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                     <label class="form-check-label" for="exampleRadios3">
+                     No que ofrece no es lo que espero
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                     <label class="form-check-label" for="exampleRadios4">
+                     Me parece que no cubro sus requisitos
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                     <label class="form-check-label" for="exampleRadios5">
+                     Otro
+                     </label>
+                  </div>
+                  <hr>
+                  <div class="form-group">
+                     <label for="exampleFormControlTextarea1">Cuéntanos un poco más</label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <hr>
+                  <div class="mt-5 form-group text-center">
+                     <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                     <a href="#" class="montserrat-regular px19 px-4">Cancelar</a>
+                     <a href="#" class="btn btn-lg btnPrimary">Aceptar</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="assets/js/jquery-3.5.1.js"></script>
+      <script src="assets/js/bootstrap.bundle.js"></script>
+      <script>
+         $(document).ready(function() {
+         
+             $('.shortDesc').each(function(f) {
+         
+                 var newstr = $(this).text().substring(0, 100);
+                 $(this).text(newstr);
+         
+             });
+         })
+      </script>
+      <script>
+         //Get the button
+         var mybutton = document.getElementById("myBtn");
+         
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {
+             scrollFunction()
+         };
+         
+         function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+             } else {
+                 mybutton.style.display = "none";
+             }
+         }
+         
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+             document.body.scrollTop = 0;
+             document.documentElement.scrollTop = 0;
+         }
+      </script>
+      <script>
+         /* Open when someone clicks on the span element */
+         function openNav() {
+             document.getElementById("myNav").style.width = "100%";
+         }
+         
+         /* Close when someone clicks on the "x" symbol inside the overlay */
+         function closeNav() {
+             document.getElementById("myNav").style.width = "0%";
+         }
+      </script>
+      <script>
+        setTimeout(function() {
+        $('#mensajePostular').modal('hide')
+        }, 4000);
+    </script>
+   </body>
+</html>
+

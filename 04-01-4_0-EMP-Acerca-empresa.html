@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css">
+
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+        <header class="back-bt header-registro text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </nav>
+            <div class="grey-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 text-left mt-2"><a href="#" onclick="goBack()"><span class="material-icons">keyboard_backspace</span> Regresar</a></div>
+                        <div class="col-6 text-right mt-2"><a href="reg-emp-04.html">Cerrar <span class="material-icons">close</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div id="main" class="container">
+            <div class="mt-5">
+                <small class="text-light-grey">Paso 4 de 6</small>
+                <h1>Acerca de la empresa</h1>
+                <small>(*) Datos requeridos</small>
+                <hr>
+            </div>
+            <form>
+
+
+                <div id="experience" class="">
+                    <label for="NombreComercial">
+                        ¿La razón social es la misma al nombre comercial?</label>
+                    <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input value="option2" data-target="#collapseOne" name="collapseGroup" type="radio" class="form-check-input collapsed" checked="" data-toggle="collapse" aria-expanded="false">
+                            <label class="form-check-label" for="collapseGroup">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input value="option1" data-target="#collapseOne" name="collapseGroup" type="radio" class="form-check-input collapsed" data-toggle="collapse" aria-expanded="false">
+                            <label class="form-check-label" for="collapseGroup">No</label>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" style="">
+                        <input type="text" class="form-control" id="" placeholder="Nombre comercial">
+                    </div>
+                    <div id="experienceRow" class="form-row d-flex align-items-end w-100">
+                        
+                        <div class="form-group col-md-12">
+                            <label for="">Descripción</label>
+                            <textarea class="form-control" id="" rows="3"></textarea>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="">Número de empleados*</label>
+                            <div role="wrapper" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group"><input type="text" class="form-control" id="" placeholder=""></div>
+                        </div>
+                        
+                        <div class="col-12">&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+                <hr>
+                <h3>Imagen de tu empresa</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="text-center"></p>
+                        <img src="assets/img/icon-100-100.png" class="rounded-circle mx-auto d-block">
+                        <p class="text-light-grey mt-3 text-center"><small>Formatos permitidos *jpg, *png, *bmp
+                                <br>Tamaño máximo 30Kb y la altura no exceda los 100 pixles</small></p>
+
+
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <p class="">¡Hey! Aquí puedes agregar el logotipo de tu negocio</p>
+                        <div class="p-3">
+
+
+                                        <div class="text-center">
+                                <input class="foto" type="file" id="foto" name="foto" (change)="elegirFoto($event)" accept="image/*">
+                                <label for="foto"><span class="btn btnLight">Subir un archivo</span></label>
+                                <div class="mt-3 text-center">
+                                    <button type="submit" (click)="validarFoto(content)" class="btn btnPrimary">Subir imagen</button>
+                                </div>
+                            </div>
+
+                                    </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h3>Video de la empresa</h3>
+                        <a href="#" data-toggle="modal" data-target="#ModalVideoEMP" class="mb-3">¿Cómo hacer un video de tu empresa?</a>
+
+                        <p> </p>
+                        <h3>Comparte el enlace del video de tu empresa</h3>
+                        <div class="form-group">
+                            <label for="">Dirección electrónica en YouTube</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 border-left">
+                        <h3>Tus redes sociales</h3>
+                        <div class="form-row align-items-center">
+                            <div class="col-12">
+                                <label class="sr-only" for="">Facebook</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="assets/img/facebook.png" class="img24"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="Facebook">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="sr-only" for="">Linked In</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="assets/img/linkedin.png" class="img24"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="LinkedIn">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="sr-only" for="">Página web</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="assets/img/web.png" class="img24"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="URL">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="sr-only" for="">Otra</label>
+                                <input type="text" class="form-control mb-2" id="" placeholder="Otra red social">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 form-group text-center">
+                    <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                    <a href="#" onclick="goBack()" class="montserrat-regular px19 px-4"> Regresar</a>
+                    <a href="reg-emp-04.html" class="btn btn-lg btnPrimary">Guardar y continuar</a>
+
+                </div>
+            </form>
+
+        </div><!-- /.container -->
+    </div>
+
+    <footer class="bg-white footerBtm">
+        <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+        </div>
+        <div class="green-bar">
+            <div class="container">
+                <div class="d-flex flex-row text-center">
+                    <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                    <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                    <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                    <div class="ml-auto p-2"><a href="necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="ModalVideoEMP" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h2>¿Cómo hacer un video de tu empresa?</h2>
+                    <ol>
+                        <li class="font-weight-bold">Crea un guión</li>
+                        <p>Piensa y escribe la informción más relevante sobre tu empresa</p>
+                        <ul>
+                            <li>Menciona el nombre de tu empresa y en donde te podemos localizar</li>
+                            <li>Platica sobre la misión, visión y valores de tu empresa</li>
+                            <li>Cuenta a que se dedica, los productos o servicios que ofrece</li>
+                        </ul>
+
+                        <li class="font-weight-bold">Busca un espacio para grabar</li>
+                        <ul>
+                            <li>Elije un espacio iluminado y sn distractores</li>
+                            <li>Aclara tu voz y procura grabar en un espacio sin ruido</li>
+                            <li>Toma tu celularr o enciende tu cámara y encuadra tu imagen</li>
+                        </ul>
+                        <li class="font-weight-bold">Graba tu video</li>
+                        <p>Platica sobre tu empresa en menos de 2 minutos</p>
+                        <ul>
+                            <li>Menciona el nombre de completo de tu empresa</li>
+                            <li>Menciona los datos de contacto: página web, dirección, teléfono o rredes sociales</li>
+                            <li>Sigue el guión que escribiste</li>
+                        </ul>
+                    </ol>
+                    <hr>
+                    <h3>Sube tu video</h3>
+                    <p>Una vez que termines de grrabar solo tienes que subirr tu video a internet</p>
+                    <ol>
+                        <li>Accede a la página de <a href="www.youtube.com" target="_blank">youtube</a></li>
+                        <li>Elije el video de tu empresa y publícalo</li>
+                        <li>Copia el enlace desde you tube y pégalo en tu perfil del Portal del Empleo</li>
+                    </ol>
+                    <hr>
+                    <div class="row justify-content-center"><a href="#" data-dismiss="modal" class="btn btnPrimary">Entendido</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js"></script>
+    <script src="assets/js/assets.js"></script>
+
+</body>
+
+</html>

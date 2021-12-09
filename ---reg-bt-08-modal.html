@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Portal del Empleo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+
+    <!-- Place your stylesheet here-->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css">
+    <link href="assets/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+
+    <!--- montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!---icons--->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">Arriba</button>
+        <header class="back-bt header-registro text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+                <div class="container">
+                    <a class="navbar-brand" href="#."><img class="logoPEHeader" src="assets/img/logo-PE.png" alt="Logo Portal del empleo"></a>
+
+
+                </div>
+            </nav>
+
+            <div class="grey-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 text-left mt-2"><a href="#." onclick="goBack()"><span class="material-icons">keyboard_backspace</span> Regresar</a></div>
+                        <div class="col-6 text-right mt-2"><a href="">Cerrar <span class="material-icons">close</span></a></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div id="main" class="container">
+            <div class="mt-5">
+                <small class="text-light-grey">Paso 6 de (6)</small>
+                <h1>¡Casi terminamos!</h1>
+                <h3>Escribe un nombre para tu CV</h3>
+                <small>(*) Datos requeridos</small>
+                <hr>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="">Título para tu CV</label>
+                            <select class="form-control" id="">
+                                <option>Selecciona</option>
+                                <option>Lic. en Diseño gráfico</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Salario mensual deseado</label>
+                            <select class="form-control" id="">
+                                <option>Selecciona</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Selecciona el horario que más te convenga</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Medio tiempo
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Tiempo completo
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="reg-bt-08-modal.html" class="text-center">Ver CV</a>
+                    </div>
+                </div>
+
+
+                <hr>
+                <h3>Puedes compartir información adicional</h3>
+                <div class="form-group">
+                    <label for="">Describe brevemente tu semblanza</label>
+                    <textarea class="form-control" id="" rows="3"></textarea>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#." class="mb-3">¿Cómo hacer tu CV en video?</a>
+
+                        <h3>Comparte el enlace de tu CV en video</h3>
+                        <div class="form-group">
+                            <label for="">Dirección electrónica en YouTube</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Tus redes sociales</h3>
+                        <div class="form-row align-items-center">
+                            <div class="col-12">
+                                <label class="sr-only" for="">Facebook</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="assets/img/facebook.png" class="img24"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="Facebook">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="sr-only" for="">Linked In</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="assets/img/linkedin.png" class="img24"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="LinkedIn">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="sr-only" for="">Página web</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><img src="assets/img/web.png" class="img24"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="URL">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="sr-only" for="">Otra</label>
+                                <input type="text" class="form-control mb-2" id="" placeholder="Otra">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="co-12 background-light-grey p-5 px14">
+                    <h3>Terminos y condiciones</h3>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            He leído y acepto los términos y condiciones*
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Aseguro que los datos que he proporcionado son correctos*
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            He sido informado que podré ejercer los derechos de Acceso, Rectificación, Cancelación y Oposición (ARCO), de conformidad con la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, ante los Responsables de la posesión de dichos datos, entendiéndose que, para el caso, será la OSNE el Sujeto obligado. También, me comprometo a garantizar la confidencialidad y protección de los datos personales que me sean proporcionados respecto a candidatos para cubrir las vacantes que oferté, que dichos datos únicamente los utilizaré para los fines para los que me fueron transferidos, y que estaré sujeto a la Ley Federal de Protección de Datos Personales en Posesión de Particulares.*<br>
+                            Atendiendo al principio de "consentimiento" consagrado en el artículo 16 y de conformidad con lo señalado en el artículo 20, ambos de la LGPDPPSO, en calidad de Empleador expreso mi voluntad,
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Me gustaría recibir ofertas de empleo acordes a mi perfil*
+                        </label>
+                    </div>
+                    <h3>Quiero que los empleadores vean mis datos de contacto y se comuniquen conmigo por:</h3>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Sí, sólo a través del Portal del empleo.
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Sí, por mi número telefónico y mi correo electrónico.
+                        </label>
+                    </div>
+
+                </div>
+                <hr>
+
+                <div class="form-group text-center">
+                    <!---button type="submit" class="btn btn-lg btnPrimary">Guardar y continuar</button--->
+                    <a href="reg-bt-09.html" class="btn btn-lg btnPrimary">Guardar y continuar</a>
+                </div>
+            </form>
+        </div><!-- /.container -->
+    </div>
+
+    <footer class="bg-white footerBtm">
+        <div class="container py-2">
+            <img class="logos" src="assets/img/logos.png" alt="Logos de gobierno, secretaría y programa">
+        </div>
+        <div class="green-bar">
+            <div class="container">
+                    <div class="d-flex flex-row text-center">
+                        <div class="p-2"><a href="static/acerca-sne.html" class="text-white">Servicio Nacional de Empleo</a></div>
+                        <div class="p-2"><a href="0-politicas.html" class="text-white">Políticas y condiciones</a></div>
+                        <div class="p-2"><a href="aviso.html" class="text-white">Aviso de privacidad</a></div>
+                        <div class="ml-auto p-2"><a href="necesitas-ayuda.html" class="text-white">¿Necesitas ayuda? <i class="material-icons text-white">info</i></a></div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade show" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-modal="true" style="display: block;">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="reg-bt-08.html" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span class="material-icons text-white">close</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col">
+                        <div class="panel panel-default">
+
+                            <div class="panel-body">
+                                <div class="bg-white p-3 mb-3 border">
+                                    
+                                       <div class="d-flex mb-3">
+                                        <h2 class="mr-auto">CV | 2020</h2><a href="bt-mi-perfil.html" class="px14 ml-auto"><span class="material-icons px14">&nbsp;</span> &nbsp;</a>
+                                    </div>
+                                    
+                                    
+                                    <hr>
+                                    <div class="row mb-2">
+
+
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-12 mb-2">
+
+
+
+
+
+                                            <h2>Jorge Rangel Aragón</h2>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="assets/img/avatar-150.jpg" alt="avatar-150">
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">CURP:</h3>
+                                            <p class="m-0">JRLO121212A12</p>
+
+                                            <h3 class="m-0">Fecha de Nacimiento</h3>
+                                            <p class="m-0">12 /12/1234</p>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Sexo</h3>
+                                            <p class="m-0">2324252627</p>
+
+                                            <h3 class="m-0">Lugar de Nacimiento</h3>
+                                            <p class="m-0">Estado de México</p>
+                                        </div>
+                                        <div class="col-md-5">
+    <h3 class="m-0 background-handicap text-white p-1" width="35%">
+        <span class="material-icons px24 bg-white rounded text-handicap-blue">accessible_forward</span>
+        Tipo de discapacidad:</h3> 
+</div>
+                                    <span>Visual</span></div>
+                                    <hr>
+                                    <div class="row col-md-12">
+                                        <h2>Consultor Ux</h2>
+                                    </div><div class="row col-12">
+                                        <h3 class="m-0">Semblanza</h3>
+                                        <p class="m-0">
+                                            Lorem Ipsum es simplemente el texto de *Diseñador* y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+                                    </div><hr><div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3 class="m-0">Dirección</h3>
+                                            <p class="m-0">Ciudad de México, Xochimilco, San Marcos Código Postal 12345</p>
+                                        </div>
+                                    </div><div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Correo electrónico</h3>
+                                            <p class="m-0">jorge.rangel@gmail.com</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Teléfono de contacto</h3>
+                                            <p class="m-0">55 55 34493921</p>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    <h3>Redes sociales</h3>
+<a href="">https://www.misitio.com/</a><br><a href="">https://www.linkedin.com/...</a><br><a href="">https://www.fb.com/...</a><hr>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h2>Experiencia laboral</h2>
+<h3 class="m-0">Puesto</h3>
+                                            <p class="m-0">Diseñador</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-8">
+                                            <h3 class="m-0">Funciones</h3>
+                                            <p class="m-0">Diseño y mantenimiento de páginas web.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Fecha de ingreso</h3>
+                                            <p class="m-0">12/12/1234</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Fecha de salida</h3>
+                                            <p class="m-0">Aún sigo en este trabajo</p>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Puesto</h3>
+                                            <p class="m-0">Diseñador</p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-8">
+                                            <h3 class="m-0">Funciones</h3>
+                                            <p class="m-0">Diseño y mantenimiento de páginas web.</p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Fecha de ingreso</h3>
+                                            <p class="m-0">12/12/1234</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Fecha de salida</h3>
+                                            <p class="m-0">12/12/1234</p>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="row col-md-12">
+                                        <h2>Estudios</h2>
+                                    </div>
+
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Escolaridad</h3>
+                                            <p class="m-0">Licenciatura</p>
+
+                                            <h3 class="m-0">Carrera o especialidad</h3>
+                                            <p class="m-0">Diseño de la comunicación gráfica</p>
+
+                                            <h3 class="m-0">Escuela o Instituto</h3>
+                                            <p class="m-0">Universidad Nacional Autónoma de México</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Cédula profesional</h3>
+                                            <p class="m-0">2324332454</p>
+
+                                            <h3 class="m-0">Situación académica</h3>
+                                            <p class="m-0">Titulado</p>
+
+                                            <h3 class="m-0">Año de egreso</h3>
+                                            <p class="m-0">2010</p>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="row col-md-12">
+                                        <h2> Cursos, talleres, seminarios y diplomados</h2>
+
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Curso, taller, seminario o diplomado</h3>
+                                            <p class="m-0">Aspel SAE</p>
+
+                                            <h3 class="m-0">¿Tienes documento probatorio?</h3>
+                                            <p class="m-0">Si, certificado</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Escuela o institución</h3>
+                                            <p class="m-0">Grupo ICEL</p>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="row col-md-12">
+                                        <h2>Conocimientos o herramientas</h2>
+
+                                    </div>
+
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Nombre del conocimiento o herramienta</h3>
+                                            <p class="m-0">Código HTML<br>
+                                                Javascript<br>
+                                                MySQL</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Experiencia</h3>
+                                            <p class="m-0">4 años<br>
+                                                2 años<br>
+                                                1 año</p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <h2>Idioma</h2>
+                                    <div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Idioma</h3>
+                                            <p class="m-0">Inglés</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Nivel</h3>
+                                            <p class="m-0">Intermedio</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="m-0">Certificación</h3>
+                                            <p class="m-0">TOEFL</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Dirección electrónica de certificación</h3>
+                                            <p class="m-0">https://www.ejemplo.com/</p>
+                                        </div>
+
+
+                                    </div>
+                                    <hr>
+                                    <h2>Competencias</h2>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <h3 class="m-0">Competencias</h3>
+                                            <p class="m-0">Trabajo en equipo</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <h2>Gustos, aficiones y habilidades</h2>
+                                    <div class="row mb-2">
+                                        <div class="col-md-12">
+                                            <h3 class="m-0">Actividades que te pueden generar ingresos</h3>
+                                            <p class="m-0">Cortar cabello<br>
+                                                Alineado de Barba<br>
+                                                Árbitro de fútbol</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    
+                                    
+                                    
+
+
+
+
+                                </div>
+
+
+
+
+
+                                <hr>
+                                <p class="text-center"><a href="#">Descargar CV</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Modal-xl" tabindex="-1" role="dialog" aria-labelledby="Modal-xl" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title montserrat-regular text-white"><a href="#." onclick="goBack()" data-dismiss="modal" class="text-white"><span class="material-icons">arrow_back</span> Regresar</a></h3>
+                    <button type="button" class="close text-white" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js"></script>
+    <script src="assets/js/bootstrap4-toggle.min.js"></script>
+    <script src="assets/js/assets.js"></script>
+
+
+
+
+
+
+
+
+
+</body></html>
